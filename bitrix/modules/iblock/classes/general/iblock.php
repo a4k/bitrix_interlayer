@@ -876,8 +876,6 @@ class CAllIBlock
 
 		$arFields["RESULT"] = &$Result;
 
-		foreach(GetModuleEvents("iblock", "OnAfterIBlockAdd", true)  as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		if(defined("BX_COMP_MANAGED_CACHE") && self::isEnabledClearTagCache())
 			$CACHE_MANAGER->ClearByTag("iblock_id_new");
@@ -1076,8 +1074,6 @@ class CAllIBlock
 		$arFields["ID"] = $ID;
 		$arFields["RESULT"] = &$Result;
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockUpdate", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		self::clearIblockTagCache($ID);
 
@@ -1100,21 +1096,7 @@ class CAllIBlock
 		$ID = (int)$ID;
 
 		$APPLICATION->ResetException();
-		foreach(GetModuleEvents("iblock", "OnBeforeIBlockDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID)) === false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				$ex = $APPLICATION->GetException();
-				if(is_object($ex))
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->throwException($err);
-				return false;
-			}
-		}
 
-		foreach (GetModuleEvents("iblock", "OnIBlockDelete", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ID));
 
 		$iblockSections = CIBlockSection::GetList(Array(), Array(
 			"IBLOCK_ID" => $ID,
@@ -1187,8 +1169,6 @@ class CAllIBlock
 
 		CIBlock::CleanCache($ID);
 
-		foreach(GetModuleEvents("iblock", "OnAfterIBlockDelete", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ID));
 
 		self::clearIblockTagCache($ID);
 
@@ -1286,29 +1266,12 @@ class CAllIBlock
 		}
 
 		$APPLICATION->ResetException();
-		if($ID===false)
-			$db_events = GetModuleEvents("iblock", "OnBeforeIBlockAdd", true);
+		if($ID===false) {}
 		else
 		{
 			$arFields["ID"] = $ID;
-			$db_events = GetModuleEvents("iblock", "OnBeforeIBlockUpdate", true);
 		}
 
-		foreach($db_events as  $arEvent)
-		{
-			$bEventRes = ExecuteModuleEventEx($arEvent, array(&$arFields));
-			if($bEventRes===false)
-			{
-				if($err = $APPLICATION->GetException())
-					$this->LAST_ERROR .= $err->GetString()."<br>";
-				else
-				{
-					$APPLICATION->ThrowException("Unknown error");
-					$this->LAST_ERROR .= "Unknown error.<br>";
-				}
-				break;
-			}
-		}
 
 		/****************************** QUOTA ******************************/
 		if(empty($this->LAST_ERROR) && (COption::GetOptionInt("main", "disk_space") > 0))

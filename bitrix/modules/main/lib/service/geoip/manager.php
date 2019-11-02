@@ -8,11 +8,7 @@
 namespace Bitrix\Main\Service\GeoIp;
 
 use Bitrix\Main\Application;
-use Bitrix\Main\Event;
-use Bitrix\Main\IO\File;
 use Bitrix\Main\Loader;
-use Bitrix\Main\EventResult;
-use Bitrix\Main\Text\Encoding;
 use Bitrix\Main\Web\Json;
 
 /**
@@ -416,46 +412,6 @@ final class Manager
 			}
 		}
 
-		$event = new Event('main', 'onMainGeoIpHandlersBuildList');
-		$event->send();
-		$resultList = $event->getResults();
-
-		if (is_array($resultList) && !empty($resultList))
-		{
-			$customClasses = array();
-
-			foreach ($resultList as $eventResult)
-			{
-				/** @var  EventResult $eventResult*/
-				if ($eventResult->getType() != EventResult::SUCCESS)
-					continue;
-
-				$params = $eventResult->getParameters();
-
-				if(!empty($params) && is_array($params))
-					$customClasses = array_merge($customClasses, $params);
-			}
-
-			if(!empty($customClasses))
-			{
-				Loader::registerAutoLoadClasses(null, $customClasses);
-
-				foreach($customClasses as $class => $file)
-				{
-					if(!File::isFileExists($file))
-					{
-						continue;
-					}
-
-					if(self::isHandlerClassValid($class))
-					{
-						$fields = isset($handlersFields[$class]) ? $handlersFields[$class] : array();
-						$handlersList[$class] = new $class($fields);
-						$handlersSort[$class] = $handlersList[$class]->getSort();
-					}
-				}
-			}
-		}
 
 		asort($handlersSort, SORT_NUMERIC);
 

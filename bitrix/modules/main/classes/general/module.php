@@ -322,40 +322,6 @@ function UnRegisterModule($id)
 	\Bitrix\Main\ModuleManager::unRegisterModule($id);
 }
 
-function AddEventHandler($FROM_MODULE_ID, $MESSAGE_ID, $CALLBACK, $SORT=100, $FULL_PATH = false)
-{
-	$eventManager = \Bitrix\Main\EventManager::getInstance();
-	return $eventManager->addEventHandlerCompatible($FROM_MODULE_ID, $MESSAGE_ID, $CALLBACK, $FULL_PATH, $SORT);
-}
-
-function RemoveEventHandler($FROM_MODULE_ID, $MESSAGE_ID, $iEventHandlerKey)
-{
-	$eventManager = \Bitrix\Main\EventManager::getInstance();
-	return $eventManager->removeEventHandler($FROM_MODULE_ID, $MESSAGE_ID, $iEventHandlerKey);
-}
-
-function GetModuleEvents($MODULE_ID, $MESSAGE_ID, $bReturnArray = false)
-{
-	$eventManager = \Bitrix\Main\EventManager::getInstance();
-	$arrResult = $eventManager->findEventHandlers($MODULE_ID, $MESSAGE_ID);
-
-	foreach($arrResult as $k => $event)
-	{
-		$arrResult[$k]['FROM_MODULE_ID'] = $MODULE_ID;
-		$arrResult[$k]['MESSAGE_ID'] = $MESSAGE_ID;
-	}
-
-	if($bReturnArray)
-	{
-		return $arrResult;
-	}
-	else
-	{
-		$resRS = new CDBResult;
-		$resRS->InitFromArray($arrResult);
-		return $resRS;
-	}
-}
 
 /**
  * @param $arEvent
@@ -413,7 +379,7 @@ function ExecuteModuleEvent($arEvent, $param1=NULL, $param2=NULL, $param3=NULL, 
 	for($i = $CNT_PREDEF + 1; $i < $nArgs; $i++)
 		$args[] = func_get_arg($i);
 
-	//TODO: Возможно заменить на EventManager::getInstance()->getLastEvent();
+	//TODO: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ EventManager::getInstance()->getLastEvent();
 	global $BX_MODULE_EVENT_LAST;
 	$BX_MODULE_EVENT_LAST = $arEvent;
 
@@ -463,7 +429,7 @@ function ExecuteModuleEventEx($arEvent, $arParams = array())
 
 	if(array_key_exists("CALLBACK", $arEvent))
 	{
-		//TODO: Возможно заменить на EventManager::getInstance()->getLastEvent();
+		//TODO: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ EventManager::getInstance()->getLastEvent();
 		global $BX_MODULE_EVENT_LAST;
 		$BX_MODULE_EVENT_LAST = $arEvent;
 
@@ -476,7 +442,7 @@ function ExecuteModuleEventEx($arEvent, $arParams = array())
 	}
 	elseif($arEvent["TO_CLASS"] != "" && $arEvent["TO_METHOD"] != "")
 	{
-		//TODO: Возможно заменить на EventManager::getInstance()->getLastEvent();
+		//TODO: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ EventManager::getInstance()->getLastEvent();
 		global $BX_MODULE_EVENT_LAST;
 		$BX_MODULE_EVENT_LAST = $arEvent;
 
@@ -495,17 +461,6 @@ function ExecuteModuleEventEx($arEvent, $arParams = array())
 	}
 }
 
-function UnRegisterModuleDependences($FROM_MODULE_ID, $MESSAGE_ID, $TO_MODULE_ID, $TO_CLASS="", $TO_METHOD="", $TO_PATH="", $TO_METHOD_ARG = array())
-{
-	$eventManager = \Bitrix\Main\EventManager::getInstance();
-	$eventManager->unRegisterEventHandler($FROM_MODULE_ID, $MESSAGE_ID, $TO_MODULE_ID, $TO_CLASS, $TO_METHOD, $TO_PATH, $TO_METHOD_ARG);
-}
-
-function RegisterModuleDependences($FROM_MODULE_ID, $MESSAGE_ID, $TO_MODULE_ID, $TO_CLASS="", $TO_METHOD="", $SORT=100, $TO_PATH="", $TO_METHOD_ARG = array())
-{
-	$eventManager = \Bitrix\Main\EventManager::getInstance();
-	$eventManager->registerEventHandlerCompatible($FROM_MODULE_ID, $MESSAGE_ID, $TO_MODULE_ID, $TO_CLASS, $TO_METHOD, $SORT, $TO_PATH, $TO_METHOD_ARG);
-}
 
 function IsModuleInstalled($module_id)
 {

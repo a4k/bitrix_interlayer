@@ -51,23 +51,7 @@ class Fabric
 		}
 		else
 		{
-			$event = new \Bitrix\Main\Event("iblock", "OnTemplateGetFunctionClass", array($functionName));
-			$event->send();
-			if ($event->getResults())
-			{
-				foreach($event->getResults() as $evenResult)
-				{
-					if($evenResult->getType() == \Bitrix\Main\EventResult::SUCCESS)
-					{
-						$functionClass = $evenResult->getParameters();
-						if (is_string($functionClass) && class_exists($functionClass))
-						{
-							self::$functionMap[$functionName] = $functionClass;
-						}
-						break;
-					}
-				}
-			}
+
 			if (isset(self::$functionMap[$functionName]))
 			{
 				$functionClass = self::$functionMap[$functionName];

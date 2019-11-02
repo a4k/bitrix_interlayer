@@ -1013,7 +1013,6 @@ $GLOBALS['arCustomTemplateEngines'] = array();
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/' . $DBType . '/user.php');
 
 
-AddEventHandler('main', 'OnAfterEpilog', array('\Bitrix\Main\Data\ManagedCache', 'finalize'));
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/' . $DBType . '/usertype.php');
 if (file_exists(($updateDbPath = $_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/general/update_db_updater.php'))) {
     $US_HOST_PROCESS_MAIN = False;
@@ -1035,7 +1034,6 @@ if (isset($_GET['show_include_exec_time'])) {
 }
 if (isset($_GET['bitrix_include_areas']) && $_GET['bitrix_include_areas'] <> '') $GLOBALS['APPLICATION']->SetShowIncludeAreas($_GET['bitrix_include_areas'] == 'Y');
 
-foreach (GetModuleEvents('main', 'OnBeforeProlog', true) as $_700434475) ExecuteModuleEventEx($_700434475);
 $GLOBALS['USER'] = new CUser;
 
 

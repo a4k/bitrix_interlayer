@@ -460,36 +460,6 @@ class CAllUserTypeEntity extends CDBResult
 		 */
 		$commonEventResult = array('PROVIDE_STORAGE' => true);
 
-		foreach (GetModuleEvents("main", "OnBeforeUserTypeAdd", true) as $arEvent)
-		{
-			$eventResult = ExecuteModuleEventEx($arEvent, array(&$arFields));
-
-			if ($eventResult === false)
-			{
-				if($e = $APPLICATION->GetException())
-				{
-					return false;
-				}
-
-				$aMsg = array();
-				$aMsg[] = array(
-					"id"=>"FIELD_NAME",
-					"text"=>GetMessage("USER_TYPE_ADD_ERROR", array(
-						"#FIELD_NAME#"=>htmlspecialcharsbx($arFields["FIELD_NAME"]),
-						"#ENTITY_ID#"=>htmlspecialcharsbx($arFields["ENTITY_ID"]),
-					))
-				);
-
-				$e = new CAdminException($aMsg);
-				$APPLICATION->ThrowException($e);
-
-				return false;
-			}
-			elseif (is_array($eventResult))
-			{
-				$commonEventResult = array_merge($commonEventResult, $eventResult);
-			}
-		}
 
 		if(is_object($USER_FIELD_MANAGER))
 			$USER_FIELD_MANAGER->CleanCache();
@@ -551,10 +521,6 @@ class CAllUserTypeEntity extends CDBResult
 		// post event
 		$arFields['ID'] = $ID;
 
-		foreach (GetModuleEvents("main", "OnAfterUserTypeAdd", true) as $arEvent)
-		{
-			ExecuteModuleEventEx($arEvent, array($arFields));
-		}
 
 		return $ID;
 	}
@@ -617,30 +583,6 @@ class CAllUserTypeEntity extends CDBResult
 			$arFields["IS_SEARCHABLE"]="N";
 
 		// events
-		foreach (GetModuleEvents("main", "OnBeforeUserTypeUpdate", true) as $arEvent)
-		{
-			if (ExecuteModuleEventEx($arEvent, array(&$arFields))===false)
-			{
-				if($e = $APPLICATION->GetException())
-				{
-					return false;
-				}
-
-				$aMsg = array();
-				$aMsg[] = array(
-					"id"=>"FIELD_NAME",
-					"text"=>GetMessage("USER_TYPE_UPDATE_ERROR", array(
-						"#FIELD_NAME#"=>htmlspecialcharsbx($arFields["FIELD_NAME"]),
-						"#ENTITY_ID#"=>htmlspecialcharsbx($arFields["ENTITY_ID"]),
-					))
-				);
-
-				$e = new CAdminException($aMsg);
-				$APPLICATION->ThrowException($e);
-
-				return false;
-			}
-		}
 
 		if(is_object($USER_FIELD_MANAGER))
 			$USER_FIELD_MANAGER->CleanCache();
@@ -689,10 +631,6 @@ class CAllUserTypeEntity extends CDBResult
 				}
 			}
 
-			foreach (GetModuleEvents("main", "OnAfterUserTypeUpdate", true) as $arEvent)
-			{
-				ExecuteModuleEventEx($arEvent, array($arFields, $ID));
-			}
 		}
 
 		return true;
@@ -722,36 +660,6 @@ class CAllUserTypeEntity extends CDBResult
 			 */
 			$commonEventResult = array('PROVIDE_STORAGE' => true);
 
-			foreach (GetModuleEvents("main", "OnBeforeUserTypeDelete", true) as $arEvent)
-			{
-				$eventResult = ExecuteModuleEventEx($arEvent, array(&$arField));
-
-				if ($eventResult ===false)
-				{
-					if($e = $APPLICATION->GetException())
-					{
-						return false;
-					}
-
-					$aMsg = array();
-					$aMsg[] = array(
-						"id"=>"FIELD_NAME",
-						"text"=>GetMessage("USER_TYPE_DELETE_ERROR", array(
-							"#FIELD_NAME#"=>htmlspecialcharsbx($arField["FIELD_NAME"]),
-							"#ENTITY_ID#"=>htmlspecialcharsbx($arField["ENTITY_ID"]),
-						))
-					);
-
-					$e = new CAdminException($aMsg);
-					$APPLICATION->ThrowException($e);
-
-					return false;
-				}
-				elseif (is_array($eventResult))
-				{
-					$commonEventResult = array_merge($commonEventResult, $eventResult);
-				}
-			}
 
 			if(is_object($USER_FIELD_MANAGER))
 				$USER_FIELD_MANAGER->CleanCache();
@@ -803,10 +711,6 @@ class CAllUserTypeEntity extends CDBResult
 				}
 			}
 
-			foreach (GetModuleEvents("main", "OnAfterUserTypeDelete", true) as $arEvent)
-			{
-				ExecuteModuleEventEx($arEvent, array($arField, $ID));
-			}
 		}
 		return $rs;
 	}
@@ -931,11 +835,6 @@ class CUserTypeManager
 		if(!is_array($this->arUserTypes))
 		{
 			$this->arUserTypes = array();
-			foreach(GetModuleEvents("main", "OnUserTypeBuildList", true) as $arEvent)
-			{
-				$res = ExecuteModuleEventEx($arEvent);
-				$this->arUserTypes[$res["USER_TYPE_ID"]] = $res;
-			}
 		}
 		if($user_type_id !== false)
 		{
@@ -1254,28 +1153,7 @@ class CUserTypeManager
 	 */
 	function getEntityList()
 	{
-		if ($this->entityList === null)
-		{
-			$event = new \Bitrix\Main\Event('main', 'onUserTypeEntityOrmMap');
-			$event->send();
 
-			foreach ($event->getResults() as $eventResult)
-			{
-				if ($eventResult->getType() == \Bitrix\Main\EventResult::SUCCESS)
-				{
-					$result = $eventResult->getParameters(); // [ENTITY_ID => 'SomeTable']
-					foreach ($result as $entityId => $entityClass)
-					{
-						if (substr($entityClass, 0, 1) !== '\\')
-						{
-							$entityClass = '\\'.$entityClass;
-						}
-
-						$this->entityList[$entityId] = $entityClass;
-					}
-				}
-			}
-		}
 
 		return $this->entityList;
 	}
@@ -2199,179 +2077,7 @@ class CUserTypeManager
 		return ob_get_clean();
 	}
 
-	function GetPublicView($arUserField, $arAdditionalParameters = array())
-	{
-		$event = new \Bitrix\Main\Event("main", "onBeforeGetPublicView", array(&$arUserField, &$arAdditionalParameters));
-		$event->send();
 
-		$arType = $this->GetUserType($arUserField["USER_TYPE_ID"]);
-
-		$html = null;
-		$event = new \Bitrix\Main\Event("main", "onGetPublicView", array($arUserField, $arAdditionalParameters));
-		$event->send();
-		foreach ($event->getResults() as $evenResult)
-		{
-			if ($evenResult->getType() == \Bitrix\Main\EventResult::SUCCESS)
-			{
-				$html = $evenResult->getParameters();
-				break;
-			}
-		}
-
-		if ($html !== null)
-		{
-			//All done
-		}
-		elseif($arUserField["VIEW_CALLBACK"] && is_callable($arUserField['VIEW_CALLBACK']))
-		{
-			$html = call_user_func_array($arUserField["VIEW_CALLBACK"], array(
-				$arUserField,
-				$arAdditionalParameters
-			));
-		}
-		elseif($arType && $arType["VIEW_CALLBACK"] && is_callable($arType['VIEW_CALLBACK']))
-		{
-			$html = call_user_func_array($arType["VIEW_CALLBACK"], array(
-				$arUserField,
-				$arAdditionalParameters
-			));
-		}
-		elseif ($arUserField["VIEW_COMPONENT_NAME"])
-		{
-			$html = $this->CallUserTypeComponent(
-				$arUserField["VIEW_COMPONENT_NAME"],
-				$arUserField["VIEW_COMPONENT_TEMPLATE"],
-				$arUserField,
-				$arAdditionalParameters
-			);
-		}
-		elseif ($arType && $arType["VIEW_COMPONENT_NAME"])
-		{
-			$html = $this->CallUserTypeComponent(
-				$arType["VIEW_COMPONENT_NAME"],
-				$arType["VIEW_COMPONENT_TEMPLATE"],
-				$arUserField,
-				$arAdditionalParameters
-			);
-		}
-		else
-		{
-			$html = $this->CallUserTypeComponent(
-				"bitrix:system.field.view",
-				$arUserField["USER_TYPE_ID"],
-				$arUserField,
-				$arAdditionalParameters
-			);
-		}
-
-		$event = new \Bitrix\Main\Event("main", "onAfterGetPublicView", array($arUserField, $arAdditionalParameters, &$html));
-		$event->send();
-
-		return $html;
-	}
-
-	public function getPublicText($userField)
-	{
-		$userType = $this->getUserType($userField['USER_TYPE_ID']);
-		if (!empty($userType['CLASS_NAME']) && is_callable(array($userType['CLASS_NAME'], 'getPublicText')))
-			return call_user_func_array(array($userType['CLASS_NAME'], 'getPublicText'), array($userField));
-
-		return join(', ', array_map(function ($v)
-		{
-			return is_null($v) || is_scalar($v) ? (string) $v : '';
-		}, (array) $userField['VALUE']));
-	}
-
-	function GetPublicEdit($arUserField, $arAdditionalParameters = array())
-	{
-		$event = new \Bitrix\Main\Event("main", "onBeforeGetPublicEdit", array(&$arUserField, &$arAdditionalParameters));
-		$event->send();
-
-		$arType = $this->GetUserType($arUserField["USER_TYPE_ID"]);
-
-		$html = null;
-		$event = new \Bitrix\Main\Event("main", "onGetPublicEdit", array($arUserField, $arAdditionalParameters));
-		$event->send();
-		foreach ($event->getResults() as $evenResult)
-		{
-			if ($evenResult->getType() == \Bitrix\Main\EventResult::SUCCESS)
-			{
-				$html = $evenResult->getParameters();
-				break;
-			}
-		}
-
-		if ($html !== null)
-		{
-			//All done
-		}
-		elseif ($arUserField["EDIT_CALLBACK"] && is_callable($arUserField['EDIT_CALLBACK']))
-		{
-			$html = call_user_func_array($arUserField["EDIT_CALLBACK"], array(
-				$arUserField,
-				$arAdditionalParameters
-			));
-		}
-		elseif ($arType && $arType["EDIT_CALLBACK"] && is_callable($arType['EDIT_CALLBACK']))
-		{
-			$html = call_user_func_array($arType["EDIT_CALLBACK"], array(
-				$arUserField,
-				$arAdditionalParameters
-			));
-		}
-		elseif ($arUserField["EDIT_COMPONENT_NAME"])
-		{
-			$html = $this->CallUserTypeComponent(
-				$arUserField["EDIT_COMPONENT_NAME"],
-				$arUserField["EDIT_COMPONENT_TEMPLATE"],
-				$arUserField,
-				$arAdditionalParameters
-			);
-		}
-		elseif ($arType && $arType["EDIT_COMPONENT_NAME"])
-		{
-			$html = $this->CallUserTypeComponent(
-				$arType["EDIT_COMPONENT_NAME"],
-				$arType["EDIT_COMPONENT_TEMPLATE"],
-				$arUserField,
-				$arAdditionalParameters
-			);
-		}
-		else
-		{
-			$html = $this->CallUserTypeComponent(
-				"bitrix:system.field.edit",
-				$arUserField["USER_TYPE_ID"],
-				$arUserField,
-				$arAdditionalParameters
-			);
-		}
-
-		$event = new \Bitrix\Main\Event("main", "onAfterGetPublicEdit", array($arUserField, $arAdditionalParameters, &$html));
-		$event->send();
-
-		return $html;
-	}
-
-	function GetSettingsHTML($arUserField, $bVarsFromForm = false)
-	{
-		if(!is_array($arUserField)) // New field
-		{
-			if($arType = $this->GetUserType($arUserField))
-				if(is_callable(array($arType["CLASS_NAME"], "getsettingshtml")))
-					return call_user_func_array(array($arType["CLASS_NAME"], "getsettingshtml"), array(false, array("NAME" => "SETTINGS"), $bVarsFromForm));
-		}
-		else
-		{
-			if(!is_array($arUserField["SETTINGS"]) || empty($arUserField["SETTINGS"]))
-				$arUserField["SETTINGS"] = $this->PrepareSettings(0, $arUserField);
-
-			if($arType = $this->GetUserType($arUserField["USER_TYPE_ID"]))
-				if(is_callable(array($arType["CLASS_NAME"], "getsettingshtml")))
-					return call_user_func_array(array($arType["CLASS_NAME"], "getsettingshtml"), array($arUserField, array("NAME" => "SETTINGS"), $bVarsFromForm));
-		}
-		return null;
-	}
 
 	/**
 	 * @param      $entity_id
@@ -2926,12 +2632,6 @@ class CUserTypeManager
 					$ENTITY_ID = $ar["ENTITY_ID"];
 			}
 
-			foreach(GetModuleEvents("main", "OnUserTypeRightsCheck", true) as $arEvent)
-			{
-				$res = ExecuteModuleEventEx($arEvent, array($ENTITY_ID));
-				if($res > $RIGHTS)
-					$RIGHTS = $res;
-			}
 		}
 
 		if($ID !== false)
@@ -4505,8 +4205,6 @@ class CUserFieldEnum
 		if(CACHED_b_user_field_enum!==false)
 			$CACHE_MANAGER->CleanDir("b_user_field_enum");
 
-		$event = new \Bitrix\Main\Event('main', 'onAfterSetEnumValues', [$FIELD_ID, $originalValues]);
-		$event->send();
 
 		return true;
 	}

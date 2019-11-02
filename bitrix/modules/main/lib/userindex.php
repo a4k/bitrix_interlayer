@@ -2,10 +2,8 @@
 namespace Bitrix\Main;
 
 use Bitrix\Main,
-	Bitrix\Main\Localization\Loc,
 	Bitrix\Main\Entity;
 
-Loc::loadMessages(__FILE__);
 
 /**
  * Class SessionIndexTable

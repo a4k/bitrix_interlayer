@@ -67,8 +67,6 @@ class Context
 
 	public function getEnvironment()
 	{
-		if ($this->env === null)
-			$this->env = new Environment($this->params["env"]);
 		return $this->env;
 	}
 

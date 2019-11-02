@@ -879,7 +879,6 @@ class Base
 		if (isset(self::$instances[$entityName]))
 		{
 			unset(self::$instances[$entityName]);
-			DataManager::unsetEntity($entityName);
 
 			return true;
 		}

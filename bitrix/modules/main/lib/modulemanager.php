@@ -89,8 +89,6 @@ class ModuleManager
 	{
 		static::add($moduleName);
 
-		$event = new Event("main", "OnAfterRegisterModule", array($moduleName));
-		$event->send();
 	}
 
 	public static function unRegisterModule($moduleName)
@@ -102,7 +100,5 @@ class ModuleManager
 
 		static::delete($moduleName);
 
-		$event = new Event("main", "OnAfterUnRegisterModule", array($moduleName));
-		$event->send();
 	}
 }

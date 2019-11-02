@@ -134,20 +134,7 @@ class CAllIBlockProperty
 		$ID = (int)$ID;
 
 		$APPLICATION->ResetException();
-		foreach (GetModuleEvents("iblock", "OnBeforeIBlockPropertyDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				if($ex = $APPLICATION->GetException())
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->ThrowException($err);
-				return false;
-			}
-		}
 
-		foreach (GetModuleEvents("iblock", "OnIBlockPropertyDelete", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ID));
 
 		if(!CIBlockPropertyEnum::DeleteByPropertyID($ID, true))
 			return false;
@@ -212,8 +199,6 @@ class CAllIBlockProperty
 
 		$res = $DB->Query("DELETE FROM b_iblock_property WHERE ID=".$ID, true);
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockPropertyDelete", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($arProperty));
 
 		return $res;
 	}
@@ -340,8 +325,6 @@ class CAllIBlockProperty
 
 		$arFields["RESULT"] = &$Result;
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockPropertyAdd", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		return $Result;
 	}
@@ -398,30 +381,10 @@ class CAllIBlockProperty
 			$APPLICATION->ResetException();
 			if($ID===false)
 			{
-				$db_events = GetModuleEvents("iblock", "OnBeforeIBlockPropertyAdd", true);
 			}
 			else
 			{
 				$arFields["ID"] = $ID;
-				$db_events = GetModuleEvents("iblock", "OnBeforeIBlockPropertyUpdate", true);
-			}
-
-			foreach($db_events as $arEvent)
-			{
-				$bEventRes = ExecuteModuleEventEx($arEvent, array(&$arFields));
-				if($bEventRes===false)
-				{
-					if($err = $APPLICATION->GetException())
-					{
-						$this->LAST_ERROR .= $err->GetString()."<br>";
-					}
-					else
-					{
-						$APPLICATION->ThrowException("Unknown error");
-						$this->LAST_ERROR .= "Unknown error.<br>";
-					}
-					break;
-				}
 			}
 		}
 
@@ -567,8 +530,6 @@ class CAllIBlockProperty
 		$arFields["ID"] = $ID;
 		$arFields["RESULT"] = &$Result;
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockPropertyUpdate", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		return $Result;
 	}
@@ -955,19 +916,6 @@ class CAllIBlockProperty
 	public static function GetUserType($USER_TYPE = false)
 	{
 		static $CACHE = null;
-
-		if(!isset($CACHE))
-		{
-			$CACHE = array();
-			foreach(GetModuleEvents("iblock", "OnIBlockPropertyBuildList", true) as $arEvent)
-			{
-				$res = ExecuteModuleEventEx($arEvent);
-				if (is_array($res) && array_key_exists("USER_TYPE", $res))
-				{
-					$CACHE[$res["USER_TYPE"]] = $res;
-				}
-			}
-		}
 
 		if($USER_TYPE !== false)
 		{

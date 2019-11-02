@@ -25,8 +25,6 @@ class CFile extends CAllFile
 
 			$delete_size += CFile::ResizeImageDelete($res);
 
-			foreach(GetModuleEvents("main", "OnFileDelete", true) as $arEvent)
-				ExecuteModuleEventEx($arEvent, array($res));
 
 			$DB->Query("DELETE FROM b_file WHERE ID = ".$ID);
 

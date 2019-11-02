@@ -19,15 +19,6 @@ Loc::loadMessages(__FILE__);
  */
 abstract class DataManager
 {
-	const EVENT_ON_BEFORE_ADD = "OnBeforeAdd";
-	const EVENT_ON_ADD = "OnAdd";
-	const EVENT_ON_AFTER_ADD = "OnAfterAdd";
-	const EVENT_ON_BEFORE_UPDATE = "OnBeforeUpdate";
-	const EVENT_ON_UPDATE = "OnUpdate";
-	const EVENT_ON_AFTER_UPDATE = "OnAfterUpdate";
-	const EVENT_ON_BEFORE_DELETE = "OnBeforeDelete";
-	const EVENT_ON_DELETE = "OnDelete";
-	const EVENT_ON_AFTER_DELETE = "OnAfterDelete";
 
 	/** @var Base[] */
 	protected static $entity;
@@ -563,17 +554,6 @@ abstract class DataManager
 
 		try
 		{
-			//event before adding
-			$event = new Event($entity, self::EVENT_ON_BEFORE_ADD, array("fields" => $fields));
-			$event->send();
-			$event->getErrors($result);
-			$fields = $event->mergeFields($fields);
-
-			//event before adding (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_BEFORE_ADD, array("fields" => $fields), true);
-			$event->send();
-			$event->getErrors($result);
-			$fields = $event->mergeFields($fields);
 
 			// uf values
 			$ufdata = array();
@@ -652,13 +632,6 @@ abstract class DataManager
 				return $result;
 			}
 
-			//event on adding
-			$event = new Event($entity, self::EVENT_ON_ADD, array("fields" => $fields + $ufdata));
-			$event->send();
-
-			//event on adding (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_ADD, array("fields" => $fields + $ufdata), true);
-			$event->send();
 
 			// use save modifiers
 			$fieldsToDb = $fields;
@@ -703,13 +676,6 @@ abstract class DataManager
 
 			$entity->cleanCache();
 
-			//event after adding
-			$event = new Event($entity, self::EVENT_ON_AFTER_ADD, array("id" => $id, "fields" => $fields));
-			$event->send();
-
-			//event after adding (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_AFTER_ADD, array("id" => $id, "primary" => $primary, "fields" => $fields), true);
-			$event->send();
 		}
 		catch (\Exception $e)
 		{
@@ -768,17 +734,6 @@ abstract class DataManager
 
 		try
 		{
-			//event before update
-			$event = new Event($entity, self::EVENT_ON_BEFORE_UPDATE, array("id" => $primary, "fields" => $fields));
-			$event->send();
-			$event->getErrors($result);
-			$fields = $event->mergeFields($fields);
-
-			//event before update (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_BEFORE_UPDATE, array("id" => $primary, "primary" => $primary, "fields" => $fields), true);
-			$event->send();
-			$event->getErrors($result);
-			$fields = $event->mergeFields($fields);
 
 			// uf values
 			$ufdata = array();
@@ -843,13 +798,6 @@ abstract class DataManager
 				return $result;
 			}
 
-			//event on update
-			$event = new Event($entity, self::EVENT_ON_UPDATE, array("id" => $primary, "fields" => $fields + $ufdata));
-			$event->send();
-
-			//event on update (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_UPDATE, array("id" => $primary, "primary" => $primary, "fields" => $fields + $ufdata), true);
-			$event->send();
 
 			// use save modifiers
 			$fieldsToDb = $fields;
@@ -896,13 +844,6 @@ abstract class DataManager
 
 			$entity->cleanCache();
 
-			//event after update
-			$event = new Event($entity, self::EVENT_ON_AFTER_UPDATE, array("id" => $primary, "fields" => $fields));
-			$event->send();
-
-			//event after update (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_AFTER_UPDATE, array("id" => $primary, "primary" => $primary, "fields" => $fields), true);
-			$event->send();
 		}
 		catch (\Exception $e)
 		{
@@ -937,29 +878,12 @@ abstract class DataManager
 
 		try
 		{
-			//event before delete
-			$event = new Event($entity, self::EVENT_ON_BEFORE_DELETE, array("id" => $primary));
-			$event->send();
-			$event->getErrors($result);
-
-			//event before delete (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_BEFORE_DELETE, array("id" => $primary, "primary" => $primary), true);
-			$event->send();
-			$event->getErrors($result);
 
 			// return if any error
 			if (!$result->isSuccess(true))
 			{
 				return $result;
 			}
-
-			//event on delete
-			$event = new Event($entity, self::EVENT_ON_DELETE, array("id" => $primary));
-			$event->send();
-
-			//event on delete (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_DELETE, array("id" => $primary, "primary" => $primary), true);
-			$event->send();
 
 			// delete
 			$connection = $entity->getConnection();
@@ -986,13 +910,6 @@ abstract class DataManager
 
 			$entity->cleanCache();
 
-			//event after delete
-			$event = new Event($entity, self::EVENT_ON_AFTER_DELETE, array("id" => $primary));
-			$event->send();
-
-			//event after delete (modern with namespace)
-			$event = new Event($entity, self::EVENT_ON_AFTER_DELETE, array("id" => $primary, "primary" => $primary), true);
-			$event->send();
 		}
 		catch (\Exception $e)
 		{
@@ -1052,18 +969,5 @@ abstract class DataManager
 		return false;
 	}
 
-	/*
-	An inheritor class can define the event handlers for own events.
-	Why? To prevent from rewriting the add/update/delete functions.
-	These handlers are triggered in the Bitrix\Main\Entity\Event::send() function
-	*/
-	public static function onBeforeAdd(Event $event){}
-	public static function onAdd(Event $event){}
-	public static function onAfterAdd(Event $event){}
-	public static function onBeforeUpdate(Event $event){}
-	public static function onUpdate(Event $event){}
-	public static function onAfterUpdate(Event $event){}
-	public static function onBeforeDelete(Event $event){}
-	public static function onDelete(Event $event){}
-	public static function onAfterDelete(Event $event){}
+
 }

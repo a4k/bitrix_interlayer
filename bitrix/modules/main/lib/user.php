@@ -292,67 +292,6 @@ class UserTable extends Entity\DataManager
 		return $connection->queryScalar($sql);
 	}
 
-	public static function getUserGroupIds($userId)
-	{
-		$groups = array();
-
-		// anonymous groups
-		$result = GroupTable::getList(array(
-			'select' => array('ID'),
-			'filter' => array(
-				'=ANONYMOUS' => 'Y',
-				'=ACTIVE' => 'Y'
-			)
-		));
-
-		while ($row = $result->fetch())
-		{
-			$groups[] = $row['ID'];
-		}
-
-		if(!in_array(2, $groups))
-			$groups[] = 2;
-
-		if($userId > 0)
-		{
-			// private groups
-			$nowTimeExpression = new SqlExpression(
-				static::getEntity()->getConnection()->getSqlHelper()->getCurrentDateTimeFunction()
-			);
-
-			$result = GroupTable::getList(array(
-				'select' => array('ID'),
-				'filter' => array(
-					'=UserGroup:GROUP.USER_ID' => $userId,
-					'=ACTIVE' => 'Y',
-					array(
-						'LOGIC' => 'OR',
-						'=UserGroup:GROUP.DATE_ACTIVE_FROM' => null,
-						'<=UserGroup:GROUP.DATE_ACTIVE_FROM' => $nowTimeExpression,
-					),
-					array(
-						'LOGIC' => 'OR',
-						'=UserGroup:GROUP.DATE_ACTIVE_TO' => null,
-						'>=UserGroup:GROUP.DATE_ACTIVE_TO' => $nowTimeExpression,
-					),
-					array(
-						'LOGIC' => 'OR',
-						'!=ANONYMOUS' => 'Y',
-						'=ANONYMOUS' => null
-					)
-				)
-			));
-
-			while ($row = $result->fetch())
-			{
-				$groups[] = $row['ID'];
-			}
-		}
-
-		sort($groups);
-
-		return $groups;
-	}
 
 	public static function getExternalUserTypes()
 	{
@@ -387,14 +326,6 @@ class UserTable extends Entity\DataManager
 		}
 
 		$record['UF_DEPARTMENT_NAMES'] = array();
-		if ($intranetInstalled)
-		{
-			$departmentNames = UserUtils::getDepartmentNames($record['UF_DEPARTMENT']);
-			foreach ($departmentNames as $departmentName)
-			{
-				$record['UF_DEPARTMENT_NAMES'][] = $departmentName['NAME'];
-			}
-		}
 
 		$departmentName = isset($record['UF_DEPARTMENT_NAMES'][0])? $record['UF_DEPARTMENT_NAMES'][0]: '';
 		$searchDepartmentContent = implode(' ', $record['UF_DEPARTMENT_NAMES']);
@@ -463,26 +394,4 @@ class UserTable extends Entity\DataManager
 		throw new NotImplementedException("Use CUser class.");
 	}
 
-	public static function onAfterAdd(Entity\Event $event)
-	{
-		$id = $event->getParameter("id");
-		static::indexRecord($id);
-		return new Entity\EventResult();
-	}
-
-	public static function onAfterUpdate(Entity\Event $event)
-	{
-		$primary = $event->getParameter("id");
-		$id = $primary["ID"];
-		static::indexRecord($id);
-		return new Entity\EventResult();
-	}
-
-	public static function onAfterDelete(Entity\Event $event)
-	{
-		$primary = $event->getParameter("id");
-		$id = $primary["ID"];
-		static::deleteIndexRecord($id);
-		return new Entity\EventResult();
-	}
 }

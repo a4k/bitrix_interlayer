@@ -1522,8 +1522,6 @@ class CIBlockElement extends CAllIBlockElement
 				unset($newFields["TIMESTAMP_X"]);
 			}
 
-			foreach (GetModuleEvents("iblock", "OnIBlockElementUpdate", true) as $arEvent)
-				ExecuteModuleEventEx($arEvent, array($newFields, $ar_wf_element));
 			unset($newFields);
 
 			$strUpdate = $DB->PrepareUpdate("b_iblock_element", $arFields, "iblock");
@@ -1593,7 +1591,7 @@ class CIBlockElement extends CAllIBlockElement
 			if($arIBlock["FIELDS"]["LOG_ELEMENT_EDIT"]["IS_REQUIRED"] == "Y")
 			{
 				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
-				$arEvents = GetModuleEvents("main", "OnBeforeEventLog", true);
+				$arEvents = null;
 				if(empty($arEvents) || ExecuteModuleEventEx($arEvents[0], array($USER_ID))===false)
 				{
 					$rsElement = CIBlockElement::GetList(
@@ -1653,8 +1651,6 @@ class CIBlockElement extends CAllIBlockElement
 			@rmdir(dirname($arFields["DETAIL_PICTURE"]["tmp_name"]));
 		}
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockElementUpdate", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		CIBlock::clearIblockTagCache($arIBlock['ID']);
 
@@ -1787,8 +1783,6 @@ class CIBlockElement extends CAllIBlockElement
 			unset($rs);
 		}
 
-		foreach (GetModuleEvents("iblock", "OnIBlockElementSetPropertyValues", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ELEMENT_ID, $IBLOCK_ID, $PROPERTY_VALUES, $PROPERTY_CODE, $ar_prop, $arDBProps));
 		if (isset($arEvent))
 			unset($arEvent);
 
@@ -2570,8 +2564,6 @@ class CIBlockElement extends CAllIBlockElement
 			$_SESSION["SESS_RECOUNT_DB"] = "Y";
 		/****************************** QUOTA ******************************/
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockElementSetPropertyValues", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ELEMENT_ID, $IBLOCK_ID, $PROPERTY_VALUES, $PROPERTY_CODE));
 	}
 
 	function GetRandFunction()

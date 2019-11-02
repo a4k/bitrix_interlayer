@@ -3598,14 +3598,7 @@ function LocalRedirect($url, $skip_security_check=false, $status="302 Found")
 	{
 		$url = \Bitrix\Main\Text\Encoding::convertEncoding($url, LANG_CHARSET, "UTF-8");
 	}
-	
-	if(function_exists("getmoduleevents"))
-	{
-		foreach(GetModuleEvents("main", "OnBeforeLocalRedirect", true) as $arEvent)
-		{
-			ExecuteModuleEventEx($arEvent, array(&$url, $skip_security_check, $bExternal));
-		}
-	}
+
 
 	if(!$bExternal)
 	{
@@ -3627,11 +3620,6 @@ function LocalRedirect($url, $skip_security_check=false, $status="302 Found")
 
 	header("Location: ".$url);
 
-	if(function_exists("getmoduleevents"))
-	{
-		foreach(GetModuleEvents("main", "OnLocalRedirect", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent);
-	}
 
 	$_SESSION["BX_REDIRECT_TIME"] = time();
 
@@ -6546,21 +6534,6 @@ function bxmail($to, $subject, $message, $additional_headers="", $additional_par
 		$context = new \Bitrix\Main\Mail\Context();
 	}
 
-	$event = new \Bitrix\Main\Event(
-		'main',
-		'OnBeforePhpMail',
-		array(
-			'arguments' => (object) array(
-				'to' => &$to,
-				'subject' => &$subject,
-				'message' => &$message,
-				'additional_headers' => &$additional_headers,
-				'additional_parameters' => &$additional_parameters,
-				'context' => &$context,
-			),
-		)
-	);
-	$event->send();
 
 	if(function_exists("custom_mail"))
 		return custom_mail($to, $subject, $message, $additional_headers, $additional_parameters, $context);

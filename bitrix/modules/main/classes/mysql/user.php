@@ -110,8 +110,6 @@ class CUser extends CAllUser
 
 		$arFields["RESULT"] = &$Result;
 
-		foreach (GetModuleEvents("main", "OnAfterUserAdd", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		if($ID > 0 && defined("BX_COMP_MANAGED_CACHE"))
 		{
@@ -655,18 +653,6 @@ class CGroup extends CAllGroup
 		if(!$this->CheckFields($arFields))
 			return false;
 
-		foreach(GetModuleEvents("main", "OnBeforeGroupAdd", true) as $arEvent)
-		{
-			$bEventRes = ExecuteModuleEventEx($arEvent, array(&$arFields));
-			if($bEventRes===false)
-			{
-				if($err = $APPLICATION->GetException())
-					$this->LAST_ERROR .= $err->GetString()."<br>";
-				else
-					$this->LAST_ERROR .= "Unknown error in OnBeforeGroupAdd handler."."<br>";
-				return false;
-			}
-		}
 
 		if(is_set($arFields, "ACTIVE") && $arFields["ACTIVE"]!="Y")
 			$arFields["ACTIVE"]="N";
@@ -723,9 +709,6 @@ class CGroup extends CAllGroup
 		}
 
 		$arFields["ID"] = $ID;
-
-		foreach (GetModuleEvents("main", "OnAfterGroupAdd", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		return $ID;
 	}
@@ -1317,7 +1300,7 @@ class CGroup extends CAllGroup
 			}
 			else
 			{
-				// ÒÎËÜÊÎ ÄËß MYSQL!!! ÄËß ORACLE ÄÐÓÃÎÉ ÊÎÄ
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ MYSQL!!! ï¿½ï¿½ï¿½ ORACLE ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 				$cnt = $dbRes->SelectedRowsCount();
 			}
 

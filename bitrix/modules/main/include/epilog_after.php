@@ -6,9 +6,6 @@ if(!isset($USER)) {global $USER;}
 if(!isset($APPLICATION)) {global $APPLICATION;}
 if(!isset($DB)) {global $DB;}
 
-foreach(GetModuleEvents("main", "OnEpilog", true) as $arEvent)
-	ExecuteModuleEventEx($arEvent);
-
 if(isset($_GET["show_lang_files"]) || isset($_SESSION["SHOW_LANG_FILES"]))
 	include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/interface/lang_files.php");
 
@@ -43,7 +40,6 @@ if (!defined('BX_WITH_ON_AFTER_EPILOG'))
 	define('BX_WITH_ON_AFTER_EPILOG', true);
 }
 
-$arAllEvents = GetModuleEvents("main", "OnAfterEpilog", true);
 
 define("START_EXEC_EVENTS_1", microtime());
 $GLOBALS["BX_STATE"] = "EV";
@@ -51,8 +47,6 @@ CMain::EpilogActions();
 define("START_EXEC_EVENTS_2", microtime());
 $GLOBALS["BX_STATE"] = "EA";
 
-foreach($arAllEvents as $arEvent)
-	ExecuteModuleEventEx($arEvent);
 
 if(!IsModuleInstalled("compression") && !defined('PUBLIC_AJAX_MODE') && ($_REQUEST["mode"] != 'excel'))
 {

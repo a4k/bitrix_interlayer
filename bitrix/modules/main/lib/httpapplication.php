@@ -38,7 +38,7 @@ class HttpApplication extends Application
 
 	public function createExceptionHandlerOutput()
 	{
-		return new Diag\HttpExceptionHandlerOutput();
+		return null;
 	}
 
 	/**

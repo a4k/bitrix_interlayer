@@ -144,7 +144,6 @@ class SqlTracker implements \Iterator
 				"\n\n".$trace.
 				"\n".$footer.
 				"\n";
-			\Bitrix\Main\IO\File::putFileContents($this->logFilePath, $message, \Bitrix\Main\IO\File::APPEND);
 		}
 	}
 

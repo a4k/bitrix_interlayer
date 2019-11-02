@@ -42,13 +42,7 @@ class CEventIBlock
 	}
 	function GetAuditTypes()
 	{
-		AddEventHandler("main", "GetAuditTypesIblock", array("CAllIBlock", "GetAuditTypes"));
-		$db_events = GetModuleEvents("main", "GetAuditTypesIblock");
-		while($arEvent = $db_events->Fetch())
-		{
-			$AuditTypes = ExecuteModuleEventEx($arEvent);
-		}
-		return $AuditTypes;
+		return null;
 	}
 
 	function GetEventInfo($row, $arParams, $arUser, $arResult)

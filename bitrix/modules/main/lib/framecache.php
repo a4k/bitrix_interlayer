@@ -47,8 +47,6 @@ class FrameCache
 	{
 		if ($isEnable && !self::$isEnable)
 		{
-			self::$onBeforeHandleKey = AddEventHandler("main", "OnBeforeEndBufferContent", Array(__CLASS__, "OnBeforeEndBufferContent"));
-			self::$onHandleKey = AddEventHandler("main", "OnEndBufferContent", Array(__CLASS__, "OnEndBufferContent"));
 			self::$isEnable = true;
 
 			\CJSCore::init(Array("fc"), false);
@@ -59,10 +57,6 @@ class FrameCache
 		}
 		elseif (!$isEnable && self::$isEnable)
 		{
-			if (self::$onBeforeHandleKey >= 0)
-				RemoveEventHandler("main", "OnBeforeEndBufferContent", self::$onBeforeHandleKey);
-			if (self::$onBeforeHandleKey >= 0)
-				RemoveEventHandler("main", "OnEndBufferContent", self::$onHandleKey);
 
 			self::$isEnable = false;
 		}

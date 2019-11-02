@@ -296,24 +296,6 @@ class Option
 
 		self::loadTriggers($moduleId);
 
-		$event = new Main\Event(
-			"main",
-			"OnAfterSetOption_".$name,
-			array("value" => $value)
-		);
-		$event->send();
-
-		$event = new Main\Event(
-			"main",
-			"OnAfterSetOption",
-			array(
-				"moduleId" => $moduleId,
-				"name" => $name,
-				"value" => $value,
-				"siteId" => $siteId,
-			)
-		);
-		$event->send();
 	}
 
 	private static function loadTriggers($moduleId)

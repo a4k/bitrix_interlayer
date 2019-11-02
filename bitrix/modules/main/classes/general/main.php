@@ -437,28 +437,6 @@ class CAllSite
 			}
 		}
 
-		if($ID===false)
-			$events = GetModuleEvents("main", "OnBeforeSiteAdd", true);
-		else
-			$events = GetModuleEvents("main", "OnBeforeSiteUpdate", true);
-		foreach($events as $arEvent)
-		{
-			$bEventRes = ExecuteModuleEventEx($arEvent, array(&$arFields));
-			if($bEventRes===false)
-			{
-				if($err = $APPLICATION->GetException())
-				{
-					$this->LAST_ERROR .= $err->GetString()." ";
-					$arMsg[] = array("id"=>"EVENT_ERROR", "text"=> $err->GetString());
-				}
-				else
-				{
-					$this->LAST_ERROR .= "Unknown error. ";
-					$arMsg[] = array("id"=>"EVENT_ERROR", "text"=> "Unknown error. ");
-				}
-				break;
-			}
-		}
 
 		if(!empty($arMsg))
 		{
@@ -642,35 +620,6 @@ class CAllSite
 
 		$APPLICATION->ResetException();
 
-		foreach(GetModuleEvents("main", "OnBeforeLangDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				if($ex = $APPLICATION->GetException())
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->throwException($err);
-				return false;
-			}
-		}
-
-		foreach(GetModuleEvents("main", "OnBeforeSiteDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				if($ex = $APPLICATION->GetException())
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->throwException($err);
-				return false;
-			}
-		}
-
-		foreach(GetModuleEvents("main", "OnLangDelete", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ID));
-
-		foreach(GetModuleEvents("main", "OnSiteDelete", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ID));
 
 		if(!$DB->Query("DELETE FROM b_event_message_site WHERE SITE_ID='".$DB->ForSQL($ID, 2)."'"))
 			return false;
@@ -1178,18 +1127,6 @@ class CAllSite
 			$siteTemplate = ".default";
 		}
 
-		$event = new Main\Event("main", "OnGetCurrentSiteTemplate", array("template" => $siteTemplate));
-		$event->send();
-
-		foreach($event->getResults() as $evenResult)
-		{
-			if(($result = $evenResult->getParameters()) <> '')
-			{
-				//only the first result matters
-				$siteTemplate = $result;
-				break;
-			}
-		}
 
 		return $siteTemplate;
 	}
@@ -1476,20 +1413,6 @@ class CAllLanguage
 		if($db_res->Fetch())
 			return false;
 
-		foreach(GetModuleEvents("main", "OnBeforeLanguageDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				if($ex = $APPLICATION->GetException())
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->throwException($err);
-				return false;
-			}
-		}
-
-		foreach(GetModuleEvents("main", "OnLanguageDelete", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ID));
 
 		return $DB->Query("DELETE FROM b_language WHERE LID='".$DB->ForSQL($ID, 2)."'", true);
 	}

@@ -739,7 +739,7 @@ class CAllIBlockSection
 			if($arIBlock["FIELDS"]["LOG_SECTION_ADD"]["IS_REQUIRED"] == "Y")
 			{
 				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
-				$arEvents = GetModuleEvents("main", "OnBeforeEventLog", true);
+				$arEvents = null;
 				if(empty($arEvents) || ExecuteModuleEventEx($arEvents[0], array($USER_ID))===false)
 				{
 					$rsSection = CIBlockSection::GetList(array(), array("=ID"=>$ID), false,  array("LIST_PAGE_URL", "NAME", "CODE"));
@@ -787,8 +787,6 @@ class CAllIBlockSection
 
 		$arFields["RESULT"] = &$Result;
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockSectionAdd", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		CIBlock::clearIblockTagCache($arIBlock['ID']);
 
@@ -1424,7 +1422,7 @@ class CAllIBlockSection
 			if($arIBlock["FIELDS"]["LOG_SECTION_EDIT"]["IS_REQUIRED"] == "Y")
 			{
 				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
-				$arEvents = GetModuleEvents("main", "OnBeforeEventLog", true);
+				$arEvents = null;
 				if(empty($arEvents) || ExecuteModuleEventEx($arEvents[0],  array($USER_ID))===false)
 				{
 					$rsSection = CIBlockSection::GetList(array(), array("=ID"=>$ID), false,  array("LIST_PAGE_URL", "NAME", "CODE"));
@@ -1458,8 +1456,6 @@ class CAllIBlockSection
 		$arFields["IBLOCK_ID"] = $db_record["IBLOCK_ID"];
 		$arFields["RESULT"] = &$Result;
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockSectionUpdate", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		CIBlock::clearIblockTagCache($arIBlock['ID']);
 
@@ -1476,17 +1472,6 @@ class CAllIBlockSection
 		$ID = (int)$ID;
 
 		$APPLICATION->ResetException();
-		foreach (GetModuleEvents("iblock", "OnBeforeIBlockSectionDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				if($ex = $APPLICATION->GetException())
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->ThrowException($err);
-				return false;
-			}
-		}
 
 		$s = CIBlockSection::GetList(Array(), Array("ID"=>$ID, "CHECK_PERMISSIONS"=>($bCheckPermissions? "Y": "N")));
 		if($s = $s->Fetch())
@@ -1681,7 +1666,7 @@ class CAllIBlockSection
 			if($arIBlockFields["LOG_SECTION_DELETE"]["IS_REQUIRED"] == "Y")
 			{
 				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
-				$arEvents = GetModuleEvents("main", "OnBeforeEventLog", true);
+				$arEvents = null;
 				if(empty($arEvents) || ExecuteModuleEventEx($arEvents[0],  array($USER_ID))===false)
 				{
 					$rsSection = CIBlockSection::GetList(
@@ -1713,8 +1698,6 @@ class CAllIBlockSection
 
 			if($res)
 			{
-				foreach (GetModuleEvents("iblock", "OnAfterIBlockSectionDelete", true) as $arEvent)
-					ExecuteModuleEventEx($arEvent, array($s));
 
 				CIBlock::clearIblockTagCache($s['IBLOCK_ID']);
 			}
@@ -1926,13 +1909,11 @@ class CAllIBlockSection
 		}
 
 		$APPLICATION->ResetException();
-		if($ID===false)
-			$db_events = GetModuleEvents("iblock", "OnBeforeIBlockSectionAdd", true);
+		if($ID===false) {}
 		else
 		{
 			$arFields["ID"] = $ID;
 			$arFields["IBLOCK_ID"] = $arIBlock["ID"];
-			$db_events = GetModuleEvents("iblock", "OnBeforeIBlockSectionUpdate", true);
 		}
 
 		/****************************** QUOTA ******************************/

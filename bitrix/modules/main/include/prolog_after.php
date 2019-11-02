@@ -137,20 +137,3 @@ define("START_EXEC_PROLOG_AFTER_2", microtime());
 $GLOBALS["BX_STATE"] = "WA";
 $APPLICATION->RestartWorkarea(true);
 
-//magically replacing the current file with another one
-$event = new Main\Event("main", "OnFileRewrite", array("path" => Main\Context::getCurrent()->getRequest()->getScriptFile()));
-$event->send();
-
-foreach($event->getResults() as $evenResult)
-{
-	if(($result = $evenResult->getParameters()) <> '')
-	{
-		$file = new Main\IO\File($_SERVER["DOCUMENT_ROOT"].$result);
-		if($file->isExists())
-		{
-			//only the first result matters
-			include($file->getPhysicalPath());
-			die();
-		}
-	}
-}

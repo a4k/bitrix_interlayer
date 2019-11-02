@@ -24,8 +24,6 @@ class CBXShortUri
 
 		$arFields["ID"] = $taskId;
 
-		foreach (GetModuleEvents("main", "OnAfterShortUriAdd", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($arFields));
 
 		return $taskId;
 	}

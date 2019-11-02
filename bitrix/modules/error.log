@@ -5474,3 +5474,813 @@ D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\genera
 #2: require(string)
 	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
 ----------
+2019-11-02 17:34:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:34:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:34:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:34:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1038
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:25 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:25 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:25 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:25 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1038
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:29 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:29 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:29 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:29 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1038
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:35:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1038
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:36:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:36:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:36:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:36:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1038
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:36:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:36:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:36:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:36:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1038
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:37:11 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:37:11 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:37:11 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1026
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:37:11 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1038
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:41:17 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:41:17 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:41:17 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:41:17 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:479
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1037
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:41:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:41:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:41:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:41:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:479
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1037
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:50:12 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:50:12 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:50:12 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:53:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:53:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:53:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 17:57:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:05:06 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:05:06 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:05:06 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:08:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:08:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:08:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:08:59 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:08:59 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:08:59 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:09:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:09:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:09:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:12:33 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:12:33 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:12:33 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:16:07 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:16:08 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:16:08 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:16:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:16:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:16:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:17:34 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:17:34 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:17:34 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:18:17 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:18:17 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:18:17 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:19:57 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:989
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:19:57 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:19:57 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1025
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------

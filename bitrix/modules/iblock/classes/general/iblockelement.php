@@ -3414,8 +3414,6 @@ class CAllIBlockElement
 			}
 			$arFields["~TIMESTAMP_X"] = $arFields["~DATE_CREATE"] = $DB->CurrentTimeFunction();
 
-			foreach (GetModuleEvents("iblock", "OnIBlockElementAdd", true) as $arEvent)
-				ExecuteModuleEventEx($arEvent, array($arFields));
 
 			$IBLOCK_SECTION_ID = $arFields["IBLOCK_SECTION_ID"];
 			unset($arFields["IBLOCK_SECTION_ID"]);
@@ -3475,7 +3473,7 @@ class CAllIBlockElement
 			)
 			{
 				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
-				$arEvents = GetModuleEvents("main", "OnBeforeEventLog", true);
+				$arEvents = null;
 				if(
 					empty($arEvents)
 					|| ExecuteModuleEventEx($arEvents[0], array($USER_ID))===false
@@ -3575,8 +3573,6 @@ class CAllIBlockElement
 
 		$arFields["RESULT"] = &$Result;
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockElementAdd", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		CIBlock::clearIblockTagCache($arIBlock['ID']);
 
@@ -3774,24 +3770,6 @@ class CAllIBlockElement
 		$ID = IntVal($ID);
 
 		$APPLICATION->ResetException();
-		foreach (GetModuleEvents("iblock", "OnBeforeIBlockElementDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				if (is_object($USER) && $USER->IsAdmin())
-					$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				else
-					$err = "";
-				$err_id = false;
-				if($ex = $APPLICATION->GetException())
-				{
-					$err .= ($err? ': ': '').$ex->GetString();
-					$err_id = $ex->GetID();
-				}
-				$APPLICATION->throwException($err, $err_id);
-				return false;
-			}
-		}
 
 		$arSql = array(
 			"ID='".$ID."'",
@@ -3827,7 +3805,7 @@ class CAllIBlockElement
 					&& $arIBlockFields["LOG_ELEMENT_DELETE"]["IS_REQUIRED"] == "Y"
 				)
 				{
-					$arEvents = GetModuleEvents("main", "OnBeforeEventLog", true);
+					$arEvents = null;
 
 					if(empty($arEvents) || ExecuteModuleEventEx($arEvents[0], array($USER_ID))===false)
 					{
@@ -3854,8 +3832,6 @@ class CAllIBlockElement
 
 				$piId = \Bitrix\Iblock\PropertyIndex\Manager::resolveElement($zr["IBLOCK_ID"], $zr["ID"]);
 
-				foreach (GetModuleEvents("iblock", "OnIBlockElementDelete", true) as $arEvent)
-					ExecuteModuleEventEx($arEvent, array($elementId, $zr));
 
 				while($res = $db_res->Fetch())
 					CIBlockElement::DeleteFile($res["VALUE"], $zr["ID"], "PROPERTY", $zr["WF_PARENT_ELEMENT_ID"], $zr["IBLOCK_ID"]);
@@ -3976,8 +3952,6 @@ class CAllIBlockElement
 				if(CModule::IncludeModule("bizproc"))
 					CBPDocument::OnDocumentDelete(array("iblock", "CIBlockDocument", $zr["ID"]), $arErrorsTmp);
 
-				foreach (GetModuleEvents("iblock", "OnAfterIBlockElementDelete", true) as $arEvent)
-					ExecuteModuleEventEx($arEvent, array($zr));
 
 				CIBlock::clearIblockTagCache($zr['IBLOCK_ID']);
 				unset($elementId);
@@ -4069,19 +4043,10 @@ class CAllIBlockElement
 		$APPLICATION->ResetException();
 		if($ID===false)
 		{
-			$db_events = GetModuleEvents("iblock", "OnStartIBlockElementAdd", true);
 		}
 		else
 		{
 			$arFields["ID"] = $ID;
-			$db_events = GetModuleEvents("iblock", "OnStartIBlockElementUpdate", true);
-		}
-
-		foreach ($db_events as $arEvent)
-		{
-			$bEventRes = ExecuteModuleEventEx($arEvent, array(&$arFields));
-			if($bEventRes===false)
-				break;
 		}
 
 		if(($ID===false || is_set($arFields, "NAME")) && strlen($arFields["NAME"])<=0)
@@ -4545,29 +4510,12 @@ class CAllIBlockElement
 		}
 
 		$APPLICATION->ResetException();
-		if($ID===false)
-			$db_events = GetModuleEvents("iblock", "OnBeforeIBlockElementAdd", true);
+		if($ID===false) {}
 		else
 		{
 			$arFields["ID"] = $ID;
-			$db_events = GetModuleEvents("iblock", "OnBeforeIBlockElementUpdate", true);
 		}
 
-		foreach($db_events as $arEvent)
-		{
-			$bEventRes = ExecuteModuleEventEx($arEvent, array(&$arFields));
-			if($bEventRes===false)
-			{
-				if($err = $APPLICATION->GetException())
-					$this->LAST_ERROR .= $err->GetString()."<br>";
-				else
-				{
-					$APPLICATION->ThrowException("Unknown error");
-					$this->LAST_ERROR .= "Unknown error.<br>";
-				}
-				break;
-			}
-		}
 
 		/****************************** QUOTA ******************************/
 		if(
@@ -4970,12 +4918,6 @@ class CAllIBlockElement
 			$file_abs_path = $io->GetLogicalName($arFile["tmp_name"]);
 
 			$arrFile = false;
-			foreach(GetModuleEvents("search", "OnSearchGetFileContent", true) as $arEvent)
-			{
-				if($arrFile = ExecuteModuleEventEx($arEvent, array($file_abs_path)))
-					break;
-			}
-
 			return $arrFile;
 		}
 
@@ -6738,8 +6680,6 @@ class CAllIBlockElement
 		$_SESSION["SESS_RECOUNT_DB"] = "Y";
 		/****************************** QUOTA ******************************/
 
-		foreach (GetModuleEvents("iblock", "OnAfterIBlockElementSetPropertyValuesEx", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ELEMENT_ID, $IBLOCK_ID, $PROPERTY_VALUES, $FLAGS));
 	}
 
 	protected static function _check_rights_sql($min_permission, $permissionsBy = null)

@@ -196,22 +196,6 @@ abstract class CAllUser extends CDBResult
 
 		$APPLICATION->ResetException();
 		$bOk = true;
-		foreach(GetModuleEvents("main", "OnBeforeUserLoginByHash", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array(&$arParams))===false)
-			{
-				if($err = $APPLICATION->GetException())
-					$result_message = array("MESSAGE"=>$err->GetString()."<br>", "TYPE"=>"ERROR");
-				else
-				{
-					$APPLICATION->ThrowException("Unknown error");
-					$result_message = array("MESSAGE"=>"Unknown error"."<br>", "TYPE"=>"ERROR");
-				}
-
-				$bOk = false;
-				break;
-			}
-		}
 
 		if($bOk && $arParams['HASH'] <> '')
 		{
@@ -276,8 +260,6 @@ abstract class CAllUser extends CDBResult
 		$arParams["USER_ID"] = $user_id;
 		$arParams["RESULT_MESSAGE"] = $result_message;
 
-		foreach (GetModuleEvents("main", "OnAfterUserLoginByHash", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arParams));
 
 		if(($result_message !== true) && (COption::GetOptionString("main", "event_log_login_fail", "N") === "Y"))
 			CEventLog::Log("SECURITY", "USER_LOGINBYHASH", "main", $login, $result_message["MESSAGE"]);
@@ -289,14 +271,6 @@ abstract class CAllUser extends CDBResult
 	{
 		$arAuth = CHTTP::ParseAuthRequest();
 
-		foreach(GetModuleEvents("main", "onBeforeUserLoginByHttpAuth", true) as $arEvent)
-		{
-			$res = ExecuteModuleEventEx($arEvent, array(&$arAuth));
-			if($res !== null)
-			{
-				return $res;
-			}
-		}
 
 		if(isset($arAuth["basic"]) && $arAuth["basic"]["username"] <> '' && $arAuth["basic"]["password"] <> '')
 		{
@@ -546,8 +520,6 @@ abstract class CAllUser extends CDBResult
 			$_SESSION["SESS_AUTH"]["APPLICATION_ID"] = $applicationId;
 			$_SESSION["SESS_AUTH"]["BX_USER_ID"] = $arUser["BX_USER_ID"];
 
-			// groups
-			$_SESSION["SESS_AUTH"]["GROUPS"] = Main\UserTable::getUserGroupIds($arUser["ID"]);
 
 			foreach ($_SESSION["SESS_AUTH"]["GROUPS"] as $groupId)
 			{
@@ -694,12 +666,6 @@ abstract class CAllUser extends CDBResult
 				"applicationId" => $applicationId,
 			);
 
-			foreach (GetModuleEvents("main", "OnAfterUserAuthorize", true) as $arEvent)
-				ExecuteModuleEventEx($arEvent, array($arParams));
-
-			foreach (GetModuleEvents("main", "OnUserLogin", true) as $arEvent)
-				ExecuteModuleEventEx($arEvent, array($_SESSION["SESS_AUTH"]["USER_ID"], $arParams));
-
 			if(COption::GetOptionString("main", "event_log_login_success", "N") === "Y")
 				CEventLog::Log("SECURITY", "USER_AUTHORIZE", "main", $arUser["ID"], $applicationId);
 
@@ -778,36 +744,9 @@ abstract class CAllUser extends CDBResult
 
 		$bOk = true;
 		$APPLICATION->ResetException();
-		foreach(GetModuleEvents("main", "OnBeforeUserLogin", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array(&$arParams))===false)
-			{
-				if($err = $APPLICATION->GetException())
-				{
-					$result_message = array("MESSAGE"=>$err->GetString()."<br>", "TYPE"=>"ERROR");
-				}
-				else
-				{
-					$APPLICATION->ThrowException("Unknown login error");
-					$result_message = array("MESSAGE"=>"Unknown login error"."<br>", "TYPE"=>"ERROR");
-				}
-
-				$bOk = false;
-				break;
-			}
-		}
 
 		if($bOk)
 		{
-			//external authentication
-			foreach(GetModuleEvents("main", "OnUserLoginExternal", true) as $arEvent)
-			{
-				$user_id = ExecuteModuleEventEx($arEvent, array(&$arParams));
-				if($user_id > 0)
-				{
-					break;
-				}
-			}
 
 			if($user_id <= 0)
 			{
@@ -932,27 +871,6 @@ abstract class CAllUser extends CDBResult
 						$result_message = array("MESSAGE"=>GetMessage("WRONG_LOGIN")."<br>", "TYPE"=>"ERROR", "ERROR_TYPE" => "LOGIN");
 					}
 				}
-				else
-				{
-					//no user found by login - try to find an external user
-					foreach(GetModuleEvents("main", "OnFindExternalUser", true) as $arEvent)
-					{
-						if(($external_user_id = intval(ExecuteModuleEventEx($arEvent, array($arParams["LOGIN"])))) > 0)
-						{
-							//external user authentication
-							//let's try to find application password for the external user
-							if(($appPassword = ApplicationPasswordTable::findPassword($external_user_id, $arParams["PASSWORD"], ($arParams["PASSWORD_ORIGINAL"] == "Y"))) !== false)
-							{
-								//bingo, the user has the application password
-								$foundUser = true;
-								$user_id = $external_user_id;
-								$applicationId = $appPassword["APPLICATION_ID"];
-								$applicationPassId = $appPassword["ID"];
-							}
-							break;
-						}
-					}
-				}
 
 				if(!$foundUser)
 				{
@@ -1031,8 +949,6 @@ abstract class CAllUser extends CDBResult
 		$arParams["RESULT_MESSAGE"] = $result_message;
 
 		$APPLICATION->ResetException();
-		foreach(GetModuleEvents("main", "OnAfterUserLogin", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arParams));
 
 		if($doAuthorize == true && $result_message !== true && (COption::GetOptionString("main", "event_log_login_fail", "N") === "Y"))
 			CEventLog::Log("SECURITY", "USER_LOGIN", "main", $login, $result_message["MESSAGE"]);
@@ -1154,17 +1070,6 @@ abstract class CAllUser extends CDBResult
 
 		$APPLICATION->ResetException();
 		$bOk = true;
-		foreach(GetModuleEvents("main", "OnBeforeUserChangePassword", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array(&$arParams))===false)
-			{
-				if($err = $APPLICATION->GetException())
-					$result_message = array("MESSAGE"=>$err->GetString()."<br>", "TYPE"=>"ERROR");
-
-				$bOk = false;
-				break;
-			}
-		}
 
 		if($bOk && COption::GetOptionString("main", "captcha_restoring_password", "N") == "Y")
 		{
@@ -1309,9 +1214,6 @@ abstract class CAllUser extends CDBResult
 				"EVENT_NAME" => &$eventName,
 			);
 
-			foreach (GetModuleEvents("main", "OnSendUserInfo", true) as $arEvent)
-				ExecuteModuleEventEx($arEvent, array(&$arParams));
-
 		}
 	}
 
@@ -1329,17 +1231,6 @@ abstract class CAllUser extends CDBResult
 		$result_message = array("MESSAGE"=>GetMessage('ACCOUNT_INFO_SENT')."<br>", "TYPE"=>"OK");
 		$APPLICATION->ResetException();
 		$bOk = true;
-		foreach(GetModuleEvents("main", "OnBeforeUserSendPassword", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array(&$arParams))===false)
-			{
-				if($err = $APPLICATION->GetException())
-					$result_message = array("MESSAGE"=>$err->GetString()."<br>", "TYPE"=>"ERROR");
-
-				$bOk = false;
-				break;
-			}
-		}
 
 		if($bOk && COption::GetOptionString("main", "captcha_restoring_password", "N") == "Y")
 		{
@@ -1495,22 +1386,6 @@ abstract class CAllUser extends CDBResult
 
 		$bOk = true;
 		$result_message = true;
-		foreach(GetModuleEvents("main", "OnBeforeUserRegister", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array(&$arFields)) === false)
-			{
-				if($err = $APPLICATION->GetException())
-					$result_message = array("MESSAGE"=>$err->GetString()."<br>", "TYPE"=>"ERROR");
-				else
-				{
-					$APPLICATION->ThrowException("Unknown error");
-					$result_message = array("MESSAGE"=>"Unknown error"."<br>", "TYPE"=>"ERROR");
-				}
-
-				$bOk = false;
-				break;
-			}
-		}
 
 		$ID = false;
 		if($bOk)
@@ -1565,8 +1440,6 @@ abstract class CAllUser extends CDBResult
 		}
 
 		$arFields["RESULT_MESSAGE"] = $result_message;
-		foreach (GetModuleEvents("main", "OnAfterUserRegister", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		return $arFields["RESULT_MESSAGE"];
 	}
@@ -1626,22 +1499,6 @@ abstract class CAllUser extends CDBResult
 
 		$bOk = true;
 		$result_message = false;
-		foreach(GetModuleEvents("main", "OnBeforeUserSimpleRegister", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array(&$arFields)) === false)
-			{
-				if($err = $APPLICATION->GetException())
-					$result_message = array("MESSAGE"=>$err->GetString()."<br>", "TYPE"=>"ERROR");
-				else
-				{
-					$APPLICATION->ThrowException("Unknown error");
-					$result_message = array("MESSAGE"=>"Unknown error"."<br>", "TYPE"=>"ERROR");
-				}
-
-				$bOk = false;
-				break;
-			}
-		}
 
 		$bRandLogin = false;
 		if(!is_set($arFields, "LOGIN"))
@@ -1690,8 +1547,6 @@ abstract class CAllUser extends CDBResult
 		}
 
 		$arFields["RESULT_MESSAGE"] = $result_message;
-		foreach(GetModuleEvents("main", "OnAfterUserSimpleRegister", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
 
 		return $arFields["RESULT_MESSAGE"];
 	}
@@ -1757,24 +1612,9 @@ abstract class CAllUser extends CDBResult
 
 		$APPLICATION->ResetException();
 		$bOk = true;
-		foreach(GetModuleEvents("main", "OnBeforeUserLogout", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array(&$arParams))===false)
-			{
-				if(!($APPLICATION->GetException()))
-				{
-					$APPLICATION->ThrowException("Unknown logout error");
-				}
-
-				$bOk = false;
-				break;
-			}
-		}
 
 		if($bOk)
 		{
-			foreach(GetModuleEvents("main", "OnUserLogout", true) as $arEvent)
-				ExecuteModuleEventEx($arEvent, array($USER_ID));
 
 			if($_SESSION["SESS_AUTH"]["STORED_AUTH_ID"]>0)
 				$DB->Query("DELETE FROM b_user_stored_auth WHERE ID=".intval($_SESSION["SESS_AUTH"]["STORED_AUTH_ID"]));
@@ -1811,8 +1651,6 @@ abstract class CAllUser extends CDBResult
 		}
 
 		$arParams["SUCCESS"] = $bOk;
-		foreach(GetModuleEvents("main", "OnAfterUserLogout", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arParams));
 
 		if(COption::GetOptionString("main", "event_log_logout", "N") === "Y")
 			CEventLog::Log("SECURITY", "USER_LOGOUT", "main", $USER_ID);
@@ -2069,29 +1907,12 @@ abstract class CAllUser extends CDBResult
 		{
 			$APPLICATION->ResetException();
 
-			if($ID===false)
-				$events = GetModuleEvents("main", "OnBeforeUserAdd", true);
+			if($ID===false) {}
 			else
 			{
 				$arFields["ID"] = $ID;
-				$events = GetModuleEvents("main", "OnBeforeUserUpdate", true);
 			}
 
-			foreach($events as $arEvent)
-			{
-				$bEventRes = ExecuteModuleEventEx($arEvent, array(&$arFields));
-				if($bEventRes===false)
-				{
-					if($err = $APPLICATION->GetException())
-						$this->LAST_ERROR .= $err->GetString()." ";
-					else
-					{
-						$APPLICATION->ThrowException("Unknown error");
-						$this->LAST_ERROR .= "Unknown error. ";
-					}
-					break;
-				}
-			}
 		}
 
 		if(is_object($APPLICATION))
@@ -2350,9 +2171,6 @@ abstract class CAllUser extends CDBResult
 		$arFields["ID"] = $ID;
 		$arFields["RESULT"] = &$result;
 
-		foreach (GetModuleEvents("main", "OnAfterUserUpdate", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array(&$arFields));
-
 		if($arFields["RESULT"] == true)
 		{
 			\Bitrix\Main\UserTable::indexRecord($ID);
@@ -2435,10 +2253,6 @@ abstract class CAllUser extends CDBResult
 		}
 		self::clearUserGroupCache($USER_ID);
 
-		foreach (GetModuleEvents("main", "OnAfterSetUserGroup", true) as $arEvent)
-		{
-			ExecuteModuleEventEx($arEvent, array("USER_ID"=>$USER_ID, "GROUPS"=>$inserted));
-		}
 
 		if($aPrevGroups <> $inserted)
 		{
@@ -2562,47 +2376,6 @@ abstract class CAllUser extends CDBResult
 		if(!$arUser)
 			return false;
 
-		foreach(GetModuleEvents("main", "OnBeforeUserDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				if($ex = $APPLICATION->GetException())
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->throwException($err);
-				if(COption::GetOptionString("main", "event_log_user_delete", "N") === "Y")
-				{
-					$UserName = ($arUser["NAME"] != "" || $arUser["LAST_NAME"] != "") ? trim($arUser["NAME"]." ".$arUser["LAST_NAME"]) : $arUser["LOGIN"];
-					$res_log = array(
-						"user" => $UserName,
-						"err" => $err
-					);
-					CEventLog::Log("SECURITY", "USER_DELETE", "main", $ID, serialize($res_log));
-				}
-				return false;
-			}
-		}
-
-		foreach(GetModuleEvents("main", "OnUserDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				if($ex = $APPLICATION->GetException())
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->throwException($err);
-				if(COption::GetOptionString("main", "event_log_user_delete", "N") === "Y")
-				{
-					$UserName = ($arUser["NAME"] != "" || $arUser["LAST_NAME"] != "") ? trim($arUser["NAME"]." ".$arUser["LAST_NAME"]) : $arUser["LOGIN"];
-					$res_log = array(
-						"user" => $UserName,
-						"err" => $err
-					);
-					CEventLog::Log("SECURITY", "USER_DELETE", "main", $ID, serialize($res_log));
-				}
-				return false;
-			}
-		}
 
 		$strSql = "SELECT F.ID FROM	b_user U, b_file F WHERE U.ID='$ID' and (F.ID=U.PERSONAL_PHOTO or F.ID=U.WORK_LOGO)";
 		$z = $DB->Query($strSql, false, "FILE: ".__FILE__." LINE:".__LINE__);
@@ -2651,10 +2424,6 @@ abstract class CAllUser extends CDBResult
 
 		\Bitrix\Main\UserTable::deleteIndexRecord($ID);
 
-		foreach(GetModuleEvents("main", "OnAfterUserDelete", true) as $arEvent)
-		{
-			ExecuteModuleEventEx($arEvent, array($ID));
-		}
 
 		return true;
 	}
@@ -2662,17 +2431,6 @@ abstract class CAllUser extends CDBResult
 	public static function GetExternalAuthList()
 	{
 		$arAll = array();
-		foreach(GetModuleEvents("main", "OnExternalAuthList", true) as $arEvent)
-		{
-			$arRes = ExecuteModuleEventEx($arEvent);
-			if(is_array($arRes))
-			{
-				foreach($arRes as $v)
-				{
-					$arAll[] = $v;
-				}
-			}
-		}
 
 		$result = new CDBResult;
 		$result->InitFromArray($arAll);
@@ -3134,8 +2892,6 @@ abstract class CAllUser extends CDBResult
 			$DB->Query($strSqlPrefix.substr($strSqlValues, 1).$strSqlPostfix, false, "", array("ignore_dml"=>true));
 		}
 
-		$event = new \Bitrix\Main\Event("main", "OnUserSetLastActivityDate", array($arUsers, $ip));
-		$event->send();
 
 		return true;
 	}
@@ -3202,57 +2958,6 @@ abstract class CAllUser extends CDBResult
 		{
 			$result['LAST_SEEN_TEXT'] = self::FormatLastActivityDate($lastseen, $now);
 		}
-
-		if ($userId > 0)
-		{
-			if ($result['IS_ONLINE'])
-			{
-				foreach(GetModuleEvents("main", "OnUserOnlineStatusGetCustomOnlineStatus", true) as $arEvent)
-				{
-					$customStatus = ExecuteModuleEventEx($arEvent, array($userId, $lastseen, $now, self::STATUS_ONLINE));
-					if (is_array($customStatus))
-					{
-						if (!empty($customStatus['STATUS']) && !empty($customStatus['STATUS_TEXT']))
-						{
-							$result['STATUS'] = strtolower($customStatus['STATUS']);
-							$result['STATUS_TEXT'] = $customStatus['STATUS_TEXT'];
-						}
-						if (isset($customStatus['LAST_SEEN']) && intval($customStatus['LAST_SEEN']) > 0)
-						{
-							$result['LAST_SEEN'] = intval($customStatus['LAST_SEEN']);
-						}
-						if (isset($customStatus['LAST_SEEN_TEXT']))
-						{
-							$result['LAST_SEEN_TEXT'] = $customStatus['LAST_SEEN_TEXT'];
-						}
-					}
-				}
-			}
-			else
-			{
-				foreach(GetModuleEvents("main", "OnUserOnlineStatusGetCustomOfflineStatus", true) as $arEvent)
-				{
-					$customStatus = ExecuteModuleEventEx($arEvent, array($userId, $lastseen, $now, self::STATUS_OFFLINE));
-					if (is_array($customStatus))
-					{
-						if (!empty($customStatus['STATUS']) && !empty($customStatus['STATUS_TEXT']))
-						{
-							$result['STATUS'] = strtolower($customStatus['STATUS']);
-							$result['STATUS_TEXT'] = $customStatus['STATUS_TEXT'];
-						}
-						if (isset($customStatus['LAST_SEEN']) && intval($customStatus['LAST_SEEN']) > 0)
-						{
-							$result['LAST_SEEN'] = intval($customStatus['LAST_SEEN']);
-						}
-						if (isset($customStatus['LAST_SEEN_TEXT']))
-						{
-							$result['LAST_SEEN_TEXT'] = $customStatus['LAST_SEEN_TEXT'];
-						}
-					}
-				}
-			}
-		}
-
 		return $result;
 	}
 
@@ -3797,18 +3502,6 @@ class CAllGroup
 		if(!$this->CheckFields($arFields, $ID))
 			return false;
 
-		foreach(GetModuleEvents("main", "OnBeforeGroupUpdate", true) as $arEvent)
-		{
-			$bEventRes = ExecuteModuleEventEx($arEvent, array($ID, &$arFields));
-			if($bEventRes===false)
-			{
-				if($err = $APPLICATION->GetException())
-					$this->LAST_ERROR .= $err->GetString()."<br>";
-				else
-					$this->LAST_ERROR .= "Unknown error in OnBeforeGroupUpdate handler."."<br>";
-				return false;
-			}
-		}
 
 		if($ID<=2)
 			unset($arFields["ACTIVE"]);
@@ -3929,9 +3622,6 @@ class CAllGroup
 			}
 		}
 
-		foreach (GetModuleEvents("main", "OnAfterGroupUpdate", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ID, &$arFields));
-
 		return true;
 	}
 
@@ -3946,20 +3636,6 @@ class CAllGroup
 
 		@set_time_limit(600);
 
-		foreach(GetModuleEvents("main", "OnBeforeGroupDelete", true) as $arEvent)
-		{
-			if(ExecuteModuleEventEx($arEvent, array($ID))===false)
-			{
-				$err = GetMessage("MAIN_BEFORE_DEL_ERR").' '.$arEvent['TO_NAME'];
-				if($ex = $APPLICATION->GetException())
-					$err .= ': '.$ex->GetString();
-				$APPLICATION->throwException($err);
-				return false;
-			}
-		}
-
-		foreach(GetModuleEvents("main", "OnGroupDelete", true) as $arEvent)
-			ExecuteModuleEventEx($arEvent, array($ID));
 
 		CMain::DelGroupRight("",array($ID));
 
@@ -4275,81 +3951,6 @@ class CAllGroup
 		}
 	}
 
-	public static function GetModulePermission($group_id, $module_id)
-	{
-		/** @global CMain $APPLICATION */
-		global $APPLICATION, $DB;
-
-		// check module permissions mode
-		$strSql = "SELECT T.ID, GT.TASK_ID FROM b_task T LEFT JOIN b_group_task GT ON T.ID=GT.TASK_ID AND GT.GROUP_ID=".intval($group_id)." WHERE T.MODULE_ID='".$DB->ForSql($module_id)."'";
-		$dbr_tasks = $DB->Query($strSql, false, "File: ".__FILE__."<br>Line: ".__LINE__);
-		if($ar_task = $dbr_tasks->Fetch())
-		{
-			do
-			{
-				if($ar_task["TASK_ID"]>0)
-					return $ar_task["TASK_ID"];
-			}
-			while ($ar_task = $dbr_tasks->Fetch());
-
-			return false;
-		}
-
-		return $APPLICATION->GetGroupRight($module_id, array($group_id), "N", "N");
-	}
-
-	public static function SetModulePermission($group_id, $module_id, $permission)
-	{
-		/** @global CMain $APPLICATION */
-		global $DB, $APPLICATION;
-
-		if(intval($permission)<=0 && $permission != false)
-		{
-			$strSql = "SELECT T.ID FROM b_task T WHERE T.MODULE_ID='".$DB->ForSql($module_id)."' AND NAME='".$DB->ForSql($permission)."'";
-			$db_task = $DB->Query($strSql);
-			if($ar_task=$db_task->Fetch())
-				$permission = $ar_task['ID'];
-		}
-
-		$permission_letter = '';
-		if(intval($permission)>0 || $permission === false)
-		{
-			$strSql = "SELECT T.ID FROM b_task T WHERE T.MODULE_ID='".$DB->ForSql($module_id)."'";
-			$dbr_tasks = $DB->Query($strSql, false, "File: ".__FILE__."<br>Line: ".__LINE__);
-			$arIds = array();
-			while($arTask = $dbr_tasks->Fetch())
-				$arIds[] = $arTask['ID'];
-
-			if(!empty($arIds))
-			{
-				$strSql = "DELETE FROM b_group_task WHERE GROUP_ID=".intval($group_id)." AND TASK_ID IN (".implode(",", $arIds).")";
-				$DB->Query($strSql, false, "File: ".__FILE__."<br>Line: ".__LINE__);
-			}
-
-			if(intval($permission)>0)
-			{
-				$DB->Query(
-					"INSERT INTO b_group_task (GROUP_ID, TASK_ID, EXTERNAL_ID) ".
-					"SELECT G.ID, T.ID, '' ".
-					"FROM b_group G, b_task T ".
-					"WHERE G.ID = ".intval($group_id)." AND T.ID = ".intval($permission),
-					false,
-					"File: ".__FILE__."<br>Line: ".__LINE__
-				);
-
-				$permission_letter = CTask::GetLetter($permission);
-			}
-		}
-		else
-		{
-			$permission_letter = $permission;
-		}
-
-		if($permission_letter <> '')
-			$APPLICATION->SetGroupRight($module_id, $group_id, $permission_letter);
-		else
-			$APPLICATION->DelGroupRight($module_id, array($group_id));
-	}
 
 	public static function GetIDByCode($code)
 	{
@@ -4743,8 +4344,7 @@ class CAllTask
 		{
 			if(COption::GetOptionString("main", "event_log_task", "N") === "Y")
 				CEventLog::Log("SECURITY", "TASK_CHANGED", "main", $ID, "(".implode(", ", $aPrevOp).") => (".implode(", ", $aNewOp).")");
-			foreach(GetModuleEvents("main", "OnTaskOperationsChanged", true) as $arEvent)
-				ExecuteModuleEventEx($arEvent, array($ID, $aPrevOp, $aNewOp));
+
 		}
 	}
 

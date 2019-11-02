@@ -7,9 +7,7 @@
  */
 
 use Bitrix\Main;
-use Bitrix\Main\Authentication\ApplicationPasswordTable;
 
-IncludeModuleLangFile(__FILE__);
 
 global $BX_GROUP_POLICY;
 $BX_GROUP_POLICY = array(

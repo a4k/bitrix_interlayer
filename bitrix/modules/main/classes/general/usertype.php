@@ -37,7 +37,6 @@ CModule::AddAutoloadClasses(
 	)
 );
 
-IncludeModuleLangFile(__FILE__);
 
 /**
  * Данный класс используется для управления метаданными пользовательских свойств.

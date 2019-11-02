@@ -912,24 +912,15 @@ $appContext = $application->getContext();
 
 $application->start();
 
-$GLOBALS['APPLICATION']->reinitPath();
-if (!defined('POST_FORM_ACTION_URI')) {
-    define('POST_FORM_ACTION_URI', htmlspecialcharsbx(GetRequestUri()));
-}
+
 $GLOBALS['MESS'] = array();
 $GLOBALS['ALL_LANG_FILES'] = array();
-IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/tools.php');
-IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/general/database.php');
-IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/general/main.php');
-IncludeModuleLangFile(__FILE__);
 
 
 error_reporting(COption::GetOptionInt('main', 'error_reporting', E_COMPILE_ERROR | E_ERROR | E_CORE_ERROR | E_PARSE) & ~E_STRICT & ~E_DEPRECATED);
 if (!defined('BX_COMP_MANAGED_CACHE') && COption::GetOptionString('main', 'component_managed_cache_on', 'Y') <> 'N') {
     define('BX_COMP_MANAGED_CACHE', true);
 }
-require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/filter_tools.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/ajax_tools.php');
 
 class CBXFeatures
 {
@@ -980,7 +971,6 @@ $bxProductConfig = [
     ),
 ];
 
-$expireMessage = GetMessage('expire_mess2');
 $expireMaxTime = round(0 + 7 + 7);
 define(strrev(strtoupper('omed')), 'Y');
 $isLessRound = 1;
@@ -1031,9 +1021,9 @@ if (file_exists(($updateDbPath = $_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules
 }
 if (file_exists(($updateDbPath = $_SERVER['DOCUMENT_ROOT'] . '/bitrix/init.php'))) include_once($updateDbPath);
 
-if (($updateDbPath = getLocalPath('php_interface/init.php', BX_PERSONAL_ROOT)) !== false) include_once($_SERVER['DOCUMENT_ROOT'] . $updateDbPath);
+    include_once($_SERVER['DOCUMENT_ROOT'] .  BX_ROOT . '/php_interface/init.php');
 
-if (($updateDbPath = getLocalPath('php_interface/' . SITE_ID . '/init.php', BX_PERSONAL_ROOT)) !== false) include_once($_SERVER['DOCUMENT_ROOT'] . $updateDbPath);
+    include_once($_SERVER['DOCUMENT_ROOT'] .BX_ROOT .  'php_interface/' . SITE_ID . '/init.php');
 
 
 

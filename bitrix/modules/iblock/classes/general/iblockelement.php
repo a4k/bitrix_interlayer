@@ -2,7 +2,6 @@
 use Bitrix\Main,
 	Bitrix\Iblock;
 
-IncludeModuleLangFile(__FILE__);
 
 global $IBLOCK_ACTIVE_DATE_FORMAT;
 $IBLOCK_ACTIVE_DATE_FORMAT = Array();

@@ -586,19 +586,7 @@ function getmicrotime()
 
 define('START_EXEC_TIME', getmicrotime());
 define('B_PROLOG_INCLUDED', true);
-require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/tools.php');
-if (version_compare(PHP_VERSION, '5.0.0') >= (1252 / 2 - 626) && @ini_get_bool('register_long_arrays') != true) {
-    $HTTP_POST_FILES = $_FILES;
-    $HTTP_SERVER_VARS = $_SERVER;
-    $HTTP_GET_VARS = $_GET;
-    $HTTP_POST_VARS = $_POST;
-    $HTTP_COOKIE_VARS = $_COOKIE;
-    $HTTP_ENV_VARS = $_ENV;
-}
-if (version_compare(PHP_VERSION, '5.4.0') < (842 - 2 * 421)) {
-    UnQuoteAll();
-}
-FormDecode();
+
 
 
 //
@@ -661,6 +649,7 @@ if ($LICENSE_KEY == '' || strtoupper($LICENSE_KEY) == 'DEMO')
 else define('LICENSE_KEY', $LICENSE_KEY);
 
 
+require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/tools.php");
 //require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/punycode.php');
 //require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/charset_converter.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/' . $DBType . '/main.php');

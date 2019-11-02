@@ -13,5 +13,4 @@ if(!isset($DB)) {global $DB;}
 
 require_once(dirname(__FILE__)."/../include.php");
 
-CMain::PrologActions();
 ?>

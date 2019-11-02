@@ -1,5 +1,4 @@
 <?php
-IncludeModuleLangFile(__FILE__);
 
 if(!defined("CACHED_b_iblock_type")) define("CACHED_b_iblock_type", 36000);
 if(!defined("CACHED_b_iblock")) define("CACHED_b_iblock", 36000);
@@ -25,8 +24,6 @@ $arClasses = array(
 	"CIBlockProperty" => "classes/".$DBType."/iblockproperty.php",
 	"CAllIBlockElement" => "classes/general/iblockelement.php",
 	"CIBlockElement" => "classes/".$DBType."/iblockelement.php",
-	"CAllIBlockRSS" => "classes/general/iblockrss.php",
-	"CIBlockRSS" => "classes/".$DBType."/iblockrss.php",
 	"CIBlockPropertyDateTime" => "classes/general/prop_datetime.php",
 	"CIBlockPropertyDate" => "classes/general/prop_date.php",
 	"CIBlockPropertyXmlID" => "classes/general/prop_xmlid.php",
@@ -35,8 +32,6 @@ $arClasses = array(
 	"CIBlockPropertyElementList" => "classes/general/prop_element_list.php",
 	"CCMLResult" => "classes/general/cmlresult.php",
 	"CIBlockXMLFile" => "classes/".$DBType."/cml2.php",
-	"CIBlockCMLImport" => "classes/general/cml2.php",
-	"CIBlockCMLExport" => "classes/general/cml2.php",
 	"CIBlockFindTools" => "classes/general/comp_findtools.php",
 	"CIBlockPriceTools" => "classes/general/comp_pricetools.php",
 	"CIBlockParameters" => "classes/general/comp_parameters.php",

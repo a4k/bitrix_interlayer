@@ -2,7 +2,6 @@
 use Bitrix\Main\Loader,
 	Bitrix\Main;
 
-IncludeModuleLangFile(__FILE__);
 
 class CAllIBlock
 {

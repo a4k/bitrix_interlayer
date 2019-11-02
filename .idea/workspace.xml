@@ -2,167 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2abcc7d-cdc0-4341-accc-455d77a2704a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bitrix/modules/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin_tools.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/comp_findtools.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/comp_formatprops.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/comp_parameters.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/comp_pricetools.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblock.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockelement.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockelement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblocktype.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblocktype.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/ratings_components.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/subelement.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/iblock.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/iblock/iblock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/bizproctype/ecrm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/bizproctype/money.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/bizproctype/usertypeproperty.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/bizproctype/usertypepropertydiskfile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/bizproctype/usertypepropertyelist.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/bizproctype/usertypepropertyemployee.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/bizproctype/usertypepropertyhtml.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/helpers/admin/property.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/helpers/filter/property.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/iblockrss.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/ajax_tools.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/classes/general/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/classes/general/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertype.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertype.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/filter_tools.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/include.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/condition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/epilog_admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/epilog_admin_after.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/epilog_admin_before.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/epilog_admin_js.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/epilog_auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/epilog_excel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/epilog_popup_admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/include_statistics.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/include_statistics_after.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/include_statistics_before.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/prolog_admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/prolog_admin_after.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/prolog_admin_before.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/prolog_admin_js.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/prolog_before.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/include/prolog_before.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/prolog_excel_after.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/prolog_popup_admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/urlrewrite.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/component/parameters.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/component/parametersigner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/appcache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/bufferarea.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/compatibility/aliases.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/data/abstractstorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/data/cacheprovider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/data/filestorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/data/memcachedstorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/debug/logger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/debug/model/log.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/engine.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/helper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/internals/automaticarea.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/internals/locker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/internals/model/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/internals/pagemanager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/responder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/composite/staticarea.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/context/culture.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/context/site.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/appcachemanifest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/cacheengineapc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/cacheenginememcache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/cacheenginenone.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/cacheenginexcache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/lrucache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/memcacheconnection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/memcachedconnection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/statichtmlcache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/statichtmlfilestorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/statichtmlmemcachedstorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/statichtmlstorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/discount/userconditioncontrol.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/action.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/actionfilter/authentication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/actionfilter/base.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/actionfilter/closesession.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/actionfilter/closurewrapper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/actionfilter/csrf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/actionfilter/httpmethod.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/binder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/closureaction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/component/componentcontroller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/component/inlineaction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/configurator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/contract/controllerable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/crawler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/currentuser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/defaultcontroller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/inlineaction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/resolver.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/response/ajaxjson.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/response/datatype/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/response/json.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/router.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/engine/urlmanager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/page/asset.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/page/frame.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/page/framebuffered.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/page/framecomponent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/page/framehelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/page/framelocker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/page/framestatic.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/access_edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/clear_component_cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/component_props.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/component_props2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/edit_area.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/enable_component.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/file_delete.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/file_edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/file_edit_src.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/file_new.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/file_property.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/folder_edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/get_start_menu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/menu_edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/structure.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/template_copy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/top_panel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/public/undo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/services/ajax.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/start.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/access_dialog.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/ajax_captcha.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/ajax_redirector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/autosave.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/backup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/calendar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/check_appcache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/clear_old_cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/clock.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/clock_selector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/composite_data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/cron_events.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/cron_html_pages.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/file_dialog.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/get_user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/imagepg.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/phone_number.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/prop_userid.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/tooltip.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/track_mail_click.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/track_mail_read.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/track_mail_unsub.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/uf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/user_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/diag/httpexceptionhandleroutput.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/lib/diag/httpexceptionhandleroutput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/localization/culture.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/localization/language.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/localization/loc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/tools.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,26 +25,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="194" />
+          <entry key="php" value="200" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="194" />
+          <entry key="PHP" value="200" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="326" />
-          <entry key="php" value="2518" />
+          <entry key="php" value="2522" />
           <entry key="txt" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2518" />
+          <entry key="PHP" value="2522" />
           <entry key="PLAIN_TEXT" value="399" />
         </counts>
       </usages-collector>
@@ -207,38 +52,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/config/option.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="222" column="45" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/entity/addresult.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/entity/field/ireadable.php">
+        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/tools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/lib/element.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="302" column="38" lean-forward="true" selection-start-line="302" selection-start-column="38" selection-end-line="302" selection-end-column="38" />
+            <state relative-caret-position="185">
+              <caret line="3012" column="1" selection-start-line="3012" selection-start-column="1" selection-end-line="3012" selection-end-column="1" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -247,8 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>iblock/</find>
-      <find>$urlBitrixSoft</find>
       <find>SiteExpireDate</find>
       <find>print_r</find>
       <find>IsAu</find>
@@ -277,6 +96,8 @@
       <find>_FileMan_GetUserTypeDescription</find>
       <find>GetUserTypeDescription</find>
       <find>epilog</find>
+      <find>Loc</find>
+      <find>\Bitrix\Main\Localization\Loc::g</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -287,6 +108,7 @@
       <replace>'SITE_ID'</replace>
       <replace>decode_garray</replace>
       <replace>define</replace>
+      <replace>G</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include</dir>
@@ -325,6 +147,8 @@
         <option value="$PROJECT_DIR$/bitrix/modules/main/include/prolog_before.php" />
         <option value="$PROJECT_DIR$/bitrix/modules/main/start.php" />
         <option value="$PROJECT_DIR$/bitrix/modules/main/include/condition.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/lib/diag/httpexceptionhandleroutput.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/tools.php" />
       </list>
     </option>
   </component>
@@ -441,6 +265,15 @@
               <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
               <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
               <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="diag" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
               <item name="php_interface" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -486,7 +319,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572676419088</updated>
-      <workItem from="1572676420587" duration="19495000" />
+      <workItem from="1572676420587" duration="19630000" />
     </task>
     <task id="LOCAL-00001" summary="clean bitrix from luggage">
       <created>1572698100275</created>
@@ -502,11 +335,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572699101990</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="remove from application">
+      <created>1572705070881</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572705070881</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19495000" />
+    <option name="totallyTimeSpent" value="19630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -545,127 +385,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="remove from application" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/lib/bizproctype/usertypepropertyelist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/admin_tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="1059" column="22" selection-start-line="1059" selection-start-column="22" selection-end-line="1059" selection-end-column="22" />
-          <folding>
-            <element signature="e#294#299#0" expanded="true" />
-            <element signature="e#309#314#0" expanded="true" />
-            <element signature="e#323#328#0" expanded="true" />
-            <element signature="e#369#375#0" expanded="true" />
-            <element signature="e#294#299#0" expanded="true" />
-            <element signature="e#309#314#0" expanded="true" />
-            <element signature="e#323#328#0" expanded="true" />
-            <element signature="e#369#375#0" expanded="true" />
-            <element signature="e#165#170#0" expanded="true" />
-            <element signature="e#217#222#0" expanded="true" />
-            <element signature="e#232#237#0" expanded="true" />
-            <element signature="e#240#245#0" expanded="true" />
-            <element signature="e#254#259#0" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#828#877#0#PHP" />
-            <element signature="e#969#1055#0#PHP" />
-            <element signature="e#1683#1722#0#PHP" />
-            <element signature="n#GetCurPage#0;n#CAllMain#0;n#!!top" />
-            <element signature="n#CAllSite#0;n#!!top" />
-            <element signature="n#InDir#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#InPeriod#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#InGroup#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetWeekStart#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetDateFormat#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetTimeFormat#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#CheckFields#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#SaveDomains#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#Add#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#Update#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#Delete#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetTemplateList#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetDefList#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetSiteDocRoot#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetSiteByFullPath#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetList#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetByID#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetArrayByID#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetDefSite#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#IsDistinctDocRoots#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#SelectBox#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#SelectBoxMulti#0;n#CAllSite#0;n#!!top" />
-            <element signature="e#386#392#0" expanded="true" />
-            <element signature="n#GetNameTemplates#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetNameFormat#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetDefaultNameFormat#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#GetCurTemplate#0;n#CAllSite#0;n#!!top" />
-            <element signature="n#_CLangDBResult#0;n#!!top" />
-            <element signature="n#__construct#0;n#_CLangDBResult#0;n#!!top" />
-            <element signature="n#Fetch#0;n#_CLangDBResult#0;n#!!top" />
-            <element signature="n#CAllLanguage#0;n#!!top" />
-            <element signature="n#GetList#0;n#CAllLanguage#0;n#!!top" />
-            <element signature="n#GetByID#0;n#CAllLanguage#0;n#!!top" />
-            <element signature="n#CheckFields#0;n#CAllLanguage#0;n#!!top" />
-            <element signature="n#Add#0;n#CAllLanguage#0;n#!!top" />
-            <element signature="n#Update#0;n#CAllLanguage#0;n#!!top" />
-            <element signature="n#Delete#0;n#CAllLanguage#0;n#!!top" />
-            <element signature="n#SelectBox#0;n#CAllLanguage#0;n#!!top" />
-            <element signature="n#GetLangSwitcherArray#0;n#CAllLanguage#0;n#!!top" />
-            <element signature="n#CLanguage#0;n#!!top" />
-            <element signature="n#CLangAdmin#0;n#!!top" />
-            <element signature="n#ShowImage#0;n#!!top" />
-            <element signature="n#CAllFilterQuery#0;n#!!top" />
-            <element signature="n#__construct#0;n#CAllFilterQuery#0;n#!!top" />
-            <element signature="n#GetQueryString#0;n#CAllFilterQuery#0;n#!!top" />
-            <element signature="n#CutKav#0;n#CAllFilterQuery#0;n#!!top" />
-            <element signature="n#ParseQ#0;n#CAllFilterQuery#0;n#!!top" />
-            <element signature="n#ParseStr#0;n#CAllFilterQuery#0;n#!!top" />
-            <element signature="n#PrepareQuery#0;n#CAllFilterQuery#0;n#!!top" />
-            <element signature="n#CAllLang#0;n#!!top" />
-            <element signature="n#CApplicationException#0;n#!!top" />
-            <element signature="n#__construct#0;n#CApplicationException#0;n#!!top" />
-            <element signature="n#CApplicationException#0;n#CApplicationException#0;n#!!top" />
-            <element signature="n#GetString#0;n#CApplicationException#0;n#!!top" />
-            <element signature="n#GetID#0;n#CApplicationException#0;n#!!top" />
-            <element signature="n#__toString#0;n#CApplicationException#0;n#!!top" />
-            <element signature="n#CAdminException#0;n#!!top" />
-            <element signature="n#__construct#0;n#CAdminException#0;n#!!top" />
-            <element signature="n#GetMessages#0;n#CAdminException#0;n#!!top" />
-            <element signature="n#AddMessage#0;n#CAdminException#0;n#!!top" />
-            <element signature="n#CCaptchaAgent#0;n#!!top" />
-            <element signature="n#DeleteOldCaptcha#0;n#CCaptchaAgent#0;n#!!top" />
-            <element signature="n#CDebugInfo#0;n#!!top" />
-            <element signature="n#__construct#0;n#CDebugInfo#0;n#!!top" />
-            <element signature="n#Start#0;n#CDebugInfo#0;n#!!top" />
-            <element signature="n#Stop#0;n#CDebugInfo#0;n#!!top" />
-            <element signature="n#Output#0;n#CDebugInfo#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/filter_tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#131#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bitrix/modules/main/ajax_tools.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -714,16 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="3009" column="1" lean-forward="true" selection-start-line="3009" selection-start-column="1" selection-end-line="3009" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bitrix/modules/main/include/prolog_before.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -755,13 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="1465" column="26" lean-forward="true" selection-start-line="1465" selection-start-column="26" selection-end-line="1465" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -937,6 +639,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/urlrewriter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="340" column="22" selection-start-line="340" selection-start-column="22" selection-end-line="340" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/io/directory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/io/file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/diag/httpexceptionhandleroutput.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="2601" column="33" selection-start-line="2601" selection-start-column="33" selection-end-line="2601" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/tools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="3012" column="1" selection-start-line="3012" selection-start-column="1" selection-end-line="3012" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

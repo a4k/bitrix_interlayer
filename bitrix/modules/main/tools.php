@@ -3206,11 +3206,6 @@ function IncludeTemplateLangFile($filepath, $lang=false)
 
 function IncludeModuleLangFile($filepath, $lang=false, $bReturnArray=false)
 {
-	if($lang === false && $bReturnArray === false)
-	{
-		\Bitrix\Main\Localization\Loc::loadMessages($filepath);
-		return true;
-	}
 
 	$filepath = rtrim(preg_replace("'[\\\\/]+'", "/", $filepath), "/ ");
 	$module_path = "/modules/";

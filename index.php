@@ -23,7 +23,7 @@ class IBlockService {
 
     public static function getList($iblockId) {
         $db_iblock = \CIBlockElement::GetList(array("SORT"=>"ASC"),
-            array("IBLOCK_ID"=>$iblockId), false, array("nPageSize" => "5"), ['NAME']);
+            array("IBLOCK_ID"=>$iblockId), false, array("nPageSize" => "5"), ['NAME', 'PROPERTY_CITY']);
 
         $result = [];
         while($arRes = $db_iblock->Fetch()) {

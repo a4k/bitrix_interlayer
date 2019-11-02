@@ -6944,3 +6944,2743 @@ D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:16
 #2: require(string)
 	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
 ----------
+2019-11-02 18:52:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:52:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:52:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:52:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2863
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:52:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2863
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:52:22 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2863
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:52:22 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:268
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:268
+----------
+2019-11-02 18:54:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:54:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:54:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:54:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:54:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:54:09 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:54:09 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:268
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:268
+----------
+2019-11-02 18:55:19 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:19 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:19 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:19 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:19 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:19 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:19 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:269
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:269
+----------
+2019-11-02 18:55:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:22 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:22 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:269
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:269
+----------
+2019-11-02 18:55:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:35 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:35 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:269
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:269
+----------
+2019-11-02 18:55:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:55:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:53 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:55:53 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:270
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:270
+----------
+2019-11-02 18:56:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:56:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:56:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:56:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:56:09 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:56:09 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:56:09 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:271
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:271
+----------
+2019-11-02 18:56:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:56:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:56:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:56:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:56:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:56:14 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:56:14 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:270
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:270
+----------
+2019-11-02 18:57:27 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:27 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:27 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:27 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:27 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:27 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:27 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:270
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:270
+----------
+2019-11-02 18:57:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:35 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:35 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:271
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:271
+----------
+2019-11-02 18:57:41 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:41 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:41 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:41 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:41 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:41 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:41 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:272
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:272
+----------
+2019-11-02 18:57:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:53 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:53 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:275
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:275
+----------
+2019-11-02 18:57:57 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:57 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:57 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:57:57 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:57 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:57 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:57:57 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:273
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:273
+----------
+2019-11-02 18:59:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:14 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:14 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:275
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:275
+----------
+2019-11-02 18:59:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:22 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:22 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:22 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:276
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:276
+----------
+2019-11-02 18:59:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 18:59:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:28 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 18:59:28 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:276
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:276
+----------
+2019-11-02 19:01:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:01:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:01:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:01:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:01:37 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:01:37 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:01:37 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Call to a member function renderExceptionMessage() on null in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:276
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#1 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:276
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\httpexceptionhandleroutput.php:6
+#3: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#4: Bitrix\Main\Loader::autoLoad(string)
+	
+#5: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httpapplication.php:41
+#6: Bitrix\Main\HttpApplication->createExceptionHandlerOutput()
+	
+#7: call_user_func_array(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:191
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\httpexceptionhandleroutput.php:6
+#3: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#4: Bitrix\Main\Loader::autoLoad(string)
+	
+#5: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httpapplication.php:41
+#6: Bitrix\Main\HttpApplication->createExceptionHandlerOutput()
+	
+#7: call_user_func_array(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php:191
+----------
+2019-11-02 19:03:28 - Host: doctorplus.integration - FATAL - [ErrorException] E_ERROR
+Uncaught Error: Class 'Bitrix\Main\Localization\Loc' not found in D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\httpexceptionhandleroutput.php:6
+Stack trace:
+#0 D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php(268): include_once()
+#1 [internal function]: Bitrix\Main\Loader::autoLoad('Bitrix\\Main\\Dia...')
+#2 D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httpapplication.php(41): spl_autoload_call('Bitrix\\Main\\Dia...')
+#3 [internal function]: Bitrix\Main\HttpApplication->createExceptionHandlerOutput()
+#4 D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php(191): call_user_func_array(Array, Array)
+#5 D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\exceptionhandler.php(274): Bitrix\Main\Diag\ExceptionHandler->getHandlerOutput()
+#6 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException(Object(Error))
+#7 {main}
+  thrown (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\diag\httpexceptionhandleroutput.php:6
+----------
+2019-11-02 19:03:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:03:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:03:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:03:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:03:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:03:54 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:04:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:04:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:04:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:04:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:04:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:04:10 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:04:16 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:04:16 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:04:16 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:04:16 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:04:16 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/localization/loc.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#3: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#7: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#8: Bitrix\Main\Loader::autoLoad(string)
+	
+#9: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#10: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#11: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#12: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#13: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:04:16 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Localization\Loc' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\tools.php:3211
+#0: IncludeModuleLangFile(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockproperty.php:4
+#1: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#2: Bitrix\Main\Loader::autoLoad(string)
+	
+#3: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockproperty.php:2
+#4: include_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#5: Bitrix\Main\Loader::autoLoad(string)
+	
+#6: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general\iblockelement.php:2908
+#7: CAllIBlockElement->PrepareGetList(array, array, array, string, array, array, NULL, NULL, NULL, boolean, string, array, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:340
+#8: CIBlockElement->prepareSql(array, array, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:643
+#9: CIBlockElement::GetList(array, array, boolean, array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:26
+#10: IBlockService::getList(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:40
+----------
+2019-11-02 19:04:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:04:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 19:04:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------

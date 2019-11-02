@@ -183,9 +183,13 @@ class ExceptionHandler
 	{
 		if ($this->handlerOutput === null)
 		{
-			$h = $this->handlerOutputCreator;
-			if (is_callable($h))
-				$this->handlerOutput = call_user_func_array($h, array());
+
+            $h = $this->handlerOutputCreator;
+
+            if (is_callable($h)) {
+
+                $this->handlerOutput = call_user_func_array($h, array());
+            }
 		}
 
 		return $this->handlerOutput;

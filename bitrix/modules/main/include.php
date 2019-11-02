@@ -909,12 +909,7 @@ define('LANGUAGE_ID', $langResult['LANGUAGE_ID']);
 
 
 $appContext = $application->getContext();
-$appContext->setLanguage(LANGUAGE_ID);
-$appContext->setCulture(new \Bitrix\Main\Context\Culture($langResult));
-$_53385991 = $appContext->getRequest();
-if (!$_53385991->isAdminSection()) {
-    $appContext->setSite(SITE_ID);
-}
+
 $application->start();
 
 $GLOBALS['APPLICATION']->reinitPath();

@@ -3078,3 +3078,631 @@ D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\genera
 #3: CAllMain::{closure}()
 	
 ----------
+2019-11-02 15:41:34 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:34 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1053
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:34 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3160
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3412
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:41:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1053
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:35 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3160
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3412
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:41:38 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:38 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1053
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:38 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3160
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3412
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:41:38 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:38 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1053
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:38 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3160
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3412
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:41:52 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:52 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1053
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:52 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3160
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3412
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:41:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1004
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1053
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:41:53 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3160
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3412
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:42:03 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\web\uri.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httprequest.php:283
+#3: Bitrix\Main\HttpRequest->getRequestedPage()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\request.php:72
+#4: Bitrix\Main\Request->getRequestedPageDirectory()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\request.php:80
+#5: Bitrix\Main\Request->isAdminSection()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:915
+#6: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#7: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:42:03 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/web/uri.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httprequest.php:283
+#3: Bitrix\Main\HttpRequest->getRequestedPage()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\request.php:72
+#4: Bitrix\Main\Request->getRequestedPageDirectory()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\request.php:80
+#5: Bitrix\Main\Request->isAdminSection()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:915
+#6: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#7: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:42:03 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\Web\Uri' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httprequest.php:283
+#0: Bitrix\Main\HttpRequest->getRequestedPage()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\request.php:72
+#1: Bitrix\Main\Request->getRequestedPageDirectory()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\request.php:80
+#2: Bitrix\Main\Request->isAdminSection()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:915
+#3: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#4: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:45:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httpcontext.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httpapplication.php:37
+#3: Bitrix\Main\HttpApplication->initializeContext(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\application.php:122
+#4: Bitrix\Main\Application->initializeExtendedKernel(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:886
+#5: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#6: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:45:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/lib/httpcontext.php' for inclusion (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#0: include_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\loader.php:268
+#1: Bitrix\Main\Loader::autoLoad(string)
+	
+#2: spl_autoload_call(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httpapplication.php:37
+#3: Bitrix\Main\HttpApplication->initializeContext(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\application.php:122
+#4: Bitrix\Main\Application->initializeExtendedKernel(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:886
+#5: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#6: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:45:18 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'Bitrix\Main\HttpContext' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\httpapplication.php:37
+#0: Bitrix\Main\HttpApplication->initializeContext(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\application.php:122
+#1: Bitrix\Main\Application->initializeExtendedKernel(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:886
+#2: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#3: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:46:20 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function setLanguage() on null (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:912
+#0: require_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:46:36 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function setCulture() on null (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:912
+#0: require_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:46:40 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function getRequest() on null (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:912
+#0: require_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:46:46 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:46:46 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1048
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:46:46 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3160
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3412
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:47:15 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:47:15 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1048
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:47:15 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3073
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3325
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:47:15 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Invalid argument supplied for foreach() (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:2805
+#0: CAllMain->GetSpreadCookieHTML()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3081
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3325
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:47:59 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+require(D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php): failed to open stream: No such file or directory (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\mysql\main.php:11
+#0: require
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\mysql\main.php:11
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:666
+#2: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:873
+#3: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#4: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:47:59 - Host: doctorplus.integration - FATAL - [ErrorException] E_COMPILE_ERROR
+require(): Failed opening required 'D:/dev/OSPanel/domains/doctorplus.integration/bitrix/modules/main/classes/general/main.php' (include_path='.;d:/dev/ospanel/modules/php/PHP-7.0-x64;d:/dev/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\mysql\main.php:11
+----------
+2019-11-02 15:48:48 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method CMain::GetCurDir() (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\mysql\main.php:30
+#0: CMain->GetLang()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:895
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:49:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:49:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1048
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:49:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:2842
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3094
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:49:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Invalid argument supplied for foreach() (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:2574
+#0: CAllMain->GetSpreadCookieHTML()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:2850
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3094
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:50:13 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:50:13 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1048
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:50:13 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:2199
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:2451
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:50:13 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Invalid argument supplied for foreach() (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1931
+#0: CAllMain->GetSpreadCookieHTML()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:2207
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:2451
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:50:42 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:50:42 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1048
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:50:42 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1356
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1608
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:50:42 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Invalid argument supplied for foreach() (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1088
+#0: CAllMain->GetSpreadCookieHTML()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1364
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1608
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:50:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:50:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1048
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:50:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class '\Bitrix\Main\Analytics\Counter' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1356
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1608
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:50:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Invalid argument supplied for foreach() (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1088
+#0: CAllMain->GetSpreadCookieHTML()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1364
+#1: CAllMain->EndBufferContent(string, integer)
+	
+#2: ob_end_flush()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:1608
+#3: CAllMain::{closure}()
+	
+----------
+2019-11-02 15:51:25 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#0: ksort(NULL)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:999
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:51:25 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1048
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 15:51:25 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ob_start(): class 'CMain' does not have a method 'EndBufferContent' (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:390
+#0: ob_start(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:390
+#1: CAllMain::PrologActions()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:16
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------

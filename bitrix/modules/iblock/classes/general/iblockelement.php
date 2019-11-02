@@ -323,67 +323,12 @@ class CAllIBlockElement
 							if(array_key_exists($parent_r["CREATED_BY"], $arAdmin))
 								$parent_r["CREATED_USER_NAME"] .= " (Admin)";
 
-							// send change notification
-							$arEventFields = array(
-								"ID"			=> $PARENT_ID,
-								"IBLOCK_ID"		=> $new_r["IBLOCK_ID"],
-								"IBLOCK_TYPE"		=> $iblock_r["IBLOCK_TYPE_ID"],
-								"ADMIN_EMAIL"		=> implode(",", $arAdmin),
-								"BCC"			=> implode(",", $arBCC),
-								"PREV_STATUS_ID"	=> $OLD_STATUS_ID,
-								"PREV_STATUS_TITLE"	=> CIblockElement::WF_GetStatusTitle($OLD_STATUS_ID),
-								"STATUS_ID"		=> $NEW_STATUS_ID,
-								"STATUS_TITLE"		=> CIblockElement::WF_GetStatusTitle($NEW_STATUS_ID),
-								"DATE_CREATE"		=> $parent_r["DATE_CREATE"],
-								"CREATED_BY_ID"		=> $parent_r["CREATED_BY"],
-								"CREATED_BY_NAME"	=> $parent_r["CREATED_USER_NAME"],
-								"CREATED_BY_EMAIL"	=> $parent_r["CREATED_BY_EMAIL"],
-								"DATE_MODIFY"		=> $new_r["TIMESTAMP_X"],
-								"MODIFIED_BY_ID"	=> $new_r["MODIFIED_BY"],
-								"MODIFIED_BY_NAME"	=> $new_r["USER_NAME"],
-								"NAME"			=> $new_r["NAME"],
-								"SECTION_ID"		=> $new_r["IBLOCK_SECTION_ID"],
-								"PREVIEW_HTML"		=> ($new_r["PREVIEW_TEXT_TYPE"]=="html" ?$new_r["PREVIEW_TEXT"]:TxtToHtml($new_r["PREVIEW_TEXT"])),
-								"PREVIEW_TEXT"		=> ($new_r["PREVIEW_TEXT_TYPE"]=="text"? $new_r["PREVIEW_TEXT"]:HtmlToTxt($new_r["PREVIEW_TEXT"])),
-								"PREVIEW"		=> $new_r["PREVIEW_TEXT"],
-								"PREVIEW_TYPE"		=> $new_r["PREVIEW_TEXT_TYPE"],
-								"DETAIL_HTML"		=> ($new_r["DETAIL_TEXT_TYPE"]=="html" ?$new_r["DETAIL_TEXT"]:TxtToHtml($new_r["DETAIL_TEXT"])),
-								"DETAIL_TEXT"		=> ($new_r["DETAIL_TEXT_TYPE"]=="text"? $new_r["DETAIL_TEXT"]:HtmlToTxt($new_r["DETAIL_TEXT"])),
-								"DETAIL"		=> $new_r["DETAIL_TEXT"],
-								"DETAIL_TYPE"		=> $new_r["DETAIL_TEXT_TYPE"],
-								"COMMENTS"		=> $new_r["WF_COMMENTS"]
-							);
-							CEvent::Send("WF_IBLOCK_STATUS_CHANGE", $iblock_r["LID"], $arEventFields);
 						}
 						else // otherwise
 						{
 							// it was new one
 
-							$arEventFields = array(
-								"ID"			=> $PARENT_ID,
-								"IBLOCK_ID"		=> $new_r["IBLOCK_ID"],
-								"IBLOCK_TYPE"		=> $iblock_r["IBLOCK_TYPE_ID"],
-								"ADMIN_EMAIL"		=> implode(",", $arAdmin),
-								"BCC"			=> implode(",", $arBCC),
-								"STATUS_ID"		=> $NEW_STATUS_ID,
-								"STATUS_TITLE"		=> CIblockElement::WF_GetStatusTitle($NEW_STATUS_ID),
-								"DATE_CREATE"		=> $parent_r["DATE_CREATE"],
-								"CREATED_BY_ID"		=> $parent_r["CREATED_BY"],
-								"CREATED_BY_NAME"	=> $parent_r["CREATED_USER_NAME"],
-								"CREATED_BY_EMAIL"	=> $parent_r["CREATED_BY_EMAIL"],
-								"NAME"			=> $new_r["NAME"],
-								"PREVIEW_HTML"		=> ($new_r["PREVIEW_TEXT_TYPE"]=="html" ?$new_r["PREVIEW_TEXT"]:TxtToHtml($new_r["PREVIEW_TEXT"])),
-								"PREVIEW_TEXT"		=> ($new_r["PREVIEW_TEXT_TYPE"]=="text"? $new_r["PREVIEW_TEXT"]:HtmlToTxt($new_r["PREVIEW_TEXT"])),
-								"PREVIEW"		=> $new_r["PREVIEW_TEXT"],
-								"PREVIEW_TYPE"		=> $new_r["PREVIEW_TEXT_TYPE"],
-								"SECTION_ID"		=> $new_r["IBLOCK_SECTION_ID"],
-								"DETAIL_HTML"		=> ($new_r["DETAIL_TEXT_TYPE"]=="html" ?$new_r["DETAIL_TEXT"]:TxtToHtml($new_r["DETAIL_TEXT"])),
-								"DETAIL_TEXT"		=> ($new_r["DETAIL_TEXT_TYPE"]=="text"? $new_r["DETAIL_TEXT"]:HtmlToTxt($new_r["DETAIL_TEXT"])),
-								"DETAIL"		=> $new_r["DETAIL_TEXT"],
-								"DETAIL_TYPE"		=> $new_r["DETAIL_TEXT_TYPE"],
-								"COMMENTS"		=> $new_r["WF_COMMENTS"]
-							);
-							CEvent::Send("WF_NEW_IBLOCK_ELEMENT",$iblock_r["LID"], $arEventFields);
+
 						}
 					}
 				}

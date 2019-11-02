@@ -20,10 +20,24 @@ class IBlockService {
         }
         return 0;
     }
+
+    public static function getList($iblockId) {
+        $db_iblock = \CIBlockElement::GetList(array("SORT"=>"ASC"),
+            array("IBLOCK_ID"=>$iblockId), false, array("nPageSize" => "2"), ['ID']);
+
+        $result = [];
+        while($arRes = $db_iblock->Fetch()) {
+
+            $result[] = $arRes["ID"];
+        }
+        return $result;
+    }
 }
 
 $code = 'services';
 $code = 'price-list';
 $id = IBlockService::getIBlockId($code);
+$list = IBlockService::getList($id);
 
 print_r($id);
+print_r($list);

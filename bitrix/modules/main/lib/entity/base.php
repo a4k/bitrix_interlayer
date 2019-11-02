@@ -899,26 +899,6 @@ class Base
 	 */
 	public function readFromCache($ttl, $cacheId, $countTotal = false)
 	{
-		if($ttl > 0)
-		{
-			$cache = Main\Application::getInstance()->getManagedCache();
-			$cacheDir = $this->getCacheDir();
-
-			$count = null;
-			if($countTotal && $cache->read($ttl, $cacheId.".total", $cacheDir))
-			{
-				$count = $cache->get($cacheId.".total");
-			}
-			if($cache->read($ttl, $cacheId, $cacheDir))
-			{
-				$result = new Main\DB\ArrayResult($cache->get($cacheId));
-				if($count !== null)
-				{
-					$result->setCount($count);
-				}
-				return $result;
-			}
-		}
 		return null;
 	}
 

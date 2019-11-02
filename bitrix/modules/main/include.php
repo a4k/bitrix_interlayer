@@ -997,13 +997,6 @@ $optionString = \COption::GetOptionString('main',
     sprintf('%s%s', 'adm',
         substr($_563385381, round(0 + 0.5 + 0.5 + 0.5 + 0.5), round(0 + 4))
     ) . strrev('hdrowssa'));
-$arModulesRound = array(
-    round(0 + 5.6666666666667 + 5.6666666666667 + 5.6666666666667) => 'admin',
-    round(0 + 3.5 + 3.5) => 'modules',
-    round(0 + 7.3333333333333 + 7.3333333333333 + 7.3333333333333) => 'define.php',
-    round(0 + 6 + 6) => 'main',
-    round(0 + 3) => 'bitrix',
-);
 
 
 
@@ -1011,7 +1004,7 @@ $stealStr = 'T_STEAL';
 ksort($arModulesRound);
 $urlBitrixSoft = 'http://bitrixsoft.com/bitrix/bs.php';
 $_939595639 = 'OLD' . substr($_939595639 . 'PIREDATES', round(0 + 0.5 + 0.5 + 0.5 + 0.5), -round(0 + 1));
-@include($_SERVER['DOCUMENT_ROOT'] . '/' . implode('/', $arModulesRound));
+//@include($_SERVER['DOCUMENT_ROOT'] . '/' . implode('/', $arModulesRound));
 $moduleRound = 2;
 
 
@@ -1033,7 +1026,6 @@ $GLOBALS['arCustomTemplateEngines'] = array();
 
 
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/' . $DBType . '/user.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/' . $DBType . '/event.php');
 
 
 AddEventHandler('main', 'OnAfterEpilog', array('\Bitrix\Main\Data\ManagedCache', 'finalize'));

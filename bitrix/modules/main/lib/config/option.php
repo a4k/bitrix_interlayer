@@ -213,28 +213,16 @@ class Option
 		{
 			if (empty(self::$options))
 			{
-				$cache = Main\Application::getInstance()->getManagedCache();
-				if ($cache->read(static::$cacheTtl, "b_option"))
-				{
-					self::$options = $cache->get("b_option");
-				}
-				else
-				{
-					$con = Main\Application::getConnection();
-					$res = $con->query(
-						"SELECT o.SITE_ID, o.MODULE_ID, o.NAME, o.VALUE ".
-						"FROM b_option o "
-					);
-					while ($ar = $res->fetch())
-					{
-						$s = ($ar["SITE_ID"] == "") ? "-" : $ar["SITE_ID"];
-						self::$options[$s][$ar["MODULE_ID"]][$ar["NAME"]] = $ar["VALUE"];
-					}
-
-					
-
-					$cache->set("b_option", self::$options);
-				}
+                $con = Main\Application::getConnection();
+                $res = $con->query(
+                    "SELECT o.SITE_ID, o.MODULE_ID, o.NAME, o.VALUE ".
+                    "FROM b_option o "
+                );
+                while ($ar = $res->fetch())
+                {
+                    $s = ($ar["SITE_ID"] == "") ? "-" : $ar["SITE_ID"];
+                    self::$options[$s][$ar["MODULE_ID"]][$ar["NAME"]] = $ar["VALUE"];
+                }
 			}
 		}
 	}

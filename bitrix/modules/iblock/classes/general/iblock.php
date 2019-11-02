@@ -630,28 +630,19 @@ class CAllIBlock
 			$bucket = intval($ID/$bucket_size);
 			$cache_id = $bucket_size."iblock".$bucket;
 
-			if($CACHE_MANAGER->Read(CACHED_b_iblock, $cache_id, "b_iblock"))
-			{
-				$arIBlocks = $CACHE_MANAGER->Get($cache_id);
-			}
-			else
-			{
-				$arIBlocks = array();
-				$res = $DB->Query("
+            $arIBlocks = array();
+            $res = $DB->Query("
 					SELECT b_iblock.*,".$DB->DateToCharFunction("TIMESTAMP_X")." TIMESTAMP_X
 					from  b_iblock
 					WHERE ID between ".($bucket*$bucket_size)." AND ".(($bucket+1)*$bucket_size-1)
-				);
-				while($arIBlock = $res->Fetch())
-				{
-					$arMessages = CIBlock::GetMessages($arIBlock["ID"]);
-					$arIBlock = array_merge($arIBlock, $arMessages);
-					$arIBlock["FIELDS"] = CIBlock::GetFields($arIBlock["ID"]);
-					$arIBlocks[$arIBlock["ID"]] = $arIBlock;
-				}
-
-				$CACHE_MANAGER->Set($cache_id, $arIBlocks);
-			}
+            );
+            while($arIBlock = $res->Fetch())
+            {
+                $arMessages = CIBlock::GetMessages($arIBlock["ID"]);
+                $arIBlock = array_merge($arIBlock, $arMessages);
+                $arIBlock["FIELDS"] = CIBlock::GetFields($arIBlock["ID"]);
+                $arIBlocks[$arIBlock["ID"]] = $arIBlock;
+            }
 
 			if(isset($arIBlocks[$ID]))
 			{
@@ -3910,8 +3901,6 @@ REQ
 	{
 		global $CACHE_MANAGER;
 		$iblock_id = (int)$iblock_id;
-		if ($iblock_id > 0 && !isset(self::$disabledCacheTag[$iblock_id]))
-			$CACHE_MANAGER->RegisterTag("iblock_id_".$iblock_id);
 	}
 
 	public static function enableClearTagCache()

@@ -1,7 +1,1208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2abcc7d-cdc0-4341-accc-455d77a2704a" name="Default Changelist" comment="" />
+    <list default="true" id="f2abcc7d-cdc0-4341-accc-455d77a2704a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/data_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/data_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_convert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_edit_property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_element_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_element_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_element_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_history_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_list_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_property_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_reindex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_reindex_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_section_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_section_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_section_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_subelement_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_subelement_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_subelement_generator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_templates.ajax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_type_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_type_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_xml_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_xml_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/operation_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/redirect_entity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/task_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/templates/iblock_subelement_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/admin/templates/navigation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/cml2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/cmlresult.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblock.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockelement.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockelement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockrss.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/cml2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/iblock.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/iblock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/iblockrss.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/data_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/data_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_convert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_edit_property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_element_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_element_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_element_edit_compat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_element_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_history_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_list_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_property_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_reindex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_reindex_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_section_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_section_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_section_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_subelement_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_templates.ajax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_type_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_type_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_xml_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/iblock_xml_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/operation_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/redirect_entity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/task_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin/templates/iblock_subelement_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/admin_tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/cml2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/comp_formatprops.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/comp_parameters.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/iblock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/iblock_event_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/iblockdocument.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/iblockelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/iblockproperty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/iblockproptools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/iblocksection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/iblocktype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_datetime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_element_auto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_element_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_element_sku.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_fileman.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_html.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_section_auto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_seq.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/prop_xmlid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/section_property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/classes/general/subelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/iblock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/public/catalog/.section.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/public/catalog/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/public/news/.left.menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/public/news/.section.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/public/news/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/step1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/step2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/install/unstep1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/bizproctype/usertypepropertyelist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/component/base.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/component/element.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/element.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/helpers/admin/property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/helpers/filter/property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblockelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblockfield.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblockgroup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblockmessage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblockproperty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblockrss.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblocksection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblocksectionelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/iblocksite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/propertyenumeration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/propertyindex/manager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/section.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/sectionelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/sectionproperty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/senderconnector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/sequence.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/lib/typelanguage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/en/prolog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/data_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/data_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_convert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_edit_property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_element_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_element_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_element_edit_compat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_element_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_history_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_list_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_property_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_reindex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_reindex_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_section_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_section_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_section_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_subelement_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_templates.ajax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_type_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_type_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_xml_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/iblock_xml_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/operation_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/redirect_entity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/task_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin/templates/iblock_subelement_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/admin_tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/cml2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/comp_formatprops.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/comp_parameters.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblock_event_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblock_rights.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblockdocument.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblockelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblockproperty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblockproptools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblocksection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/iblocktype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_datetime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_element_auto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_element_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_element_sku.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_fileman.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_html.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_section_auto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_seq.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/prop_xmlid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/section_property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/classes/general/subelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/iblock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/public/catalog/.section.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/public/catalog/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/public/news/.left.menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/public/news/.section.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/public/news/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/step1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/step2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/install/unstep1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/bizproctype/usertypepropertyelist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/component/base.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/component/element.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/element.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/helpers/admin/property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/helpers/filter/property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblockelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblockfield.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblockgroup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblockmessage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblockproperty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblockrss.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblocksection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblocksectionelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/iblocksite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/propertyenumeration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/propertyindex/manager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/section.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/sectionelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/sectionproperty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/senderconnector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/sequence.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/lib/typelanguage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lang/ru/prolog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/component/base.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/component/element.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/component/elementlist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/component/filters.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/lib/component/tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/iblock/rss.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/agent_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/agent_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/agreement_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/agreement_consents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/agreement_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/buy_support.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/captcha.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/checklist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/checklist_detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/checklist_report.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/composite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/composite_diff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/composite_diff_source.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/composite_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/composite_pages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/culture_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/culture_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/define.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/dump.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/dump_auto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/dump_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/event_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/favorite_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/favorite_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/geoip_handler_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/geoip_handlers_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/group_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/group_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/group_rights.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/group_rights2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/hot_keys_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/hot_keys_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/lang_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/lang_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/main_controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/message_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/message_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/module_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/operation_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/partner_modules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/php_command_line.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/phpinfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/promo_https.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/quota.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/rating_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/rating_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/rating_rule_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/rating_rule_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/rating_settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/repair_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/restore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/sample.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/settings_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/short_uri_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/short_uri_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/site_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/site_checker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/site_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/site_speed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/smile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/smile_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/smile_gallery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/smile_gallery_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/smile_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/smile_set.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/smile_set_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/sql.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/task_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/task_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/task_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/template_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/template_create_preview.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/template_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/template_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/template_load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/type_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/type_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system_call.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system_market.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system_market_detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system_market_notru.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system_partner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system_partner_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/update_system_partner_call.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/urlrewrite_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/urlrewrite_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/urlrewrite_reindex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/user_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/user_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/user_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/user_settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/userfield_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/userfield_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/wizard_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/wizard_install.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/wizard_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/admin/wizard_load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/access.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/admin_informer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/admin_notify.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/agent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/archive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/asn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/authproviders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/backup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/cache_apc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/cache_eaccelerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/cache_files.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/cache_files_cleaner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/cache_html.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/cache_memcache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/cache_xcache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/captcha.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/charset_converter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/checklist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/component.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/component_ajax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/component_engine.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/component_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/component_util.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/controller_member.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/crypt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/csv_data.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/csv_user_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/event_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/favorites.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/file.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/file_dialog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/file_temp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/finder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/global_counter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/grids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/hot_keys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/liveid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/lpa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/classes/general/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/mp_notifications.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/php_parser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/phpunit_test_listener_plain.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/punycode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/quota.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/rating_rule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/rating_rules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/ratings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/ratings_components.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/rsabcmath.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/rsaopenssl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/rsasecurity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/sanitizer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/short_uri.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/site_checker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/site_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/smile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/sql_util.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/table_schema.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/tar_gz.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/textparser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/time.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/undo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/update_b24.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/update_class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/update_client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/update_client_partner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/update_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/update_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/update_update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/update_update5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/uploader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/urlrewriter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/classes/general/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/user_counter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/user_options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypebool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypedate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypedbl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypeelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypeenum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypefile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypeint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypesection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypestr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypestrfmt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypetime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/usertypeurl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/version.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/virtual_io_filesystem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/vuln_scanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/wizard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/wizard_site.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/wizard_site_steps.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/wizard_util.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/xml.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/general/zip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/usertype.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/usertype.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/include.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/include/site_closed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_calendar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_filter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_lib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_notify.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_styles.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_tabcontrol.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_tabcontrol_drag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_tabengine.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_ui_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/admin_viewtabcontrol.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/auth/authorize.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/auth/change_password.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/auth/forgot_password.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/auth/otp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/auth/wrapper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/auth/wrapper_auth_result.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/auth/wrapper_popup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/debug_info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/desktop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/desktop_menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/epilog_auth_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/epilog_jspopup_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/epilog_main_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/epilog_popup_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/favorite_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/favorite_menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/filter_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/get_menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/get_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/hot_keys_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/init_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/init_jspopup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/jspopup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/lang_files.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/navigation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/popup_auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/prolog_auth_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/prolog_jspopup_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/prolog_main_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/prolog_popup_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/settings_admin_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/settings_admin_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/top_panel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/interface/user_options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/agent_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/agent_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/all_settings_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/buy_support.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/captcha.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0070.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0090.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0110.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0120.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0130.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0140.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0150.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QC0160.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0070.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0080.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0090.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QD0110.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QE0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QE0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QE0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QH0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QH0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QH0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QH0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QH0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QH0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QJ0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QJ0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QJ0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QJ0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QM0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QM0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0070.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0080.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0090.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QP0100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QS0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QS0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QS0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QS0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QSEC0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QSEC0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QSEC0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QSEC0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QSEC0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QSEC0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QSEC0070.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QSEC0090.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QWE0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QWE0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/checklist/QWE0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/component_template_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/component_template_load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/composite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/composite_diff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/composite_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/composite_pages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/content_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/culture_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/culture_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/dump.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/dump_auto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/dump_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/event_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/favorite_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/favorite_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/geoip_handler_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/geoip_handlers_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/group_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/group_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/group_rights.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/group_rights2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/hot_keys_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/hot_keys_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/lang_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/lang_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/main_controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/message_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/message_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/module_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/operation_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/partner_modules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/php_command_line.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/promo_https.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/rating_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/rating_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/rating_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/rating_rule_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/rating_rule_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/rating_settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/repair_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/restore_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/services_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/settings_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/short_uri_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/short_uri_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/site_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/site_checker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/site_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/site_speed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/smile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/smile_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/smile_gallery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/smile_gallery_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/smile_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/smile_set.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/smile_set_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/sql.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/task_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/task_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/task_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/template_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/template_create_preview.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/template_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/template_load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/tools_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/type_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/type_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/update_system.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/update_system_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/update_system_call.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/update_system_market.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/update_system_market_detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/update_system_partner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/update_system_partner_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/urlrewrite_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/urlrewrite_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/urlrewrite_reindex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/user_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/user_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/user_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/user_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/user_settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/userfield_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/userfield_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/webanalytics_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/wizard_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/wizard_install.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/wizard_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin/wizard_load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/admin_tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/ajax_tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/access.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/admin_informer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/admin_notify.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/agent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/authproviders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/checklist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/component.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/component_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/component_util.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/controller_member.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/csv_user_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/csv_user_import_labels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/event_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/favorites.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/file.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/file_dialog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/finder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/grids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/hot_keys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/mp_notifications.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/quota.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/rating_rule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/rating_rules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/ratings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/ratings_components.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/sanitizer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/short_uri.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/smile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/tar_gz.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/time.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/undo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/update_client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/update_client_partner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/update_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/update_update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/update_update5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/uploader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypebool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypedate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypedbl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypeelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypeenum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypefile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypeint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypesection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypestr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypestrfmt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypetime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/usertypeurl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/vuln_scanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/wizard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/classes/general/zip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/date_format.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/filter_tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/include.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/include/condition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/include/epilog_before.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/install.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/install/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/install/wizard_sol/panel_button.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/install/wizard_sol/template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/install/wizard_sol/wizard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/.left.menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/.left.menu_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/.module.menu_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/.sections.menu_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/admin_lib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/auth/wrapper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/debug_info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/desktop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/desktop_menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/epilog_main_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/navigation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/prolog_auth_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/prolog_main_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/interface/top_panel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js/colorpicker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js/kanban.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js/sidepanel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js/spotlight.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_access.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_admin_interface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_autosave.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_avatar_editor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_canvas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_clipboard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_fileinput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_tags.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_translit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_uploader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_core_viewer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/js_site_speed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/analytics/sitespeed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/argumentnullexception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/argumentoutofrangeexception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/argumenttypeexception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/composite/debug/logger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/composite/debug/model/log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/composite/engine.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/composite/internals/model/page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/diag/exceptionhandleroutput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/diag/httpexceptionhandleroutput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/discount/userconditioncontrol.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/engine/actionfilter/authentication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/entity/datamanager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/entity/validator/base.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/entity/validator/foreign.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/entity/validator/length.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/entity/validator/range.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/entity/validator/regexp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/entity/validator/unique.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/grid/panel/snippet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/grid/panel/snippet/onchange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/localization/culture.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/numerator/generator/datenumbergenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/numerator/generator/prefixnumbergenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/numerator/generator/randomnumbergenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/numerator/generator/sequentnumbergenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/numerator/numerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/page/frame.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/senderconnector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/service/geoip/extension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/service/geoip/handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/service/geoip/maxmind.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/service/geoip/sypexgeo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/text/dateconverter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/ui/fileinput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/ui/fileinputreceiver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/ui/filter/field.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/ui/filter/fieldadapter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/ui/uploader/status.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/ui/uploader/uploader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/update/stepper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/update/userstepper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/urlpreview/urlpreviewusertype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/userconsent/agreement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/userconsent/internals/agreement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/userconsent/intl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/lib/userfield/dispatcher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/access_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/component_props.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/component_props2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/edit_area.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/enable_component.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/file_delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/file_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/file_edit_src.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/file_new.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/file_property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/folder_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/folder_new.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/get_start_menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/menu_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/structure.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/template_copy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/public/top_panel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools/access_dialog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools/calendar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools/clock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools/file_dialog/buttons_save.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools/file_dialog/file_dialog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools/help.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools/prop_userid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/en/tools/user_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/agent_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/agent_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/all_settings_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/buy_support.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/captcha.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0070.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0090.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0110.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0120.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0130.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0140.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0150.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QC0160.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0070.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0080.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0090.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QD0110.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QE0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QE0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QE0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QH0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QH0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QH0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QH0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QH0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QH0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QJ0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QJ0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QJ0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QJ0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QM0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QM0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0070.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0080.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0090.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QP0100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QS0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QS0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QS0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QS0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QSEC0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QSEC0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QSEC0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QSEC0040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QSEC0050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QSEC0060.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QSEC0070.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QSEC0090.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QWE0010.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QWE0020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/checklist/QWE0030.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/component_template_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/component_template_load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/composite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/composite_diff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/composite_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/composite_pages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/content_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/culture_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/culture_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/dump.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/dump_auto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/dump_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/event_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/favorite_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/favorite_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/geoip_handler_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/geoip_handlers_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/group_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/group_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/group_rights.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/group_rights2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/hot_keys_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/hot_keys_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/lang_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/lang_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/main_controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/message_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/message_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/module_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/operation_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/partner_modules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/php_command_line.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/promo_https.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/rating_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/rating_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/rating_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/rating_rule_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/rating_rule_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/rating_settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/repair_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/restore_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/services_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/settings_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/short_uri_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/short_uri_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/site_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/site_checker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/site_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/site_speed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/smile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/smile_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/smile_gallery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/smile_gallery_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/smile_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/smile_set.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/smile_set_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/sql.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/task_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/task_description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/task_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/template_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/template_create_preview.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/template_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/template_load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/tools_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/type_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/type_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/update_system.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/update_system_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/update_system_call.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/update_system_market.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/update_system_market_detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/update_system_partner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/update_system_partner_act.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/urlrewrite_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/urlrewrite_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/urlrewrite_reindex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/user_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/user_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/user_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/user_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/user_settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/userfield_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/userfield_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/webanalytics_index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/wizard_export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/wizard_install.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/wizard_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin/wizard_load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/admin_tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/ajax_tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/access.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/admin_informer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/admin_notify.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/agent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/authproviders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/checklist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/component.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/component_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/component_util.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/controller_member.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/csv_user_import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/csv_user_import_labels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/event_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/favorites.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/file.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/file_dialog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/finder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/grids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/hot_keys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/mp_notifications.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/quota.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/rating_rule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/rating_rules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/ratings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/ratings_components.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/sanitizer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/short_uri.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/smile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/tar_gz.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/time.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/undo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/update_client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/update_client_partner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/update_log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/update_update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/update_update5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/uploader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypebool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypedate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypedbl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypeelement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypeenum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypefile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypeint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypesection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypestr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypestrfmt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypetime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/usertypeurl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/vuln_scanner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/wizard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/classes/general/zip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/date_format.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/filter_tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/include.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/include/condition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/include/epilog_before.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/install.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/install/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/install/wizard_sol/panel_button.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/install/wizard_sol/template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/install/wizard_sol/wizard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/.left.menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/.left.menu_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/.module.menu_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/.sections.menu_template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/admin_lib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/auth/authorize.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/auth/change_password.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/auth/forgot_password.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/auth/wrapper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/debug_info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/desktop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/desktop_menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/epilog_main_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/navigation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/prolog_auth_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/prolog_main_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/interface/top_panel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js/colorpicker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js/kanban.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js/sidepanel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js/spotlight.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_access.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_admin_interface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_autosave.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_avatar_editor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_canvas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_clipboard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_fileinput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_tags.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_translit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_uploader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_core_viewer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/js_site_speed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/analytics/sitespeed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/argumentnullexception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/argumentoutofrangeexception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/argumenttypeexception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/composite/debug/logger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/composite/debug/model/log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/composite/engine.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/composite/internals/model/page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/diag/exceptionhandleroutput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/diag/httpexceptionhandleroutput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/discount/userconditioncontrol.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/engine/actionfilter/authentication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/entity/base.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/entity/datamanager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/entity/validator/base.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/entity/validator/foreign.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/entity/validator/length.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/entity/validator/range.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/entity/validator/regexp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/entity/validator/unique.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/grid/panel/snippet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/grid/panel/snippet/onchange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/localization/culture.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/numerator/generator/datenumbergenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/numerator/generator/prefixnumbergenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/numerator/generator/randomnumbergenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/numerator/generator/sequentnumbergenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/numerator/numerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/page/frame.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/senderconnector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/service/geoip/extension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/service/geoip/handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/service/geoip/maxmind.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/service/geoip/sypexgeo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/text/dateconverter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/ui/fileinput.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/ui/fileinputreceiver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/ui/filter/field.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/ui/filter/fieldadapter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/ui/uploader/status.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/ui/uploader/uploader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/update/stepper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/update/userstepper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/urlpreview/urlpreviewusertype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/userconsent/agreement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/userconsent/internals/agreement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/userconsent/intl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/lib/userfield/dispatcher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/access_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/component_props.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/component_props2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/edit_area.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/enable_component.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/file_delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/file_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/file_edit_src.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/file_new.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/file_property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/folder_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/folder_new.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/get_start_menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/menu_edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/structure.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/template_copy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/public/top_panel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools/access_dialog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools/calendar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools/clock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools/file_dialog/buttons_save.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools/file_dialog/file_dialog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools/help.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools/prop_userid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lang/ru/tools/user_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/analytics/catalog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/analytics/counter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/analytics/counterdata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/analytics/sitespeed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/annotations/annotationreader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/application.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/lib/application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/authentication/application.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/authentication/applicationmanager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/authentication/applicationpassword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/authentication/context.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/config/option.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/lib/config/option.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/cacheenginefiles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/data/managedcache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/entity/base.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/lib/entity/base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/eventmanager.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/lib/eventmanager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/lib/modulemanager.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/lib/modulemanager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/modules/main/tools/cron_events.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/modules/main/tools/cron_events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitrix/php_interface/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitrix/php_interface/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,25 +1219,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="44" />
+          <entry key="php" value="122" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="44" />
+          <entry key="PHP" value="122" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="326" />
-          <entry key="php" value="2204" />
+          <entry key="php" value="2398" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2204" />
+          <entry key="PHP" value="2398" />
           <entry key="PLAIN_TEXT" value="326" />
         </counts>
       </usages-collector>
@@ -44,66 +1245,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="395" column="30" selection-start-line="395" selection-start-column="30" selection-end-line="395" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/config/option.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="224" column="17" selection-start-line="224" selection-start-column="17" selection-end-line="224" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/modulemanager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/include.php">
+        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/eventmanager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="881" column="46" selection-start-line="881" selection-start-column="46" selection-end-line="881" selection-end-column="46" />
-              <folding>
-                <element signature="e#30#304#0#PHP" />
-                <element signature="e#335#2319#0#PHP" />
-                <element signature="e#2321#21857#0#PHP" />
-                <element signature="e#22047#22893#0#PHP" />
-                <element signature="e#27454#28180#0#PHP" />
-              </folding>
+            <state relative-caret-position="176">
+              <caret line="306" lean-forward="true" selection-start-line="306" selection-end-line="306" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/iblock.php">
+        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/entity/base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="118" column="30" lean-forward="true" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="888" column="44" selection-start-line="888" selection-start-column="40" selection-end-line="888" selection-end-column="44" />
-              <folding>
-                <element signature="e#386#392#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/include/prolog_before.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/sql_util.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/urlrewriter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="138">
+              <caret line="900" column="5" selection-start-line="900" selection-start-column="5" selection-end-line="900" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -112,22 +1294,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>_____37453224</find>
-      <find>____1463230628</find>
-      <find>root</find>
-      <find>RE9DVU1F</find>
-      <find>$GLOBALS['decode_karray'][3]</find>
-      <find>startDecode(15)</find>
-      <find>$GLOBALS['decode_karray'][4]</find>
-      <find>iblock/incl</find>
-      <find>iblock</find>
-      <find>include</find>
-      <find>.config.php</find>
       <find>max_year</find>
       <find>include.php</find>
       <find>require</find>
       <find>OLDSITEEXPIREDATE</find>
-      <find>Agent</find>
       <find>odules/main/classes/general/urlrewriter.php</find>
       <find>agent</find>
       <find>event</find>
@@ -139,9 +1309,21 @@
       <find>iblock/</find>
       <find>$urlBitrixSoft</find>
       <find>SiteExpireDate</find>
-      <find>IsAu</find>
       <find>print_r</find>
+      <find>IsAu</find>
+      <find>'iblock'</find>
+      <find>arNavP</find>
       <find>CAccess</find>
+      <find>cvtabl</find>
+      <find>Agent</find>
+      <find>CAgent</find>
+      <find>general/</find>
+      <find>CBXPunycode</find>
+      <find>punyco</find>
+      <find>$event</find>
+      <find>CTimeZone</find>
+      <find>rss</find>
+      <find>Cache</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -155,15 +1337,36 @@
     </replaceStrings>
     <dirStrings>
       <dir>D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include</dir>
+      <dir>D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\general</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/bitrix/php_interface/init.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_edit.php" />
         <option value="$PROJECT_DIR$/bitrix/modules/main/start.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/main.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/tools/cron_events.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockelement.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/classes/general/user.php" />
         <option value="$PROJECT_DIR$/bitrix/modules/main/include.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/usertype.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/classes/general/main.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/iblock.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/classes/mysql/database.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblock.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/options.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/lib/data/managedcache.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/lib/application.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/lib/entity/base.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/lib/config/option.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/lib/modulemanager.php" />
+        <option value="$PROJECT_DIR$/bitrix/modules/main/lib/eventmanager.php" />
       </list>
     </option>
   </component>
@@ -179,6 +1382,7 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -216,14 +1420,6 @@
               <item name="bitrix" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="iblock" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
-              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="iblock" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -240,6 +1436,14 @@
               <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
               <item name="bitrix" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="iblock" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,15 +1461,7 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="general" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
-              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
@@ -279,22 +1475,34 @@
               <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
               <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
               <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doctorplus.integration" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
               <item name="php_interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="doctorplus.integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="standard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,10 +1515,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general" />
       <recent name="D:\dev\OSPanel\domains\doctorplus.integration" />
     </key>
   </component>
@@ -336,12 +1545,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572676419088</updated>
-      <workItem from="1572676420587" duration="13200000" />
+      <workItem from="1572676420587" duration="16171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13200000" />
+    <option name="totallyTimeSpent" value="16171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -353,7 +1562,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.14305949" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -375,218 +1584,347 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bitrix/js/ui/forms/images/close.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/admin_notify.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/rest/classes/general/rest_provider.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/agent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2376" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/rest/classes/general/rest_event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/rest/classes/general/rest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4860" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="152" column="9" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/install/step2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/include.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/composite/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
-          <caret line="438" column="18" selection-start-line="438" selection-start-column="18" selection-end-line="438" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
-        </state>
+        <state relative-caret-position="-3186" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="760" column="17" selection-start-line="760" selection-start-column="17" selection-end-line="760" selection-end-column="17" />
+        <state relative-caret-position="-2804">
+          <caret line="1282" column="29" selection-start-line="1282" selection-start-column="29" selection-end-line="1282" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/license_key.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/hot_keys.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/iblock.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/access.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3384">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="-54" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/component/parameters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/punycode.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+        <state relative-caret-position="234">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/module.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4374" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4644" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3924">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="54">
+          <caret line="260" column="42" selection-start-line="260" selection-start-column="42" selection-end-line="260" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/httpapplication.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/option.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/mysql/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864" />
+        <state relative-caret-position="54">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/version.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/php_interface/dbconn.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/start.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/tools/cron_events.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="657" selection-start-line="657" selection-end-line="661" selection-end-column="41" />
-          <folding>
-            <element signature="e#31#1071#0#PHP" />
-            <element signature="e#3208#30337#0#PHP" />
-            <element signature="n#htmlToCode#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/virtual_io.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5015">
+        <state relative-caret-position="18">
           <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/tools.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockelement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49572">
-          <caret line="2783" column="16" selection-start-line="2783" selection-start-column="16" selection-end-line="2783" selection-end-column="16" />
+        <state relative-caret-position="504">
+          <caret line="330" selection-start-line="330" selection-end-line="330" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/mysql/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/mysql/event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2192">
+          <caret line="1690" column="13" selection-start-line="1690" selection-start-column="13" selection-end-line="1690" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/include.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="1028" lean-forward="true" selection-start-line="1028" selection-end-line="1028" />
           <folding>
-            <element signature="e#199#1008#0#PHP" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="e#30#304#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/urlrewriter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/sql_util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/php_interface/init.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/general/cml2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/include/prolog_before.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/userfield/dispatcher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="270">
+          <caret line="171" column="9" lean-forward="true" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/usertype.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/mysql/usertype.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/general/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="888" column="44" selection-start-line="888" selection-start-column="40" selection-end-line="888" selection-end-column="44" />
+        <state relative-caret-position="212">
+          <caret line="3466" column="21" lean-forward="true" selection-start-line="3466" selection-start-column="21" selection-end-line="3466" selection-end-column="21" />
           <folding>
             <element signature="e#386#392#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/iblock.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/mysql/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="118" column="30" lean-forward="true" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        <state relative-caret-position="252">
+          <caret line="329" lean-forward="true" selection-start-line="329" selection-end-line="329" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/include.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockresult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="113" column="13" lean-forward="true" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/rss.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/iblockrss.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblockrss.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/lib/template/entity/catalogstore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/lib/template/entity/element.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/lib/template/entity/base.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/lib/component/element.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="273" column="45" selection-start-line="273" selection-start-column="45" selection-end-line="273" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/general/comp_findtools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/general/iblock.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="881" column="46" selection-start-line="881" selection-start-column="46" selection-end-line="881" selection-end-column="46" />
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_xml_import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/admin/iblock_xml_export.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/cml2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/data/cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1680">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/data/cacheenginefiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/classes/mysql/iblock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/options.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6318">
+          <caret line="356" column="28" lean-forward="true" selection-start-line="356" selection-start-column="28" selection-end-line="356" selection-end-column="28" />
           <folding>
-            <element signature="e#30#304#0#PHP" />
-            <element signature="e#335#2319#0#PHP" />
-            <element signature="e#2321#21857#0#PHP" />
-            <element signature="e#22047#22893#0#PHP" />
-            <element signature="e#27454#28180#0#PHP" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#174#180#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#174#180#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/classes/mysql/agent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="604" column="39" selection-start-line="604" selection-start-column="39" selection-end-line="604" selection-end-column="39" />
+          <folding>
+            <element signature="e#31#1071#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/iblock/lib/component/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/include/prolog_before.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/data/lrucache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/data/managedcache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="395" column="30" selection-start-line="395" selection-start-column="30" selection-end-line="395" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/config/option.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="224" column="17" selection-start-line="224" selection-start-column="17" selection-end-line="224" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/entity/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="900" column="5" selection-start-line="900" selection-start-column="5" selection-end-line="900" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/modulemanager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/modules/main/lib/eventmanager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="306" lean-forward="true" selection-start-line="306" selection-end-line="306" />
         </state>
       </provider>
     </entry>

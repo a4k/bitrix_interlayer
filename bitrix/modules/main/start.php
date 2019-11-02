@@ -586,7 +586,6 @@ function getmicrotime()
 
 define('START_EXEC_TIME', getmicrotime());
 define('B_PROLOG_INCLUDED', true);
-require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/general/version.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/tools.php');
 if (version_compare(PHP_VERSION, '5.0.0') >= (1252 / 2 - 626) && @ini_get_bool('register_long_arrays') != true) {
     $HTTP_POST_FILES = $_FILES;
@@ -662,11 +661,11 @@ if ($LICENSE_KEY == '' || strtoupper($LICENSE_KEY) == 'DEMO')
 else define('LICENSE_KEY', $LICENSE_KEY);
 
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/punycode.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/charset_converter.php');
+//require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/punycode.php');
+//require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/charset_converter.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/' . $DBType . '/main.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/' . $DBType . '/option.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/general/cache.php');
+//require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/general/cache.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/general/module.php');
 error_reporting(E_COMPILE_ERROR | E_ERROR | E_CORE_ERROR | E_PARSE);
 

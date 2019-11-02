@@ -328,14 +328,6 @@ abstract class CDatabaseMysql extends CAllDatabase
 
 		$sFieldExpr = $strFieldName;
 
-		//time zone
-		if($strType == "FULL" && CTimeZone::Enabled())
-		{
-			$diff = CTimeZone::GetOffset();
-
-			if($diff <> 0)
-				$sFieldExpr = "DATE_ADD(".$strFieldName.", INTERVAL ".$diff." SECOND)";
-		}
 
 		return str_replace("#FIELD#", $sFieldExpr, $CACHE[$id]);
 	}

@@ -315,12 +315,6 @@ abstract class Application
 		{
 			$show_cache_stat = $_COOKIE["show_cache_stat"];
 		}
-		Data\Cache::setShowCacheStat($show_cache_stat === "Y");
-
-		if (isset($_GET["clear_cache_session"]))
-			Data\Cache::setClearCacheSession($_GET["clear_cache_session"] === 'Y');
-		if (isset($_GET["clear_cache"]))
-			Data\Cache::setClearCache($_GET["clear_cache"] === 'Y');
 	}
 
 	/*
@@ -401,10 +395,6 @@ abstract class Application
 	 */
 	public function getManagedCache()
 	{
-		if ($this->managedCache == null)
-		{
-			$this->managedCache = new Data\ManagedCache();
-		}
 
 		return $this->managedCache;
 	}

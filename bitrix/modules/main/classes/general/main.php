@@ -3457,13 +3457,6 @@ abstract class CAllMain
 			}
 		}
 
-		
-
-		//user auto time zone via js cookies
-		if(CTimeZone::Enabled() && (!defined("BX_SKIP_TIMEZONE_COOKIE") || BX_SKIP_TIMEZONE_COOKIE === false))
-		{
-			CTimeZone::SetAutoCookie();
-		}
 
 		// check user options set via cookie
 		if ($USER->IsAuthorized())
@@ -3508,11 +3501,6 @@ abstract class CAllMain
 
 		$DB->StartUsingMasterOnly();
 
-		//send email events
-		if(COption::GetOptionString("main", "check_events", "Y") !== "N")
-		{
-			CEvent::CheckEvents();
-		}
 
 		//files cleanup
 		CMain::FileAction();

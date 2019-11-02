@@ -9,10 +9,6 @@ class ModuleManager
 	{
 		if (empty(self::$installedModules))
 		{
-			$cacheManager = Application::getInstance()->getManagedCache();
-			if ($cacheManager->read(3600, "b_module"))
-				self::$installedModules = $cacheManager->get("b_module");
-
 			if (empty(self::$installedModules))
 			{
 				self::$installedModules = array();
@@ -20,7 +16,6 @@ class ModuleManager
 				$rs = $con->query("SELECT ID FROM b_module ORDER BY ID");
 				while ($ar = $rs->fetch())
 					self::$installedModules[$ar['ID']] = $ar;
-				$cacheManager->set("b_module", self::$installedModules);
 			}
 		}
 

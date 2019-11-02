@@ -1292,7 +1292,6 @@ abstract class CAllUser extends CDBResult
 
 		if($res_array = $res->Fetch())
 		{
-			$event = new CEvent;
 			$arFields = array(
 				"USER_ID"=>$res_array["ID"],
 				"STATUS"=>($res_array["ACTIVE"]=="Y"?GetMessage("STATUS_ACTIVE"):GetMessage("STATUS_BLOCKED")),
@@ -1315,10 +1314,6 @@ abstract class CAllUser extends CDBResult
 			foreach (GetModuleEvents("main", "OnSendUserInfo", true) as $arEvent)
 				ExecuteModuleEventEx($arEvent, array(&$arParams));
 
-			if (!$bImmediate)
-				$event->Send($eventName, $SITE_ID, $arFields, "Y", "", array(), $res_array["LANGUAGE_ID"]);
-			else
-				$event->SendImmediate($eventName, $SITE_ID, $arFields, "Y", "", array(), $res_array["LANGUAGE_ID"]);
 		}
 	}
 
@@ -1418,8 +1413,6 @@ abstract class CAllUser extends CDBResult
 							"USER_HOST" => @gethostbyaddr($_SERVER["REMOTE_ADDR"]),
 						);
 
-						$event = new CEvent;
-						$event->SendImmediate("NEW_USER_CONFIRM", $arParams["SITE_ID"], $arFields, "Y", "", array(), $arUser["LANGUAGE_ID"]);
 
 						$result_message = array("MESSAGE"=>GetMessage("MAIN_SEND_PASS_CONFIRM")."<br>", "TYPE"=>"OK");
 						$f = true;
@@ -1534,10 +1527,7 @@ abstract class CAllUser extends CDBResult
 				unset($arEventFields["CONFIRM_PASSWORD"]);
 				unset($arEventFields["~CHECKWORD_TIME"]);
 
-				$event = new CEvent;
-				$event->SendImmediate("NEW_USER", $arEventFields["SITE_ID"], $arEventFields);
-				if($bConfirmReq)
-					$event->SendImmediate("NEW_USER_CONFIRM", $arEventFields["SITE_ID"], $arEventFields);
+
 				$result_message = array("MESSAGE"=>GetMessage("USER_REGISTER_OK"), "TYPE"=>"OK", "ID"=>$ID);
 			}
 			else
@@ -1554,15 +1544,10 @@ abstract class CAllUser extends CDBResult
 				if(COption::GetOptionString("main", "event_log_register", "N") === "Y")
 				{
 					$res_log["user"] = ($USER_NAME != "" || $USER_LAST_NAME != "") ? trim($USER_NAME." ".$USER_LAST_NAME) : $USER_LOGIN;
-					CEventLog::Log("SECURITY", "USER_REGISTER", "main", $ID, serialize($res_log));
 				}
 			}
 			else
 			{
-				if(COption::GetOptionString("main", "event_log_register_fail", "N") === "Y")
-				{
-					CEventLog::Log("SECURITY", "USER_REGISTER_FAIL", "main", $ID, $result_message["MESSAGE"]);
-				}
 			}
 		}
 
@@ -1682,14 +1667,12 @@ abstract class CAllUser extends CDBResult
 
 				$this->Authorize($ID);
 
-				$event = new CEvent;
 				$arFields["USER_ID"] = $ID;
 
 				$arEventFields = $arFields;
 				unset($arEventFields["PASSWORD"]);
 				unset($arEventFields["CONFIRM_PASSWORD"]);
 
-				$event->SendImmediate("NEW_USER", $arEventFields["SITE_ID"], $arEventFields);
 				CUser::SendUserInfo($ID, $arEventFields["SITE_ID"], GetMessage("USER_REGISTERED_SIMPLE"), true);
 				$result_message = array("MESSAGE"=>GetMessage("USER_REGISTER_OK"), "TYPE"=>"OK");
 			}
@@ -1704,14 +1687,6 @@ abstract class CAllUser extends CDBResult
 				if(COption::GetOptionString("main", "event_log_register", "N") === "Y")
 				{
 					$res_log["user"] = $arFields["LOGIN"];
-					CEventLog::Log("SECURITY", "USER_REGISTER", "main", $ID, serialize($res_log));
-				}
-			}
-			else
-			{
-				if(COption::GetOptionString("main", "event_log_register_fail", "N") === "Y")
-				{
-					CEventLog::Log("SECURITY", "USER_REGISTER_FAIL", "main", $ID, $result_message["MESSAGE"]);
 				}
 			}
 		}

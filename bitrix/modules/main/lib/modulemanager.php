@@ -33,10 +33,6 @@ class ModuleManager
 
 		if ($moduleName == 'main')
 		{
-			if (!defined("SM_VERSION"))
-			{
-				include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/version.php");
-			}
 			$version = SM_VERSION;
 		}
 		else

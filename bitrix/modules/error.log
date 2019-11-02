@@ -1,0 +1,1182 @@
+2019-11-02 12:00:59 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1312
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:01:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:01:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:01:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:01:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:01:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1258
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:26 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:26 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:26 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:26 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:26 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1258
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:30 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:30 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:30 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:30 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:30 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1258
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1258
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1107
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1124
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:02:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1258
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:03:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:867) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1104
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1104
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:03:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:867) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:03:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:867) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1106
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:03:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:867) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1123
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1123
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:03:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1257
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:04:12 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1103
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1103
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:04:12 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1104
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1104
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:04:12 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1105
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:04:12 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:865) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1122
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1122
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:04:12 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1256
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:04:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1256
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:04:36 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1258
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:11:38 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'CAgent' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1114
+#0: require_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:13:59 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1353
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:14:10 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 12:14:11 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:07:26 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:07:45 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:07:46 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:73) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:73) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:73) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:73) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:74) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:74) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:74) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:74) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:10:55 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:11:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:13:47 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:422) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:13:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:422) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:13:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:422) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:13:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:422) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:13:48 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:15:07 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:17:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:609) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:17:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:609) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:17:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:609) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:17:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:609) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:17:54 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:45 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:608) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:45 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:608) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:45 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:608) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:45 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:608) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:45 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:460) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:460) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:460) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:460) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:20:56 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:21:40 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:563) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:21:40 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:563) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:21:40 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:563) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:21:40 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:563) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:21:40 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:22:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:460) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:22:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:460) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:22:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:460) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:22:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:460) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:22:02 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:22:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:26:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:665) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1207
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:26:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:665) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1208
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:26:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Cannot modify header information - headers already sent by (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:665) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#0: header(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1209
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:26:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\start.php:665) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1218
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:26:44 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:29:39 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:29:42 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:33:32 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1352
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:34:28 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1293
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:34:47 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1293
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:36:05 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1192
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:36:06 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1192
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:36:15 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1193
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:36:17 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1193
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:36:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1193
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:36:38 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'CSQLWhere' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\entity\query.php:1043
+#0: Bitrix\Main\Entity\Query->setFilterChains(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\entity\query.php:2079
+#1: Bitrix\Main\Entity\Query->buildQuery()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\entity\query.php:778
+#2: Bitrix\Main\Entity\Query->exec()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\lib\entity\datamanager.php:290
+#3: Bitrix\Main\Entity\DataManager::getList(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\user.php:3691
+#4: CAllUser->CheckAuthActions()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1138
+#5: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#6: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:36:47 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1193
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:38:27 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function IsAuthorized() on null (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1060
+#0: require_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:39:28 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function IsAuthorized() on null (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1057
+#0: require_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:39:29 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function IsAuthorized() on null (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1057
+#0: require_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:39:42 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1058
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:39:42 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function CanDoFileOperation() on null (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1061
+#0: require_once
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:39:55 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1058
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:39:55 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function IsAuthorized() on null (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\main.php:3469
+#0: CAllMain::PrologActions()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:16
+#1: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:40:49 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1058
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:40:49 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'CAccess' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblock.php:119
+#0: CIBlock::GetList(array, array, boolean, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:15
+#1: IBlockService::getIBlockId(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:27
+----------
+2019-11-02 14:42:43 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1058
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:42:43 - Host: doctorplus.integration - UNCAUGHT_EXCEPTION - [Error] 
+Class 'CAccess' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\iblock\classes\mysql\iblock.php:119
+#0: CIBlock::GetList(array, array, boolean, boolean, array)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:15
+#1: IBlockService::getIBlockId(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:27
+----------
+2019-11-02 14:44:14 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1061
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------
+2019-11-02 14:44:18 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+call_user_func_array() expects parameter 1 to be a valid callback, class 'CWizardSolPanel' not found (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\classes\general\module.php:490
+#0: ExecuteModuleEventEx(array)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1061
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------

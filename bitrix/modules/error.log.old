@@ -1,0 +1,10 @@
+2019-11-02 12:00:59 - Host: doctorplus.integration - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+session_start(): Cannot send session cache limiter - headers already sent (output started at D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:917) (0)
+D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1177
+#0: session_start()
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:1177
+#1: require_once(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
+----------

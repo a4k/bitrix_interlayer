@@ -2,8 +2,6 @@
 namespace Bitrix\Iblock;
 
 use Bitrix\Main\Entity;
-use Bitrix\Main\Localization\Loc;
-Loc::loadMessages(__FILE__);
 
 class InheritedPropertyTable extends Entity\DataManager
 {

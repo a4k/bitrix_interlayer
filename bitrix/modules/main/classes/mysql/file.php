@@ -3,7 +3,7 @@ class CFile extends CAllFile
 {
 	public static function Delete($ID)
 	{
-		global $DB;
+        global $DB;
 		$io = CBXVirtualIo::GetInstance();
 		$ID = intval($ID);
 
@@ -33,6 +33,7 @@ class CFile extends CAllFile
 				$directory->rmdir();
 
 			CFile::CleanCache($ID);
+
 
 			/****************************** QUOTA ******************************/
 			if($delete_size > 0 && COption::GetOptionInt("main", "disk_space") > 0)

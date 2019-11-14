@@ -171,19 +171,6 @@ class CAllUserTypeEntity extends CDBResult
 	{
 		global $DB, $CACHE_MANAGER;
 
-		if(CACHED_b_user_field!==false)
-		{
-			$cacheId = "b_user_type".md5(serialize($aSort).".".serialize($aFilter));
-			if($CACHE_MANAGER->Read(CACHED_b_user_field, $cacheId, "b_user_field"))
-			{
-				$arResult = $CACHE_MANAGER->Get($cacheId);
-				$res = new CDBResult;
-				$res->InitFromArray($arResult);
-				$res = new CUserTypeEntity($res);
-				return $res;
-			}
-		}
-
 		$bLangJoin = false;
 		$arFilter = array();
 		foreach($aFilter as $key=>$val)
@@ -283,9 +270,6 @@ class CAllUserTypeEntity extends CDBResult
 			$res = $DB->Query($strSql, false, "FILE: ".__FILE__."<br> LINE: ".__LINE__);
 			while($ar = $res->Fetch())
 				$arResult[]=$ar;
-
-			/** @noinspection PhpUndefinedVariableInspection */
-			$CACHE_MANAGER->Set($cacheId, $arResult);
 
 			$res = new CDBResult;
 			$res->InitFromArray($arResult);

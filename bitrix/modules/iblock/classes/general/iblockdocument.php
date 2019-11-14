@@ -1081,76 +1081,10 @@ class CIBlockDocument
 					if ($propertyValue["USER_TYPE"] == "UserID" || $propertyValue["USER_TYPE"] == "employee" &&
 						(COption::GetOptionString("bizproc", "employee_compatible_mode", "N") != "Y"))
 					{
-						if(empty($propertyValue["VALUE"]))
-						{
-							continue;
-						}
-						if(!is_array($propertyValue["VALUE"]))
-						{
-							$propertyValue["VALUE"] = array($propertyValue["VALUE"]);
-						}
-						$listUsers = implode(' | ', $propertyValue["VALUE"]);
-						$userQuery = CUser::getList($by = 'ID', $order = 'ASC',
-							array('ID' => $listUsers) ,
-							array('FIELDS' => array('ID' ,'LOGIN', 'NAME', 'LAST_NAME')));
-						while($user = $userQuery->fetch())
-						{
-							if($propertyValue["MULTIPLE"] == "Y")
-							{
-								$arResult["PROPERTY_".$propertyKey][] = "user_".intval($user['ID']);
-								$arResult["PROPERTY_".$propertyKey."_PRINTABLE"][] = "(".$user["LOGIN"].")".
-									((strlen($user["NAME"]) > 0 || strlen($user["LAST_NAME"]) > 0) ? " " : "").$user["NAME"].
-									((strlen($user["NAME"]) > 0 && strlen($user["LAST_NAME"]) > 0) ? " " : "").$user["LAST_NAME"];
-							}
-							else
-							{
-								$arResult["PROPERTY_".$propertyKey] = "user_".intval($user['ID']);
-								$arResult["PROPERTY_".$propertyKey."_PRINTABLE"] = "(".$user["LOGIN"].")".
-									((strlen($user["NAME"]) > 0 || strlen($user["LAST_NAME"]) > 0) ? " " : "").$user["NAME"].
-									((strlen($user["NAME"]) > 0 && strlen($user["LAST_NAME"]) > 0) ? " " : "").$user["LAST_NAME"];
-							}
-						}
+
 					}
 					elseif($propertyValue["USER_TYPE"] == "DiskFile")
 					{
-						if(is_array($propertyValue["VALUE"]))
-						{
-							if($propertyValue["MULTIPLE"] == "Y")
-							{
-								$propertyValue["VALUE"] = current($propertyValue["VALUE"]);
-							}
-
-							if(!is_array($propertyValue["VALUE"]))
-							{
-								continue;
-							}
-
-							foreach($propertyValue["VALUE"] as $attachedId)
-							{
-								$userType = \CIBlockProperty::getUserType($propertyValue['USER_TYPE']);
-								$fileId = null;
-								if (array_key_exists('GetObjectId', $userType))
-								{
-									$fileId = call_user_func_array($userType['GetObjectId'], array($attachedId));
-								}
-								if(!$fileId)
-								{
-									continue;
-								}
-								$printableUrl = '';
-								if (array_key_exists('GetUrlAttachedFileElement', $userType))
-								{
-									$printableUrl = call_user_func_array($userType['GetUrlAttachedFileElement'], array($documentId, $fileId));
-								}
-
-								$arResult["PROPERTY_".$propertyKey][$attachedId] = $fileId;
-								$arResult["PROPERTY_".$propertyKey."_PRINTABLE"][$attachedId] = $printableUrl;
-							}
-						}
-						else
-						{
-							continue;
-						}
 					}
 					else
 					{
@@ -1785,22 +1719,7 @@ class CIBlockDocument
 
 			if ($arDocumentFields[$key]["Type"] == "user")
 			{
-				$ar = array();
-				foreach ($arFields[$key] as $v1)
-				{
-					if (substr($v1, 0, strlen("user_")) == "user_")
-					{
-						$ar[] = substr($v1, strlen("user_"));
-					}
-					else
-					{
-						$a1 = self::GetUsersFromUserGroup($v1, $documentId);
-						foreach ($a1 as $a11)
-							$ar[] = $a11;
-					}
-				}
-
-				$arFields[$key] = $ar;
+				$arFields[$key] = [];
 			}
 			elseif ($arDocumentFields[$key]["Type"] == "select")
 			{
@@ -1991,351 +1910,12 @@ class CIBlockDocument
 
 	function CanUserOperateDocument($operation, $userId, $documentId, $arParameters = array())
 	{
-		$documentId = trim($documentId);
-		if (strlen($documentId) <= 0)
-			return false;
-
-		if (!array_key_exists("IBlockId", $arParameters)
-			&& (
-				!array_key_exists("IBlockPermission", $arParameters)
-				|| !array_key_exists("DocumentStates", $arParameters)
-				|| !array_key_exists("IBlockRightsMode", $arParameters)
-				|| array_key_exists("IBlockRightsMode", $arParameters) && ($arParameters["IBlockRightsMode"] === "E")
-			)
-			|| !array_key_exists("CreatedBy", $arParameters) && !array_key_exists("AllUserGroups", $arParameters))
-		{
-			$dbElementList = CIBlockElement::GetList(
-				array(),
-				array("ID" => $documentId, "SHOW_NEW" => "Y", "SHOW_HISTORY" => "Y"),
-				false,
-				false,
-				array("ID", "IBLOCK_ID", "CREATED_BY")
-			);
-			$arElement = $dbElementList->Fetch();
-
-			if (!$arElement)
-				return false;
-
-			$arParameters["IBlockId"] = $arElement["IBLOCK_ID"];
-			$arParameters["CreatedBy"] = $arElement["CREATED_BY"];
-		}
-
-		if (!array_key_exists("IBlockRightsMode", $arParameters))
-			$arParameters["IBlockRightsMode"] = CIBlock::GetArrayByID($arParameters["IBlockId"], "RIGHTS_MODE");
-
-		if ($arParameters["IBlockRightsMode"] === "E")
-		{
-			if ($operation === CBPCanUserOperateOperation::ReadDocument)
-				return CIBlockElementRights::UserHasRightTo($arParameters["IBlockId"], $documentId, "element_read");
-			elseif ($operation === CBPCanUserOperateOperation::WriteDocument)
-				return CIBlockElementRights::UserHasRightTo($arParameters["IBlockId"], $documentId, "element_edit");
-			elseif (
-				$operation === CBPCanUserOperateOperation::StartWorkflow
-				|| $operation === CBPCanUserOperateOperation::ViewWorkflow
-			)
-			{
-				if (CIBlockElementRights::UserHasRightTo($arParameters["IBlockId"], $documentId, "element_edit"))
-					return true;
-
-				if (!array_key_exists("WorkflowId", $arParameters))
-					return false;
-
-				if (!CIBlockElementRights::UserHasRightTo($arParameters["IBlockId"], $documentId, "element_read"))
-					return false;
-
-				$userId = intval($userId);
-				if (!array_key_exists("AllUserGroups", $arParameters))
-				{
-					if (!array_key_exists("UserGroups", $arParameters))
-						$arParameters["UserGroups"] = CUser::GetUserGroup($userId);
-
-					$arParameters["AllUserGroups"] = $arParameters["UserGroups"];
-					if ($userId == $arParameters["CreatedBy"])
-						$arParameters["AllUserGroups"][] = "Author";
-				}
-
-				if (!array_key_exists("DocumentStates", $arParameters))
-				{
-					if ($operation === CBPCanUserOperateOperation::StartWorkflow)
-						$arParameters["DocumentStates"] = CBPWorkflowTemplateLoader::GetDocumentTypeStates(array("iblock", "CIBlockDocument", "iblock_".$arParameters["IBlockId"]));
-					else
-						$arParameters["DocumentStates"] = CBPDocument::GetDocumentStates(
-							array("iblock", "CIBlockDocument", "iblock_".$arParameters["IBlockId"]),
-							array("iblock", "CIBlockDocument", $documentId)
-						);
-				}
-
-				if (array_key_exists($arParameters["WorkflowId"], $arParameters["DocumentStates"]))
-					$arParameters["DocumentStates"] = array($arParameters["WorkflowId"] => $arParameters["DocumentStates"][$arParameters["WorkflowId"]]);
-				else
-					return false;
-
-				$arAllowableOperations = CBPDocument::GetAllowableOperations(
-					$userId,
-					$arParameters["AllUserGroups"],
-					$arParameters["DocumentStates"],
-					true
-				);
-
-				if (!is_array($arAllowableOperations))
-					return false;
-
-				if (($operation === CBPCanUserOperateOperation::ViewWorkflow) && in_array("read", $arAllowableOperations)
-					|| ($operation === CBPCanUserOperateOperation::StartWorkflow) && in_array("write", $arAllowableOperations))
-					return true;
-
-				$chop = ($operation === CBPCanUserOperateOperation::ViewWorkflow) ? "element_read" : "element_edit";
-
-				foreach ($arAllowableOperations as $op)
-				{
-					$ar = CTask::GetOperations($op, true);
-					if (in_array($chop, $ar))
-						return true;
-				}
-			}
-			elseif (
-				$operation === CBPCanUserOperateOperation::CreateWorkflow
-			)
-			{
-				return CBPDocument::CanUserOperateDocumentType(
-					CBPCanUserOperateOperation::CreateWorkflow,
-					$userId,
-					array("iblock", "CIBlockDocument", $documentId),
-					$arParameters
-				);
-			}
-
-			return false;
-		}
-
-		if (!array_key_exists("IBlockPermission", $arParameters))
-		{
-			if (CModule::IncludeModule('lists'))
-				$arParameters["IBlockPermission"] = CLists::GetIBlockPermission($arParameters["IBlockId"], $userId);
-			else
-				$arParameters["IBlockPermission"] = CIBlock::GetPermission($arParameters["IBlockId"], $userId);
-		}
-
-		if ($arParameters["IBlockPermission"] <= "R")
-			return false;
-		elseif ($arParameters["IBlockPermission"] >= "W")
-			return true;
-
-		$userId = intval($userId);
-		if (!array_key_exists("AllUserGroups", $arParameters))
-		{
-			if (!array_key_exists("UserGroups", $arParameters))
-				$arParameters["UserGroups"] = CUser::GetUserGroup($userId);
-
-			$arParameters["AllUserGroups"] = $arParameters["UserGroups"];
-			if ($userId == $arParameters["CreatedBy"])
-				$arParameters["AllUserGroups"][] = "Author";
-		}
-
-		if (!array_key_exists("DocumentStates", $arParameters))
-		{
-			$arParameters["DocumentStates"] = CBPDocument::GetDocumentStates(
-				array("iblock", "CIBlockDocument", "iblock_".$arParameters["IBlockId"]),
-				array("iblock", "CIBlockDocument", $documentId)
-			);
-		}
-
-		if (array_key_exists("WorkflowId", $arParameters))
-		{
-			if (array_key_exists($arParameters["WorkflowId"], $arParameters["DocumentStates"]))
-				$arParameters["DocumentStates"] = array($arParameters["WorkflowId"] => $arParameters["DocumentStates"][$arParameters["WorkflowId"]]);
-			else
-				return false;
-		}
-
-		$arAllowableOperations = CBPDocument::GetAllowableOperations(
-			$userId,
-			$arParameters["AllUserGroups"],
-			$arParameters["DocumentStates"]
-		);
-
-		if (!is_array($arAllowableOperations))
-			return false;
-
-		$r = false;
-		switch ($operation)
-		{
-			case CBPCanUserOperateOperation::ViewWorkflow:
-				$r = in_array("read", $arAllowableOperations);
-				break;
-			case CBPCanUserOperateOperation::StartWorkflow:
-				$r = in_array("write", $arAllowableOperations);
-				break;
-			case CBPCanUserOperateOperation::CreateWorkflow:
-				$r = false;
-				break;
-			case CBPCanUserOperateOperation::WriteDocument:
-				$r = in_array("write", $arAllowableOperations);
-				break;
-			case CBPCanUserOperateOperation::ReadDocument:
-				$r = in_array("read", $arAllowableOperations) || in_array("write", $arAllowableOperations);
-				break;
-			default:
-				$r = false;
-		}
-
-		return $r;
+		return true;
 	}
 
 	function CanUserOperateDocumentType($operation, $userId, $documentType, $arParameters = array())
 	{
-		$documentType = trim($documentType);
-		if (strlen($documentType) <= 0)
-			return false;
-
-		$arParameters["IBlockId"] = intval(substr($documentType, strlen("iblock_")));
-		$arParameters['sectionId'] = !empty($arParameters['sectionId']) ? (int)$arParameters['sectionId'] : 0;
-
-		if (!array_key_exists("IBlockRightsMode", $arParameters))
-			$arParameters["IBlockRightsMode"] = CIBlock::GetArrayByID($arParameters["IBlockId"], "RIGHTS_MODE");
-
-		if ($arParameters["IBlockRightsMode"] === "E")
-		{
-			if ($operation === CBPCanUserOperateOperation::CreateWorkflow)
-				return CIBlockRights::UserHasRightTo($arParameters["IBlockId"], $arParameters["IBlockId"], "iblock_rights_edit");
-			elseif ($operation === CBPCanUserOperateOperation::WriteDocument)
-				return CIBlockSectionRights::UserHasRightTo($arParameters["IBlockId"], $arParameters["sectionId"], "section_element_bind");
-			elseif ($operation === CBPCanUserOperateOperation::ViewWorkflow
-				|| $operation === CBPCanUserOperateOperation::StartWorkflow)
-			{
-				if (!array_key_exists("WorkflowId", $arParameters))
-					return false;
-
-				if ($operation === CBPCanUserOperateOperation::ViewWorkflow)
-					return CIBlockRights::UserHasRightTo($arParameters["IBlockId"], 0, "element_read");
-
-				if ($operation === CBPCanUserOperateOperation::StartWorkflow)
-					return CIBlockSectionRights::UserHasRightTo($arParameters["IBlockId"], $arParameters['sectionId'], "section_element_bind");
-
-				$userId = intval($userId);
-				if (!array_key_exists("AllUserGroups", $arParameters))
-				{
-					if (!array_key_exists("UserGroups", $arParameters))
-						$arParameters["UserGroups"] = CUser::GetUserGroup($userId);
-
-					$arParameters["AllUserGroups"] = $arParameters["UserGroups"];
-					$arParameters["AllUserGroups"][] = "Author";
-				}
-
-				if (!array_key_exists("DocumentStates", $arParameters))
-				{
-					if ($operation === CBPCanUserOperateOperation::StartWorkflow)
-						$arParameters["DocumentStates"] = CBPWorkflowTemplateLoader::GetDocumentTypeStates(array("iblock", "CIBlockDocument", "iblock_".$arParameters["IBlockId"]));
-					else
-						$arParameters["DocumentStates"] = CBPDocument::GetDocumentStates(
-							array("iblock", "CIBlockDocument", "iblock_".$arParameters["IBlockId"]),
-							null
-						);
-				}
-
-				if (array_key_exists($arParameters["WorkflowId"], $arParameters["DocumentStates"]))
-					$arParameters["DocumentStates"] = array($arParameters["WorkflowId"] => $arParameters["DocumentStates"][$arParameters["WorkflowId"]]);
-				else
-					return false;
-
-				$arAllowableOperations = CBPDocument::GetAllowableOperations(
-					$userId,
-					$arParameters["AllUserGroups"],
-					$arParameters["DocumentStates"],
-					true
-				);
-
-				if (!is_array($arAllowableOperations))
-					return false;
-
-				if (($operation === CBPCanUserOperateOperation::ViewWorkflow) && in_array("read", $arAllowableOperations)
-					|| ($operation === CBPCanUserOperateOperation::StartWorkflow) && in_array("write", $arAllowableOperations))
-					return true;
-
-				$chop = ($operation === CBPCanUserOperateOperation::ViewWorkflow) ? "element_read" : "section_element_bind";
-
-				foreach ($arAllowableOperations as $op)
-				{
-					$ar = CTask::GetOperations($op, true);
-					if (in_array($chop, $ar))
-						return true;
-				}
-			}
-
-			return false;
-		}
-
-		if (!array_key_exists("IBlockPermission", $arParameters))
-		{
-			if(CModule::IncludeModule('lists'))
-				$arParameters["IBlockPermission"] = CLists::GetIBlockPermission($arParameters["IBlockId"], $userId);
-			else
-				$arParameters["IBlockPermission"] = CIBlock::GetPermission($arParameters["IBlockId"], $userId);
-		}
-
-		if ($arParameters["IBlockPermission"] <= "R")
-			return false;
-		elseif ($arParameters["IBlockPermission"] >= "W")
-			return true;
-
-		$userId = intval($userId);
-		if (!array_key_exists("AllUserGroups", $arParameters))
-		{
-			if (!array_key_exists("UserGroups", $arParameters))
-				$arParameters["UserGroups"] = CUser::GetUserGroup($userId);
-
-			$arParameters["AllUserGroups"] = $arParameters["UserGroups"];
-			$arParameters["AllUserGroups"][] = "Author";
-		}
-
-		if (!array_key_exists("DocumentStates", $arParameters))
-		{
-			$arParameters["DocumentStates"] = CBPDocument::GetDocumentStates(
-				array("iblock", "CIBlockDocument", "iblock_".$arParameters["IBlockId"]),
-				null
-			);
-		}
-
-		if (array_key_exists("WorkflowId", $arParameters))
-		{
-			if (array_key_exists($arParameters["WorkflowId"], $arParameters["DocumentStates"]))
-				$arParameters["DocumentStates"] = array($arParameters["WorkflowId"] => $arParameters["DocumentStates"][$arParameters["WorkflowId"]]);
-			else
-				return false;
-		}
-
-		$arAllowableOperations = CBPDocument::GetAllowableOperations(
-			$userId,
-			$arParameters["AllUserGroups"],
-			$arParameters["DocumentStates"]
-		);
-
-		if (!is_array($arAllowableOperations))
-			return false;
-
-		$r = false;
-		switch ($operation)
-		{
-			case CBPCanUserOperateOperation::ViewWorkflow:
-				$r = in_array("read", $arAllowableOperations);
-				break;
-			case CBPCanUserOperateOperation::StartWorkflow:
-				$r = in_array("write", $arAllowableOperations);
-				break;
-			case CBPCanUserOperateOperation::CreateWorkflow:
-				$r = in_array("write", $arAllowableOperations);
-				break;
-			case CBPCanUserOperateOperation::WriteDocument:
-				$r = in_array("write", $arAllowableOperations);
-				break;
-			case CBPCanUserOperateOperation::ReadDocument:
-				$r = false;
-				break;
-			default:
-				$r = false;
-		}
-
-		return $r;
+		return true;
 	}
 
 	/**
@@ -2365,23 +1945,8 @@ class CIBlockDocument
 
 			if ($arDocumentFields[$key]["Type"] == "user")
 			{
-				$ar = array();
-				$arFields[$key] = CBPHelper::MakeArrayFlat($arFields[$key]);
-				foreach ($arFields[$key] as $v1)
-				{
-					if (substr($v1, 0, strlen("user_")) == "user_")
-					{
-						$ar[] = substr($v1, strlen("user_"));
-					}
-					else
-					{
-						$a1 = self::GetUsersFromUserGroup($v1, $parentDocumentId);
-						foreach ($a1 as $a11)
-							$ar[] = $a11;
-					}
-				}
 
-				$arFields[$key] = $ar;
+				$arFields[$key] = [];
 			}
 			elseif ($arDocumentFields[$key]["Type"] == "select")
 			{
@@ -2941,10 +2506,6 @@ class CIBlockDocument
 			}
 		}
 
-		$dbGroupsList = CGroup::GetListEx(array("NAME" => "ASC"), array("ID" => $groupsId));
-		while ($arGroup = $dbGroupsList->Fetch())
-			$result[$arGroup["ID"]] = $arGroup["NAME"];
-
 		if ($withExtended && $extendedGroupsCode)
 		{
 			foreach ($extendedGroupsCode as $groupCode)
@@ -2954,44 +2515,6 @@ class CIBlockDocument
 		}
 
 		return $result;
-	}
-
-	public function GetUsersFromUserGroup($group, $documentId)
-	{
-		$group = strtolower($group);
-		if ($group == 'author')
-		{
-			$documentId = (int)$documentId;
-			if ($documentId <= 0)
-				return array();
-
-			$db = CIBlockElement::GetList(array(), array("ID" => $documentId, "SHOW_NEW" => "Y", "SHOW_HISTORY" => "Y"), false, false, array("ID", "IBLOCK_ID", "CREATED_BY"));
-			if ($ar = $db->Fetch())
-				return array($ar["CREATED_BY"]);
-			return array();
-		}
-
-		if ((string)intval($group) !== (string)$group)
-			return array();
-
-		$group = (int)$group;
-		if ($group <= 0)
-			return array();
-
-		$arResult = array();
-
-		$arFilter = array("ACTIVE" => "Y");
-		if ($group != 2)
-			$arFilter["GROUPS_ID"] = $group;
-		else
-		{
-			$arFilter['EXTERNAL_AUTH_ID'] = '';
-		}
-
-		$dbUsersList = CUser::GetList(($b = "ID"), ($o = "ASC"), $arFilter);
-		while ($arUser = $dbUsersList->Fetch())
-			$arResult[] = $arUser["ID"];
-		return $arResult;
 	}
 
 	public function SetPermissions($documentId, $workflowId, $arPermissions, $bRewrite = true)
@@ -3052,13 +2575,7 @@ class CIBlockDocument
 				if (!$user)
 					continue;
 				$gc = null;
-				if ($user == 'author')
-				{
-					$u = self::GetUsersFromUserGroup('author', $documentId);
-					foreach ($u as $u1)
-						$gc = "U".$u1;
-				}
-				elseif (strpos($user, 'group_') === 0)
+				if (strpos($user, 'group_') === 0)
 				{
 					$gc = strtoupper(substr($user, strlen('group_')));
 				}

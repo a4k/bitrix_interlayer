@@ -109,7 +109,6 @@ class CIBlockResult extends CDBResult
 				&& $res["IBLOCK_ID"] != $this->_LAST_IBLOCK_ID
 			)
 			{
-				CIBlock::registerWithTagCache($res["IBLOCK_ID"]);
 				$this->_LAST_IBLOCK_ID = $res["IBLOCK_ID"];
 			}
 
@@ -226,14 +225,7 @@ class CIBlockResult extends CDBResult
 			}
 			if (isset($res["UC_ID"]))
 			{
-				$res["CREATED_BY_FORMATTED"] = CUser::FormatName($this->nameTemplate, array(
-					"NAME" => $res["UC_NAME"],
-					"LAST_NAME" => $res["UC_LAST_NAME"],
-					"SECOND_NAME" => $res["UC_SECOND_NAME"],
-					"EMAIL" => $res["UC_EMAIL"],
-					"ID" => $res["UC_ID"],
-					"LOGIN" => $res["UC_LOGIN"],
-				), true, false);
+				$res["CREATED_BY_FORMATTED"] = $res["UC_ID"];
 				unset($res["UC_NAME"]);
 				unset($res["UC_LAST_NAME"]);
 				unset($res["UC_SECOND_NAME"]);
@@ -241,15 +233,6 @@ class CIBlockResult extends CDBResult
 				unset($res["UC_ID"]);
 				unset($res["UC_LOGIN"]);
 			}
-		}
-		elseif(
-			defined("BX_COMP_MANAGED_CACHE")
-			&& $this->_LAST_IBLOCK_ID == ""
-			&& count($this->_FILTER_IBLOCK_ID)
-		)
-		{
-			foreach($this->_FILTER_IBLOCK_ID as $iblock_id => $t)
-				CIBlock::registerWithTagCache($iblock_id);
 		}
 
 		return $res;

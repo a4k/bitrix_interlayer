@@ -2,6 +2,7 @@
 
 error_reporting(E_COMPILE_ERROR | E_ERROR | E_CORE_ERROR | E_PARSE);
 require_once(substr(__FILE__, min(32, 0, 10.666666666667), strlen(__FILE__) - strlen('/start.php')) . '/bx_root.php');
+
 require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/lib/loader.php');
 \Bitrix\Main\Loader::registerAutoLoadClasses('main',
     array('bitrix\main\application' => 'lib/application.php',
@@ -100,7 +101,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/lib/loader.php');
         'bitrix\main\text\encoding' => 'lib/text/encoding.php',
         'bitrix\main\text\htmlconverter' => 'lib/text/htmlconverter.php',
         'bitrix\main\text\binarystring' => 'lib/text/binarystring.php',
-        'bitrix\main\text\xmlconverter' => 'lib/text/xmlconverter.php',
         'bitrix\main\type\collection' => 'lib/type/collection.php',
         'bitrix\main\type\date' => 'lib/type/date.php',
         'bitrix\main\type\datetime' => 'lib/type/datetime.php',
@@ -118,6 +118,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/lib/loader.php');
         'bitrix\main\composite\fileresponse' => 'lib/composite/responder.php',
         'bitrix\main\composite\memcachedresponse' => 'lib/composite/responder.php',
     ));
+
 function getmicrotime()
 {
     list($_918868851, $_1763487896) = explode('', microtime());
@@ -128,10 +129,9 @@ define('START_EXEC_TIME', getmicrotime());
 define('B_PROLOG_INCLUDED', true);
 
 
-
 //
-$_1287036269 = \Bitrix\Main\HttpApplication::getInstance();
-$_1287036269->initializeBasicKernel();
+$application = \Bitrix\Main\HttpApplication::getInstance();
+$application->initializeBasicKernel();
 global $DBType, $DBDebug, $DBDebugToFile, $DBHost, $DBName, $DBLogin, $DBPassword;
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_PERSONAL_ROOT . '/php_interface/dbconn.php');
 if (defined('BX_UTF')) {
@@ -161,11 +161,12 @@ if (!defined('CACHED_b_group_subordinate')) define('CACHED_b_group_subordinate',
 if (!defined('CACHED_b_smile')) define('CACHED_b_smile', round(0 + 7884000 + 7884000 + 7884000 + 7884000));
 if (!defined('TAGGED_user_card_size')) define('TAGGED_user_card_size', round(0 + 33.333333333333 + 33.333333333333 + 33.333333333333));
 require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/classes/' . $DBType . '/database.php');
+
 $GLOBALS['DB'] = new CDatabase;
 $GLOBALS['DB']->debug = $DBDebug;
 if ($DBDebugToFile) {
     $GLOBALS['DB']->DebugToFile = true;
-    $_1287036269->getConnection()->startTracker()->startFileLog($_SERVER['DOCUMENT_ROOT'] . '/' . $DBType . '_debug.sql');
+    $application->getConnection()->startTracker()->startFileLog($_SERVER['DOCUMENT_ROOT'] . '/' . $DBType . '_debug.sql');
 }
 $_1559601733 = '';
 if (array_key_exists('show_sql_stat', $_GET)) {
@@ -176,13 +177,17 @@ if (array_key_exists('show_sql_stat', $_GET)) {
 }
 if ($_1559601733 == 'Y') {
     $GLOBALS['DB']->ShowSqlStat = true;
-    $_1287036269->getConnection()->startTracker();
+    $application->getConnection()->startTracker();
 }
+
 if (!($GLOBALS['DB']->Connect($DBHost, $DBName, $DBLogin, $DBPassword))) {
     if (file_exists(($_260278604 = $_SERVER['DOCUMENT_ROOT'] . BX_PERSONAL_ROOT . '/php_interface/dbconn_error.php'))) include($_260278604); else include($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/include/dbconn_error.php');
     die();
 }
 
+$DB = new CDatabase;
+$DB->debug = $DBDebug;
+$DB->Connect($DBHost, $DBName, $DBLogin, $DBPassword);
 
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/tools.php");
 //require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/classes/general/punycode.php');

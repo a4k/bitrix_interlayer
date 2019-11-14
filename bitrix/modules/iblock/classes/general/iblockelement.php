@@ -1,4 +1,6 @@
 <?
+
+use Bitrix\Iblock\InheritedProperty\ElementTemplates;
 use Bitrix\Main,
 	Bitrix\Iblock;
 
@@ -3047,7 +3049,7 @@ class CAllIBlockElement
 	///////////////////////////////////////////////////////////////////
 	function Add($arFields, $bWorkFlow=false, $bUpdateSearch=true, $bResizePictures=false)
 	{
-		global $DB, $USER;
+		global $DB;
 
 		$arIBlock = CIBlock::GetArrayByID($arFields["IBLOCK_ID"]);
 		$bWorkFlow = $bWorkFlow && is_array($arIBlock) && ($arIBlock["WORKFLOW"] != "N") && CModule::IncludeModule("workflow");
@@ -3283,7 +3285,7 @@ class CAllIBlockElement
 			}
 		}
 
-		$ipropTemplates = new \Bitrix\Iblock\InheritedProperty\ElementTemplates($arFields["IBLOCK_ID"], 0);
+		$ipropTemplates = new ElementTemplates($arFields["IBLOCK_ID"], 0);
 		if(is_set($arFields, "PREVIEW_PICTURE"))
 		{
 			if(is_array($arFields["PREVIEW_PICTURE"]))
@@ -3405,13 +3407,7 @@ class CAllIBlockElement
 			}
 
 			unset($arFields["ID"]);
-			if(is_object($USER))
-			{
-				if(!isset($arFields["CREATED_BY"]) || intval($arFields["CREATED_BY"]) <= 0)
-					$arFields["CREATED_BY"] = intval($USER->GetID());
-				if(!isset($arFields["MODIFIED_BY"]) || intval($arFields["MODIFIED_BY"]) <= 0)
-					$arFields["MODIFIED_BY"] = intval($USER->GetID());
-			}
+
 			$arFields["~TIMESTAMP_X"] = $arFields["~DATE_CREATE"] = $DB->CurrentTimeFunction();
 
 
@@ -3458,21 +3454,16 @@ class CAllIBlockElement
 
 			if (array_key_exists("IPROPERTY_TEMPLATES", $arFields))
 			{
-				$ipropTemplates = new \Bitrix\Iblock\InheritedProperty\ElementTemplates($arIBlock["ID"], $ID);
+				$ipropTemplates = new ElementTemplates($arIBlock["ID"], $ID);
 				$ipropTemplates->set($arFields["IPROPERTY_TEMPLATES"]);
 			}
-
-			if($bUpdateSearch)
-				CIBlockElement::UpdateSearch($ID);
-
-			\Bitrix\Iblock\PropertyIndex\Manager::updateElementIndex($arIBlock["ID"], $ID);
 
 			if(
 				!isset($arFields["WF_PARENT_ELEMENT_ID"])
 				&& $arIBlock["FIELDS"]["LOG_ELEMENT_ADD"]["IS_REQUIRED"] == "Y"
 			)
 			{
-				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
+				$USER_ID = 0;
 				$arEvents = null;
 				if(
 					empty($arEvents)
@@ -3489,13 +3480,7 @@ class CAllIBlockElement
 						"USER_ID" => $USER_ID,
 						"IBLOCK_PAGE_URL" => $arElement["LIST_PAGE_URL"],
 					);
-					CEventLog::Log(
-						"IBLOCK",
-						"IBLOCK_ELEMENT_ADD",
-						"iblock",
-						$arIBlock["ID"],
-						serialize($res)
-					);
+					AddMessage2Log($res);
 				}
 			}
 			if($bWorkFlow && intval($arFields["WF_PARENT_ELEMENT_ID"])<=0)
@@ -3573,8 +3558,6 @@ class CAllIBlockElement
 
 		$arFields["RESULT"] = &$Result;
 
-
-		CIBlock::clearIblockTagCache($arIBlock['ID']);
 
 		return $Result;
 	}
@@ -3765,8 +3748,8 @@ class CAllIBlockElement
 	///////////////////////////////////////////////////////////////////
 	public static function Delete($ID)
 	{
-		global $DB, $APPLICATION, $USER;
-		$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
+		global $DB, $APPLICATION;
+		$USER_ID = 0;
 		$ID = IntVal($ID);
 
 		$APPLICATION->ResetException();
@@ -3820,17 +3803,8 @@ class CAllIBlockElement
 							"USER_ID" => $USER_ID,
 							"IBLOCK_PAGE_URL" => $arElement["LIST_PAGE_URL"],
 						);
-						CEventLog::Log(
-							"IBLOCK",
-							"IBLOCK_ELEMENT_DELETE",
-							"iblock",
-							$zr["IBLOCK_ID"],
-							serialize($res_log)
-						);
 					}
 				}
-
-				$piId = \Bitrix\Iblock\PropertyIndex\Manager::resolveElement($zr["IBLOCK_ID"], $zr["ID"]);
 
 
 				while($res = $db_res->Fetch())
@@ -3923,13 +3897,13 @@ class CAllIBlockElement
 				$obIBlockElementRights = new CIBlockElementRights($zr["IBLOCK_ID"], $zr["ID"]);
 				$obIBlockElementRights->DeleteAllRights();
 
-				$ipropTemplates = new \Bitrix\Iblock\InheritedProperty\ElementTemplates($zr["IBLOCK_ID"], $zr["ID"]);
-				$ipropTemplates->delete();
-
-				if(IntVal($zr["WF_PARENT_ELEMENT_ID"])<=0 && $zr["WF_STATUS_ID"]==1 && CModule::IncludeModule("search"))
-				{
-					CSearch::DeleteIndex("iblock", $elementId);
-				}
+				$ipropTemplates = new ElementTemplates($zr["IBLOCK_ID"], $zr["ID"]);
+                try {
+                    $ipropTemplates->delete();
+                } catch (Main\ArgumentException $e) {
+                } catch (Main\SystemException $e) {
+                } catch (Exception $e) {
+                }
 
 				CIBlockElement::DeleteFile($zr["PREVIEW_PICTURE"], $zr["ID"], "PREVIEW", $zr["WF_PARENT_ELEMENT_ID"], $zr["IBLOCK_ID"]);
 				CIBlockElement::DeleteFile($zr["DETAIL_PICTURE"], $zr["ID"], "DETAIL", $zr["WF_PARENT_ELEMENT_ID"], $zr["IBLOCK_ID"]);
@@ -3947,13 +3921,6 @@ class CAllIBlockElement
 				if (isset(self::$elementIblock[$elementId]))
 					unset(self::$elementIblock[$elementId]);
 
-				\Bitrix\Iblock\PropertyIndex\Manager::deleteElementIndex($zr["IBLOCK_ID"], $piId);
-
-				if(CModule::IncludeModule("bizproc"))
-					CBPDocument::OnDocumentDelete(array("iblock", "CIBlockDocument", $zr["ID"]), $arErrorsTmp);
-
-
-				CIBlock::clearIblockTagCache($zr['IBLOCK_ID']);
 				unset($elementId);
 			}
 		}
@@ -5942,7 +5909,8 @@ class CAllIBlockElement
 		}
 		else
 		{
-			$rs = new CIBlockPropertyResult($DB->Query($strSql));
+		    $rtk = $DB->Query($strSql);
+			$rs = new CIBlockPropertyResult($rtk);
 		}
 		return $rs;
 	}
@@ -6687,32 +6655,9 @@ class CAllIBlockElement
 		global $DB, $USER;
 		$min_permission = (strlen($min_permission)==1) ? $min_permission : "R";
 
-		if ($permissionsBy !== null)
-			$permissionsBy = (int)$permissionsBy;
-		if ($permissionsBy < 0)
-			$permissionsBy = null;
-
-		if ($permissionsBy !== null)
-		{
-			$iUserID = $permissionsBy;
-			$strGroups = implode(',', CUser::GetUserGroup($permissionsBy));
-			$bAuthorized = false;
-		}
-		else
-		{
-			if (is_object($USER))
-			{
-				$iUserID = (int)$USER->GetID();
-				$strGroups = $USER->GetGroups();
-				$bAuthorized = $USER->IsAuthorized();
-			}
-			else
-			{
-				$iUserID = 0;
-				$strGroups = "2";
-				$bAuthorized = false;
-			}
-		}
+        $iUserID = 0;
+        $strGroups = "2";
+        $bAuthorized = false;
 
 		$stdPermissions = "
 			SELECT IBLOCK_ID
@@ -6734,11 +6679,6 @@ class CAllIBlockElement
 		else
 			$operation = '';
 
-		if($operation)
-		{
-			$acc = new CAccess;
-			$acc->UpdateCodes($permissionsBy !== null ? array('USER_ID' => $permissionsBy) : false);
-		}
 
 		if($operation == "element_read")
 		{

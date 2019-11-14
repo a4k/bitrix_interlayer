@@ -904,18 +904,43 @@ class CAllIBlockProperty
 			}
 		}
 
-		if(CACHED_b_iblock_property_enum !== false)
-			$CACHE_MANAGER->CleanDir("b_iblock_property_enum");
-
-		if (defined("BX_COMP_MANAGED_CACHE"))
-			$CACHE_MANAGER->ClearByTag("iblock_property_enum_".$ID);
-
 		return true;
 	}
+
+	public static function BuildList() {
+        $ciblockPropertyDate = new CIBlockPropertyDate();
+        $ciblockPropertyDateTime = new CIBlockPropertyDateTime();
+        $ciblockPropertyXmlID = new CIBlockPropertyXmlID();
+        $ciblockPropertyHTML = new CIBlockPropertyHTML();
+        $ciblockPropertyElementList = new CIBlockPropertyElementList();
+        $ciblockPropertySequence = new CIBlockPropertySequence();
+        $ciblockPropertyElementAutoComplete = new CIBlockPropertyElementAutoComplete();
+        $ciblockPropertySectionAutoComplete = new CIBlockPropertySectionAutoComplete();
+
+        $result = array();
+        $result[] = $ciblockPropertyDate->GetUserTypeDescription();
+        $result[] = $ciblockPropertyDateTime->GetUserTypeDescription();
+        $result[] = $ciblockPropertyXmlID->GetUserTypeDescription();
+        $result[] = $ciblockPropertyHTML->GetUserTypeDescription();
+        $result[] = $ciblockPropertyElementList->GetUserTypeDescription();
+        $result[] = $ciblockPropertySequence->GetUserTypeDescription();
+        $result[] = $ciblockPropertyElementAutoComplete->GetUserTypeDescription();
+        $result[] = $ciblockPropertySectionAutoComplete->GetUserTypeDescription();
+
+        return $result;
+    }
 
 	public static function GetUserType($USER_TYPE = false)
 	{
 		static $CACHE = null;
+
+		$arList = self::BuildList();
+		foreach ($arList as $item) {
+            if (is_array($item) && array_key_exists("USER_TYPE", $item))
+            {
+                $CACHE[$item["USER_TYPE"]] = $item;
+            }
+        }
 
 		if($USER_TYPE !== false)
 		{

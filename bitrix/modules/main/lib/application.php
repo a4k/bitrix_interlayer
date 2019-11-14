@@ -107,32 +107,30 @@ abstract class Application
 		$this->createDatabaseConnection();
 	}
 
+	public function initializeBasicT()
+	{
+		if ($this->isBasicKernelInitialized)
+			return;
+		$this->isBasicKernelInitialized = true;
+
+		$this->initializeExceptionHandler();
+		$this->createDatabaseConnection();
+	}
+
 	/**
 	 * Does full kernel initialization. Should be called somewhere after initializeBasicKernel()
 	 *
 	 * @param array $params Parameters of the current request (depends on application type)
 	 * @throws SystemException
 	 */
-	public function initializeExtendedKernel(array $params)
+	public function initializeExtendedKernel()
 	{
 		if ($this->isExtendedKernelInitialized)
 			return;
 		$this->isExtendedKernelInitialized = true;
 
-		$this->initializeContext($params);
-
-		//$this->initializeDispatcher();
 	}
 
-	final public function getDispatcher()
-	{
-		if (is_null($this->dispatcher))
-			throw new NotSupportedException();
-		if (!($this->dispatcher instanceof Dispatcher))
-			throw new NotSupportedException();
-
-		return clone $this->dispatcher;
-	}
 
 	/**
 	 * Initializes context of the current request.
@@ -188,31 +186,6 @@ abstract class Application
 		exit($status);
 	}
 
-	/**
-	 * Exception handler can be initialized through the Config\Configuration (.settings.php file).
-	 *
-	 * 'exception_handling' => array(
-	 *		'value' => array(
-	 *			'debug' => true,        // output exception on screen
-	 *			'handled_errors_types' => E_ALL & ~E_STRICT & ~E_NOTICE,    // catchable error types, printed to log
-	 *			'exception_errors_types' => E_ALL & ~E_NOTICE & ~E_STRICT,  // error types from catchable which throws exceptions
-	 *			'ignore_silence' => false,      // ignore @
-	 *			'assertion_throws_exception' => true,       // assertion throws exception
-	 *			'assertion_error_type' => 256,
-	 *			'log' => array(
-	 *              'class_name' => 'MyLog',        // custom log class, must extends ExceptionHandlerLog; can be omited, in this case default Diag\FileExceptionHandlerLog will be used
-	 *              'extension' => 'MyLogExt',      // php extension, is used only with 'class_name'
-	 *              'required_file' => 'modules/mylog.module/mylog.php'     // included file, is used only with 'class_name'
-	 *				'settings' => array(        // any settings for 'class_name'
-	 *					'file' => 'bitrix/modules/error.log',
-	 *					'log_size' => 1000000,
-	 *				),
-	 *			),
-	 *		),
-	 *		'readonly' => false,
-	 *	),
-	 *
-	 */
 	protected function initializeExceptionHandler()
 	{
 		$exceptionHandler = new Diag\ExceptionHandler();
@@ -317,15 +290,6 @@ abstract class Application
 		}
 	}
 
-	/*
-	final private function initializeDispatcher()
-	{
-		$dispatcher = new Dispatcher();
-		$dispatcher->initialize();
-		$this->dispatcher = $dispatcher;
-	}
-	*/
-
 	/**
 	 * @return \Bitrix\Main\Diag\ExceptionHandler
 	 */
@@ -354,15 +318,6 @@ abstract class Application
 		return $this->context;
 	}
 
-	/**
-	 * Modifies context of the current request.
-	 *
-	 * @param Context $context
-	 */
-	public function setContext(Context $context)
-	{
-		$this->context = $context;
-	}
 
 	/**
 	 * Static method returns database connection for the specified name.
@@ -378,15 +333,6 @@ abstract class Application
 		return $pool->getConnection($name);
 	}
 
-	/**
-	 * Returns new instance of the Cache object.
-	 *
-	 * @return Data\Cache
-	 */
-	public function getCache()
-	{
-		return Data\Cache::createInstance();
-	}
 
 	/**
 	 * Returns manager of the managed cache.
@@ -397,21 +343,6 @@ abstract class Application
 	{
 
 		return $this->managedCache;
-	}
-
-	/**
-	 * Returns manager of the managed cache.
-	 *
-	 * @return Data\TaggedCache
-	 */
-	public function getTaggedCache()
-	{
-		if ($this->taggedCache == null)
-		{
-			$this->taggedCache = new Data\TaggedCache();
-		}
-
-		return $this->taggedCache;
 	}
 
 	/**
@@ -486,21 +417,4 @@ abstract class Application
 		return isset($_SERVER["BX_PERSONAL_ROOT"]) ? $_SERVER["BX_PERSONAL_ROOT"] : "/bitrix";
 	}
 
-	/**
-	 * Resets accelerator if any.
-	 */
-	public static function resetAccelerator()
-	{
-		if (defined("BX_NO_ACCELERATOR_RESET"))
-			return;
-
-		$fl = Config\Configuration::getValue("no_accelerator_reset");
-		if ($fl)
-			return;
-
-		if (function_exists("accelerator_reset"))
-			accelerator_reset();
-		elseif (function_exists("wincache_refresh_if_changed"))
-			wincache_refresh_if_changed();
-	}
 }

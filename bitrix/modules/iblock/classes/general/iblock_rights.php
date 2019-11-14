@@ -584,8 +584,6 @@ class CIBlockRights
 
 	static function UserHasRightTo($IBLOCK_ID, $ID, $permission, $flags = 0)
 	{
-		$acc = new CAccess;
-		$acc->UpdateCodes();
 
 		$obRights = new CIBlockRights($IBLOCK_ID);
 
@@ -601,64 +599,8 @@ class CIBlockRights
 	 */
 	static function _check_if_user_has_right($obRights, $ID, $permission, $flags = 0)
 	{
-		global $DB, $USER;
-		$USER_ID = 0;
+        return CIBlockRights::_mk_result($ID, array(), true, $flags);
 
-		if($USER_ID > 0 && (!is_object($USER) || $USER_ID != $USER->GetID()))
-		{
-			$user_id = intval($USER_ID);
-			$arGroups = CUser::GetUserGroup($USER_ID);
-
-			if(
-				in_array(1, $arGroups)
-				&& COption::GetOptionString("main", "controller_member", "N") != "Y"
-				&& COption::GetOptionString("main", "~controller_limited_admin", "N") != "Y"
-			)
-			{
-				return CIBlockRights::_mk_result($ID, CIBlockRights::LetterToOperations("X"), true, $flags);
-			}
-		}
-		elseif(!is_object($USER))
-		{
-			return CIBlockRights::_mk_result($ID, array(), false, $flags);
-		}
-		elseif($USER->IsAdmin())
-		{
-			return CIBlockRights::_mk_result($ID, CIBlockRights::LetterToOperations("X"), true, $flags);
-		}
-
-		$user_id = intval($USER->GetID());
-		$arGroups = $USER->GetUserGroupArray();
-
-		$RIGHTS_MODE = CIBlock::GetArrayByID($obRights->GetIBlockID(), "RIGHTS_MODE");
-		if($RIGHTS_MODE === "E")
-		{
-			if(is_array($ID))
-				$arOperations = $obRights->GetUserOperations($ID, $user_id);
-			else
-			{
-				static $cache;
-				$cache_id = get_class($obRights).$user_id."|".$ID;
-				if(!isset($cache[$cache_id]))
-					$cache[$cache_id] = $obRights->GetUserOperations($ID, $user_id);
-				$arOperations = $cache[$cache_id];
-			}
-
-			if($flags & CIBlockRights::RETURN_OPERATIONS)
-				return $arOperations;
-			else
-				return isset($arOperations[$permission]);
-		}
-		else//if($RIGHTS_MODE === "S")
-		{
-			$letter = CIBlock::GetPermission($obRights->GetIBlockID());
-			$arOperations = CIBlockRights::_mk_result($ID, CIBlockRights::LetterToOperations($letter), CIBlockRights::LetterToOperations($letter), $flags);
-
-			if($flags & CIBlockRights::RETURN_OPERATIONS)
-				return $arOperations;
-			else
-				return isset($arOperations[$permission]);
-		}
 	}
 
 	static function _mk_result($ID, $arOperations, $bAllow, $flags)
@@ -931,8 +873,6 @@ class CIBlockSectionRights extends CIBlockRights
 
 	static function UserHasRightTo($IBLOCK_ID, $ID, $permission, $flags = 0)
 	{
-		$acc = new CAccess;
-		$acc->UpdateCodes();
 
 		if($ID > 0)
 		{
@@ -1203,8 +1143,6 @@ class CIBlockElementRights extends CIBlockRights
 
 	static function UserHasRightTo($IBLOCK_ID, $ID, $permission, $flags = 0)
 	{
-		$acc = new CAccess;
-		$acc->UpdateCodes();
 
 		$obRights = new CIBlockElementRights($IBLOCK_ID, 0);
 
@@ -1227,11 +1165,6 @@ class CIBlockElementRights extends CIBlockRights
 			$bAuthorized = false;
 		}
 
-		if ($USER_ID > 0)
-		{
-			$acc = new CAccess;
-			$acc->UpdateCodes(array('USER_ID' => $USER_ID));
-		}
 
 		if(!is_array($arID))
 			$sqlID = array(intval($arID));

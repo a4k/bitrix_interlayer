@@ -55,7 +55,8 @@ final class Loader
 	 */
 	public static function includeModule($moduleName)
 	{
-		if (!is_string($moduleName) || $moduleName == "")
+
+        if (!is_string($moduleName) || $moduleName == "")
 			throw new LoaderException("Empty module name");
 		if (preg_match("#[^a-zA-Z0-9._]#", $moduleName))
 			throw new LoaderException(sprintf("Module name '%s' is not correct", $moduleName));
@@ -74,9 +75,6 @@ final class Loader
 		if (isset(self::$arSemiloadedModules[$moduleName]))
 			trigger_error("Module '".$moduleName."' is in loading progress", E_USER_WARNING);
 
-		$arInstalledModules = ModuleManager::getInstalledModules();
-		if (!isset($arInstalledModules[$moduleName]))
-			return self::$arLoadedModules[$moduleName] = false;
 
 		$documentRoot = static::getDocumentRoot();
 

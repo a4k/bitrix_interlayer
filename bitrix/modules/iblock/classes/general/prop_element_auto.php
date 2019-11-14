@@ -1,8 +1,6 @@
 <?
-use Bitrix\Main\Localization\Loc,
-	Bitrix\Iblock;
+use Bitrix\Iblock;
 
-Loc::loadMessages(__FILE__);
 
 define ('BT_UT_AUTOCOMPLETE_REP_SYM_OTHER','other');
 
@@ -15,7 +13,7 @@ class CIBlockPropertyElementAutoComplete
 		return array(
 			"PROPERTY_TYPE" => Iblock\PropertyTable::TYPE_ELEMENT,
 			"USER_TYPE" => self::USER_TYPE,
-			"DESCRIPTION" => Loc::getMessage('BT_UT_EAUTOCOMPLETE_DESCR'),
+			"DESCRIPTION" => getMessage('BT_UT_EAUTOCOMPLETE_DESCR'),
 			"GetPropertyFieldHtml" => array(__CLASS__, "GetPropertyFieldHtml"),
 			"GetPropertyFieldHtmlMulty" => array(__CLASS__,'GetPropertyFieldHtmlMulty'),
 			"GetAdminListViewHTML" => array(__CLASS__,"GetAdminListViewHTML"),
@@ -167,9 +165,9 @@ class CIBlockPropertyElementAutoComplete
 		{
 			return array(
 				'REFERENCE' => array(
-					Loc::getMessage('BT_UT_EAUTOCOMPLETE_VIEW_AUTO'),
-					Loc::getMessage('BT_UT_EAUTOCOMPLETE_VIEW_TREE'),
-					Loc::getMessage('BT_UT_EAUTOCOMPLETE_VIEW_ELEMENT'),
+					getMessage('BT_UT_EAUTOCOMPLETE_VIEW_AUTO'),
+					getMessage('BT_UT_EAUTOCOMPLETE_VIEW_TREE'),
+					getMessage('BT_UT_EAUTOCOMPLETE_VIEW_ELEMENT'),
 				),
 				'REFERENCE_ID' => array(
 					'A','T','E'
@@ -186,11 +184,11 @@ class CIBlockPropertyElementAutoComplete
 		{
 			return array(
 				'REFERENCE' => array(
-					Loc::getMessage('BT_UT_AUTOCOMPLETE_SYM_SPACE'),
-					Loc::getMessage('BT_UT_AUTOCOMPLETE_SYM_GRID'),
-					Loc::getMessage('BT_UT_AUTOCOMPLETE_SYM_STAR'),
-					Loc::getMessage('BT_UT_AUTOCOMPLETE_SYM_UNDERLINE'),
-					Loc::getMessage('BT_UT_AUTOCOMPLETE_SYM_OTHER'),
+					getMessage('BT_UT_AUTOCOMPLETE_SYM_SPACE'),
+					getMessage('BT_UT_AUTOCOMPLETE_SYM_GRID'),
+					getMessage('BT_UT_AUTOCOMPLETE_SYM_STAR'),
+					getMessage('BT_UT_AUTOCOMPLETE_SYM_UNDERLINE'),
+					getMessage('BT_UT_AUTOCOMPLETE_SYM_OTHER'),
 
 				),
 				'REFERENCE_ID' => array(

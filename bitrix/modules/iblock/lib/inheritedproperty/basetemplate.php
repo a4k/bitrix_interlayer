@@ -6,6 +6,8 @@
  */
 namespace Bitrix\Iblock\InheritedProperty;
 
+use Bitrix\Iblock\InheritedPropertyTable;
+
 class BaseTemplate
 {
 	/** @var \Bitrix\Iblock\InheritedProperty\BaseValues|null */
@@ -29,17 +31,19 @@ class BaseTemplate
 		return $this->entity;
 	}
 
-	/**
-	 * Stores templates for entity into database.
-	 *
-	 * @param array $templates Templates to be stored to DB.
-	 *
-	 * @return void
-	 * @throws \Bitrix\Main\ArgumentException
-	 */
+    /**
+     * Stores templates for entity into database.
+     *
+     * @param array $templates Templates to be stored to DB.
+     *
+     * @return void
+     * @throws \Bitrix\Main\ArgumentException
+     * @throws \Bitrix\Main\SystemException
+     * @throws \Exception
+     */
 	public function set(array $templates)
 	{
-		$templateList = \Bitrix\Iblock\InheritedPropertyTable::getList(array(
+		$templateList = InheritedPropertyTable::getList(array(
 			"select" => array("ID", "CODE", "TEMPLATE"),
 			"filter" => array(
 				"=IBLOCK_ID" => $this->entity->getIblockId(),
@@ -56,11 +60,11 @@ class BaseTemplate
 				if ($templates[$CODE] !== $row["TEMPLATE"])
 				{
 					if ($templates[$CODE] != "")
-						\Bitrix\Iblock\InheritedPropertyTable::update($row["ID"], array(
+						InheritedPropertyTable::update($row["ID"], array(
 							"TEMPLATE" => $templates[$CODE],
 						));
 					else
-						\Bitrix\Iblock\InheritedPropertyTable::delete($row["ID"]);
+						InheritedPropertyTable::delete($row["ID"]);
 
 					$this->entity->deleteValues($row["ID"]);
 				}
@@ -74,7 +78,7 @@ class BaseTemplate
 			{
 				if ($TEMPLATE != "")
 				{
-					\Bitrix\Iblock\InheritedPropertyTable::add(array(
+					InheritedPropertyTable::add(array(
 						"IBLOCK_ID" => $this->entity->getIblockId(),
 						"CODE" => $CODE,
 						"ENTITY_TYPE" => $this->entity->getType(),
@@ -100,7 +104,7 @@ class BaseTemplate
 			$entity = $this->entity;
 
 		$result = array();
-		$templateList = \Bitrix\Iblock\InheritedPropertyTable::getList(array(
+		$templateList = InheritedPropertyTable::getList(array(
 			"select" => array("ID", "CODE", "TEMPLATE", "ENTITY_TYPE", "ENTITY_ID"),
 			"filter" => array(
 				"=IBLOCK_ID" => $entity->getIblockId(),
@@ -131,7 +135,7 @@ class BaseTemplate
 		$iblockId = $entity->getIblockId();
 		if (!isset($cache[$iblockId]))
 		{
-			$templateList = \Bitrix\Iblock\InheritedPropertyTable::getList(array(
+			$templateList = InheritedPropertyTable::getList(array(
 				"select" => array("ID"),
 				"filter" => array(
 					"=IBLOCK_ID" => $iblockId,
@@ -143,15 +147,17 @@ class BaseTemplate
 		return $cache[$iblockId];
 	}
 
-	/**
-	 * Deletes templates for this entity from database.
-	 *
-	 * @return void
-	 * @throws \Bitrix\Main\ArgumentException
-	 */
+    /**
+     * Deletes templates for this entity from database.
+     *
+     * @return void
+     * @throws \Bitrix\Main\ArgumentException
+     * @throws \Bitrix\Main\SystemException
+     * @throws \Exception
+     */
 	public function delete()
 	{
-		$templateList = \Bitrix\Iblock\InheritedPropertyTable::getList(array(
+        $templateList = InheritedPropertyTable::getList(array(
 			"select" => array("ID"),
 			"filter" => array(
 				"=IBLOCK_ID" => $this->entity->getIblockId(),
@@ -160,11 +166,13 @@ class BaseTemplate
 			),
 		));
 
-		while ($row = $templateList->fetch())
+
+        while ($row = $templateList->fetch())
 		{
-			\Bitrix\Iblock\InheritedPropertyTable::delete($row["ID"]);
+			InheritedPropertyTable::delete($row["ID"]);
 		}
-	}
+
+    }
 
 	/**
 	 * Returns templates for the entity and all it's parents

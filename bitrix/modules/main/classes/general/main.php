@@ -728,20 +728,6 @@ class CAllSite
 	{
 		global $DB, $CACHE_MANAGER;
 
-		if(CACHED_b_lang!==false)
-		{
-			$cacheId = "b_lang".md5($by.".".$order.".".serialize($arFilter));
-			if($CACHE_MANAGER->Read(CACHED_b_lang, $cacheId, "b_lang"))
-			{
-				$arResult = $CACHE_MANAGER->Get($cacheId);
-
-				$res = new CDBResult;
-				$res->InitFromArray($arResult);
-				$res = new _CLangDBResult($res);
-				return $res;
-			}
-		}
-
 		$strSqlSearch = "";
 		$bIncDomain = false;
 		if(is_array($arFilter))
@@ -827,9 +813,6 @@ class CAllSite
 			$res = $DB->Query($strSql, false, "FILE: ".__FILE__."<br> LINE: ".__LINE__);
 			while($ar = $res->Fetch())
 				$arResult[]=$ar;
-
-			/** @noinspection PhpUndefinedVariableInspection */
-			$CACHE_MANAGER->Set($cacheId, $arResult);
 
 			$res = new CDBResult;
 			$res->InitFromArray($arResult);
@@ -1166,32 +1149,13 @@ class _CLangDBResult extends CDBResult
 				}
 				else
 				{
-					if($CACHE_MANAGER->Read(CACHED_b_lang_domain, "b_lang_domain", "b_lang_domain"))
-					{
-						$arLangDomain = $CACHE_MANAGER->Get("b_lang_domain");
-					}
-					else
-					{
-						$arLangDomain = array("DOMAIN"=>array(), "LID"=>array());
-						$rs = $DB->Query("SELECT * FROM b_lang_domain ORDER BY ".$DB->Length("DOMAIN"));
-						while($ar = $rs->Fetch())
-						{
-							$arLangDomain["DOMAIN"][]=$ar;
-							$arLangDomain["LID"][$ar["LID"]][]=$ar;
-						}
-						$CACHE_MANAGER->Set("b_lang_domain", $arLangDomain);
-					}
-					$res["DOMAINS"] = "";
-					if(is_array($arLangDomain["LID"][$res["LID"]]))
-						foreach($arLangDomain["LID"][$res["LID"]] as $ar_res)
-						{
-							$domain = $ar_res["DOMAIN"];
-							$arErrorsTmp = array();
-							if ($domainTmp = CBXPunycode::ToUnicode($ar_res["DOMAIN"], $arErrorsTmp))
-								$domain = $domainTmp;
-							$res["DOMAINS"] .= $domain."\r\n";
-
-						}
+                    $arLangDomain = array("DOMAIN"=>array(), "LID"=>array());
+                    $rs = $DB->Query("SELECT * FROM b_lang_domain ORDER BY ".$DB->Length("DOMAIN"));
+                    while($ar = $rs->Fetch())
+                    {
+                        $arLangDomain["DOMAIN"][]=$ar;
+                        $arLangDomain["LID"][$ar["LID"]][]=$ar;
+                    }
 				}
 				$res["DOMAINS"] = trim($res["DOMAINS"]);
 				$arCache[$res["LID"]] = $res["DOMAINS"];
@@ -1469,10 +1433,6 @@ class CLangAdmin extends CLanguage
 
 $SHOWIMAGEFIRST=false;
 
-function ShowImage($PICTURE_ID, $iMaxW=0, $iMaxH=0, $sParams=false, $strImageUrl="", $bPopup=false, $strPopupTitle=false,$iSizeWHTTP=0, $iSizeHHTTP=0)
-{
-	return CFile::ShowImage($PICTURE_ID, $iMaxW, $iMaxH, $sParams, $strImageUrl, $bPopup, $strPopupTitle,$iSizeWHTTP, $iSizeHHTTP);
-}
 
 abstract class CAllFilterQuery
 {

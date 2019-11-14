@@ -1,4 +1,7 @@
 <?
+
+use Bitrix\Iblock\InheritedProperty\SectionTemplates;
+
 IncludeModuleLangFile(__FILE__);
 
 class CAllIBlockSection
@@ -497,7 +500,7 @@ class CAllIBlockSection
 			}
 		}
 
-		$ipropTemplates = new \Bitrix\Iblock\InheritedProperty\SectionTemplates($arFields["IBLOCK_ID"], 0);
+		$ipropTemplates = new SectionTemplates($arFields["IBLOCK_ID"], 0);
 		if(is_set($arFields, "PICTURE"))
 		{
 			if(strlen($arFields["PICTURE"]["name"]) <= 0 && strlen($arFields["PICTURE"]["del"]) <= 0)
@@ -560,20 +563,13 @@ class CAllIBlockSection
 
 		unset($arFields["DATE_CREATE"]);
 		$arFields["~DATE_CREATE"] = $DB->CurrentTimeFunction();
-		if(is_object($USER))
-		{
-			$user_id = intval($USER->GetID());
-			if(!isset($arFields["CREATED_BY"]) || intval($arFields["CREATED_BY"]) <= 0)
-				$arFields["CREATED_BY"] = $user_id;
-			if(!isset($arFields["MODIFIED_BY"]) || intval($arFields["MODIFIED_BY"]) <= 0)
-				$arFields["MODIFIED_BY"] = $user_id;
-		}
+
 
 		$IBLOCK_ID = intval($arFields["IBLOCK_ID"]);
 
 		if(!$this->CheckFields($arFields))
 		{
-			$Result = false;
+            $Result = false;
 			$arFields["RESULT_MESSAGE"] = &$this->LAST_ERROR;
 		}
 		elseif($IBLOCK_ID && !$GLOBALS["USER_FIELD_MANAGER"]->CheckFields("IBLOCK_".$IBLOCK_ID."_SECTION", 0, $arFields))
@@ -586,7 +582,8 @@ class CAllIBlockSection
 		}
 		else
 		{
-			if(array_key_exists("PICTURE", $arFields))
+
+            if(array_key_exists("PICTURE", $arFields))
 			{
 				$SAVED_PICTURE = $arFields["PICTURE"];
 				CFile::SaveForDB($arFields, "PICTURE", "iblock");
@@ -738,26 +735,20 @@ class CAllIBlockSection
 
 			if($arIBlock["FIELDS"]["LOG_SECTION_ADD"]["IS_REQUIRED"] == "Y")
 			{
-				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
+				$USER_ID = 0;
 				$arEvents = null;
 				if(empty($arEvents) || ExecuteModuleEventEx($arEvents[0], array($USER_ID))===false)
 				{
 					$rsSection = CIBlockSection::GetList(array(), array("=ID"=>$ID), false,  array("LIST_PAGE_URL", "NAME", "CODE"));
 					$arSection = $rsSection->GetNext();
 					$res = array(
-						"ID" => $ID,
+						"ID" => $arSection['ID'],
+						"IBLOCK_ID" => $arSection['IBLOCK_ID'],
 						"CODE" => $arSection["CODE"],
 						"NAME" => $arSection["NAME"],
 						"SECTION_NAME" => $arIBlock["SECTION_NAME"],
 						"USER_ID" => $USER_ID,
 						"IBLOCK_PAGE_URL" => $arSection["LIST_PAGE_URL"],
-					);
-					CEventLog::Log(
-						"IBLOCK",
-						"IBLOCK_SECTION_ADD",
-						"iblock",
-						$arIBlock["ID"],
-						serialize($res)
 					);
 				}
 			}
@@ -773,7 +764,7 @@ class CAllIBlockSection
 
 			if (array_key_exists("IPROPERTY_TEMPLATES", $arFields))
 			{
-				$ipropTemplates = new \Bitrix\Iblock\InheritedProperty\SectionTemplates($arIBlock["ID"], $ID);
+				$ipropTemplates = new SectionTemplates($arIBlock["ID"], $ID);
 				$ipropTemplates->set($arFields["IPROPERTY_TEMPLATES"]);
 			}
 
@@ -798,7 +789,7 @@ class CAllIBlockSection
 	///////////////////////////////////////////////////////////////////
 	function Update($ID, $arFields, $bResort=true, $bUpdateSearch=true, $bResizePictures=false)
 	{
-		global $USER, $DB, $APPLICATION;
+		global $DB, $APPLICATION;
 
 		$ID = (int)$ID;
 
@@ -1032,7 +1023,7 @@ class CAllIBlockSection
 			}
 		}
 
-		$ipropTemplates = new \Bitrix\Iblock\InheritedProperty\SectionTemplates($db_record["IBLOCK_ID"], $db_record["ID"]);
+		$ipropTemplates = new SectionTemplates($db_record["IBLOCK_ID"], $db_record["ID"]);
 		if(is_set($arFields, "PICTURE"))
 		{
 			if (
@@ -1099,12 +1090,6 @@ class CAllIBlockSection
 			(is_set($arFields, "NAME")? $arFields["NAME"]: $db_record["NAME"])."\r\n".
 			($DESC_TYPE_tmp=="html"? HTMLToTxt($DESC_tmp): $DESC_tmp)
 		);
-
-		if(is_object($USER))
-		{
-			if(!isset($arFields["MODIFIED_BY"]) || intval($arFields["MODIFIED_BY"]) <= 0)
-				$arFields["MODIFIED_BY"] = intval($USER->GetID());
-		}
 
 		if(!$this->CheckFields($arFields, $ID))
 		{
@@ -1395,9 +1380,14 @@ class CAllIBlockSection
 
 			if (array_key_exists("IPROPERTY_TEMPLATES", $arFields))
 			{
-				$ipropTemplates = new \Bitrix\Iblock\InheritedProperty\SectionTemplates($arIBlock["ID"], $ID);
-				$ipropTemplates->set($arFields["IPROPERTY_TEMPLATES"]);
-			}
+				$ipropTemplates = new SectionTemplates($arIBlock["ID"], $ID);
+                try {
+                    $ipropTemplates->set($arFields["IPROPERTY_TEMPLATES"]);
+                } catch (\Bitrix\Main\ArgumentException $e) {
+                } catch (\Bitrix\Main\SystemException $e) {
+                } catch (Exception $e) {
+                }
+            }
 
 			$uf_updated = $GLOBALS["USER_FIELD_MANAGER"]->Update("IBLOCK_".$db_record["IBLOCK_ID"]."_SECTION", $ID, $arFields);
 			if($uf_updated)
@@ -1416,12 +1406,9 @@ class CAllIBlockSection
 					CIBlockSectionPropertyLink::Set($ID, $PROPERTY_ID, $arLink);
 			}
 
-			if($bUpdateSearch)
-				CIBlockSection::UpdateSearch($ID);
-
 			if($arIBlock["FIELDS"]["LOG_SECTION_EDIT"]["IS_REQUIRED"] == "Y")
 			{
-				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
+				$USER_ID = 0;
 				$arEvents = null;
 				if(empty($arEvents) || ExecuteModuleEventEx($arEvents[0],  array($USER_ID))===false)
 				{
@@ -1434,13 +1421,6 @@ class CAllIBlockSection
 						"SECTION_NAME" => $arIBlock["SECTION_NAME"],
 						"USER_ID" => $USER_ID,
 						"IBLOCK_PAGE_URL" => $arSection["LIST_PAGE_URL"],
-					);
-					CEventLog::Log(
-						"IBLOCK",
-						"IBLOCK_SECTION_EDIT",
-						"iblock",
-						$arIBlock["ID"],
-						serialize($res)
 					);
 				}
 			}
@@ -1455,9 +1435,6 @@ class CAllIBlockSection
 		$arFields["ID"] = $ID;
 		$arFields["IBLOCK_ID"] = $db_record["IBLOCK_ID"];
 		$arFields["RESULT"] = &$Result;
-
-
-		CIBlock::clearIblockTagCache($arIBlock['ID']);
 
 		return $Result;
 	}
@@ -1538,12 +1515,17 @@ class CAllIBlockSection
 					return false;
 			}
 
-			CFile::Delete($s["PICTURE"]);
-			CFile::Delete($s["DETAIL_PICTURE"]);
+			if($s["PICTURE"]) {
+                CFile::Delete($s["PICTURE"]);
+            }
+			if($s["DETAIL_PICTURE"]) {
+                CFile::Delete($s["DETAIL_PICTURE"]);
+            }
 
 			static $arDelCache;
 			if(!is_array($arDelCache))
 				$arDelCache = Array();
+
 			if(!is_set($arDelCache, $s["IBLOCK_ID"]))
 			{
 				$arDelCache[$s["IBLOCK_ID"]] = false;
@@ -1614,9 +1596,6 @@ class CAllIBlockSection
 			CIBlockSectionPropertyLink::DeleteBySection($ID);
 			$DB->Query("DELETE FROM b_iblock_section_element WHERE IBLOCK_SECTION_ID=".$ID, false, $err_mess.__LINE__);
 
-			if(CModule::IncludeModule("search"))
-				CSearch::DeleteIndex("iblock", "S".$ID);
-
 			$GLOBALS["USER_FIELD_MANAGER"]->Delete("IBLOCK_".$s["IBLOCK_ID"]."_SECTION", $ID);
 
 			//Delete the hole in the tree
@@ -1631,7 +1610,9 @@ class CAllIBlockSection
 					ID = ".$s["ID"]."
 			");
 			$ss = $ss->Fetch();
-			if(($ss["RIGHT_MARGIN"] > 0) && ($ss["LEFT_MARGIN"] > 0))
+
+
+            if(($ss["RIGHT_MARGIN"] > 0) && ($ss["LEFT_MARGIN"] > 0))
 			{
 				$DB->Query("
 					UPDATE b_iblock_section SET
@@ -1655,17 +1636,22 @@ class CAllIBlockSection
 			$obSectionRights = new CIBlockSectionRights($s["IBLOCK_ID"], $ID);
 			$obSectionRights->DeleteAllRights();
 
-			$ipropTemplates = new \Bitrix\Iblock\InheritedProperty\SectionTemplates($s["IBLOCK_ID"], $ID);
-			$ipropTemplates->delete();
+			$ipropTemplates = new SectionTemplates($s["IBLOCK_ID"], $ID);
+            try {
+                $ipropTemplates->delete();
+            } catch (\Bitrix\Main\ArgumentException $e) {
+            } catch (\Bitrix\Main\SystemException $e) {
+            } catch (Exception $e) {
+            }
 
-			/************* QUOTA *************/
+            /************* QUOTA *************/
 			$_SESSION["SESS_RECOUNT_DB"] = "Y";
 			/************* QUOTA *************/
 
 			$arIBlockFields = CIBlock::GetArrayByID($s["IBLOCK_ID"], "FIELDS");
 			if($arIBlockFields["LOG_SECTION_DELETE"]["IS_REQUIRED"] == "Y")
 			{
-				$USER_ID = is_object($USER)? intval($USER->GetID()) : 0;
+				$USER_ID = 0;
 				$arEvents = null;
 				if(empty($arEvents) || ExecuteModuleEventEx($arEvents[0],  array($USER_ID))===false)
 				{
@@ -1684,23 +1670,11 @@ class CAllIBlockSection
 						"USER_ID" => $USER_ID,
 						"IBLOCK_PAGE_URL" => $arSection["LIST_PAGE_URL"],
 					);
-					CEventLog::Log(
-						"IBLOCK",
-						"IBLOCK_SECTION_DELETE",
-						"iblock",
-						$s["IBLOCK_ID"],
-						serialize($res)
-					);
+					AddMessage2Log($res);
 				}
 			}
 
 			$res = $DB->Query("DELETE FROM b_iblock_section WHERE ID=".$ID, false, $err_mess.__LINE__);
-
-			if($res)
-			{
-
-				CIBlock::clearIblockTagCache($s['IBLOCK_ID']);
-			}
 
 			return $res;
 		}
@@ -1924,22 +1898,6 @@ class CAllIBlockSection
 				$this->LAST_ERROR = $quota->LAST_ERROR;
 		}
 		/****************************** QUOTA ******************************/
-
-		foreach ($db_events as $arEvent)
-		{
-			$bEventRes = ExecuteModuleEventEx($arEvent, array(&$arFields));
-			if($bEventRes===false)
-			{
-				if($err = $APPLICATION->GetException())
-					$this->LAST_ERROR .= $err->GetString()."<br>";
-				else
-				{
-					$APPLICATION->ThrowException("Unknown error");
-					$this->LAST_ERROR .= "Unknown error.<br>";
-				}
-				break;
-			}
-		}
 
 		if(strlen($this->LAST_ERROR)>0)
 			return false;
@@ -2358,32 +2316,9 @@ class CAllIBlockSection
 		global $DB, $USER;
 		$min_permission = (strlen($min_permission)==1) ? $min_permission : "R";
 
-		if ($permissionsBy !== null)
-			$permissionsBy = (int)$permissionsBy;
-		if ($permissionsBy < 0)
-			$permissionsBy = null;
-
-		if ($permissionsBy !== null)
-		{
-			$iUserID = $permissionsBy;
-			$strGroups = implode(',', CUser::GetUserGroup($permissionsBy));
-			$bAuthorized = false;
-		}
-		else
-		{
-			if (is_object($USER))
-			{
-				$iUserID = (int)$USER->GetID();
-				$strGroups = $USER->GetGroups();
-				$bAuthorized = $USER->IsAuthorized();
-			}
-			else
-			{
-				$iUserID = 0;
-				$strGroups = "2";
-				$bAuthorized = false;
-			}
-		}
+        $iUserID = 0;
+        $strGroups = "2";
+        $bAuthorized = false;
 
 		$stdPermissions = "
 			SELECT IBLOCK_ID
@@ -2405,11 +2340,6 @@ class CAllIBlockSection
 		else
 			$operation = '';
 
-		if($operation)
-		{
-			$acc = new CAccess;
-			$acc->UpdateCodes($permissionsBy !== null ? array('USER_ID' => $permissionsBy) : false);
-		}
 
 		if($operation == "section_read")
 		{

@@ -9,10 +9,8 @@ namespace Bitrix\Main;
 
 use Bitrix\Main\DB\SqlExpression;
 use Bitrix\Main\Entity;
-use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Search\MapBuilder;
 
-Loc::loadMessages(__FILE__);
 
 class UserTable extends Entity\DataManager
 {

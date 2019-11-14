@@ -44,7 +44,7 @@ class CDatabase extends CDatabaseMysql
 
 	protected function QueryInternal($strSql)
 	{
-		return mysqli_query($this->db_Conn, $strSql, MYSQLI_STORE_RESULT);
+        return mysqli_query($this->db_Conn, $strSql, MYSQLI_STORE_RESULT);
 	}
 
 	protected function GetError()

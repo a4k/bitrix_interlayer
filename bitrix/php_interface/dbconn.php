@@ -5,7 +5,7 @@ $DBType = "mysql";
 $DBHost = "localhost";
 $DBLogin = "root";
 $DBPassword = "";
-$DBName = "doctorplus";
+$DBName = "dintegration";
 $DBDebug = true;
 $DBDebugToFile = false;
 

@@ -72,8 +72,9 @@ abstract class CDatabaseMysql extends CAllDatabase
 
 		if(defined("DELAY_DB_CONNECT") && DELAY_DB_CONNECT===true)
 			return true;
-		else
-			return $this->DoConnect($connectionName);
+		else {
+            return $this->DoConnect($connectionName);
+        }
 	}
 
 	abstract protected function QueryInternal($sql);
@@ -125,7 +126,7 @@ abstract class CDatabaseMysql extends CAllDatabase
 
 			$connection = $connectionPool->getSlaveConnection($strSql);
 
-			if(isset($arOptions["ignore_dml"]))
+            if(isset($arOptions["ignore_dml"]))
 			{
 				$connectionPool->ignoreDml(false);
 			}
@@ -160,7 +161,7 @@ abstract class CDatabaseMysql extends CAllDatabase
 
 		$result = $this->QueryInternal($strSql);
 
-		if($this->DebugToFile || $DB->ShowSqlStat)
+        if($this->DebugToFile || $DB->ShowSqlStat)
 		{
 			/** @noinspection PhpUndefinedVariableInspection */
 			$exec_time = round(microtime(true) - $start_time, 10);

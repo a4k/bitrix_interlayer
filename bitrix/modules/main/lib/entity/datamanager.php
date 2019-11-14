@@ -9,10 +9,8 @@
 namespace Bitrix\Main\Entity;
 
 use Bitrix\Main;
-use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Entity\Query\Filter\ConditionTree as Filter;
 
-Loc::loadMessages(__FILE__);
 
 /**
  * Base entity data manager

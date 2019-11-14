@@ -185,7 +185,7 @@ abstract class CAllDatabase
 
 	function DoConnect($connectionName = "")
 	{
-		if($this->bConnected)
+        if($this->bConnected)
 			return true;
 
 		$app = Main\Application::getInstance();
@@ -231,7 +231,8 @@ abstract class CAllDatabase
 		if ($app != null)
 		{
 			$con = $app->getConnection($connectionName);
-			if(!$con && $this->bNodeConnection)
+
+            if(!$con && $this->bNodeConnection)
 			{
 				//create a node connection in the new kernel
 				$pool = $app->getConnectionPool();

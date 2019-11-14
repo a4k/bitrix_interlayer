@@ -7,7 +7,6 @@ abstract class Converter
 	const HTML = "html";
 
 	private static $htmlConverter;
-	private static $xmlConverter;
 	private static $emptyConverter;
 
 	public static function getHtmlConverter()
@@ -17,12 +16,6 @@ abstract class Converter
 		return self::$htmlConverter;
 	}
 
-	public static function getXmlConverter()
-	{
-		if (self::$xmlConverter == null)
-			self::$xmlConverter = new XmlConverter();
-		return self::$xmlConverter;
-	}
 
 	public static function getEmptyConverter()
 	{

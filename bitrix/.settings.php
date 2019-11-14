@@ -50,7 +50,7 @@ return array (
       array (
         'className' => '\\Bitrix\\Main\\DB\\MysqliConnection',
         'host' => 'localhost',
-        'database' => 'doctorplus',
+        'database' => 'dintegration',
         'login' => 'root',
         'password' => '',
         'options' => 2.0,

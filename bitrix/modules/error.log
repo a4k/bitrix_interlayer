@@ -9684,3 +9684,75 @@ D:\dev\OSPanel\domains\doctorplus.integration\bitrix\modules\main\include.php:16
 #2: require(string)
 	D:\dev\OSPanel\domains\doctorplus.integration\index.php:3
 ----------
+2019-11-07 19:55:12 - Host: binterlayer.rf - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	C:\OSPanel\domains\binterlayer.rf\index.php:3
+----------
+2019-11-07 19:55:13 - Host: binterlayer.rf - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(C:/OSPanel/domains/binterlayer.rf/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:161
+#0: include_once
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	C:\OSPanel\domains\binterlayer.rf\index.php:3
+----------
+2019-11-07 19:55:13 - Host: binterlayer.rf - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'C:/OSPanel/domains/binterlayer.rf/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP_7.0-x64;c:/ospanel/modules/php/PHP_7.0-x64/PEAR/pear') (0)
+C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:161
+#0: include_once
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	C:\OSPanel\domains\binterlayer.rf\index.php:3
+----------
+2019-11-07 19:56:27 - Host: binterlayer.rf - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+ksort() expects parameter 1 to be array, null given (0)
+C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:125
+#0: ksort(NULL)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:125
+#1: require_once(string)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	C:\OSPanel\domains\binterlayer.rf\index.php:3
+----------
+2019-11-07 19:56:27 - Host: binterlayer.rf - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(C:/OSPanel/domains/binterlayer.rf/bitrixphp_interface/s1/init.php): failed to open stream: No such file or directory (0)
+C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:161
+#0: include_once
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	C:\OSPanel\domains\binterlayer.rf\index.php:3
+----------
+2019-11-07 19:56:27 - Host: binterlayer.rf - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+include_once(): Failed opening 'C:/OSPanel/domains/binterlayer.rf/bitrixphp_interface/s1/init.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP_7.0-x64;c:/ospanel/modules/php/PHP_7.0-x64/PEAR/pear') (0)
+C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:161
+#0: include_once
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include.php:161
+#1: require_once(string)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\include\prolog_before.php:14
+#2: require(string)
+	C:\OSPanel\domains\binterlayer.rf\index.php:3
+----------
+2019-11-07 19:56:27 - Host: binterlayer.rf - UNCAUGHT_EXCEPTION - [Error] 
+Class 'CUserTypeEntity' not found (0)
+C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\classes\general\usertype.php:941
+#0: CUserTypeManager->GetUserFields(string)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\main\classes\general\usertype.php:2728
+#1: CUserTypeSQL->SetEntity(string, string)
+	C:\OSPanel\domains\binterlayer.rf\bitrix\modules\iblock\classes\mysql\iblocksection.php:30
+#2: CIBlockSection::GetList(array, array, boolean, array, array)
+	C:\OSPanel\domains\binterlayer.rf\index.php:38
+#3: IBlockService::getSectionList(string)
+	C:\OSPanel\domains\binterlayer.rf\index.php:52
+----------

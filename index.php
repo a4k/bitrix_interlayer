@@ -32,12 +32,24 @@ class IBlockService {
         }
         return $result;
     }
+
+    public static function getSectionList($iblockId) {
+        $db_iblock = \CIBlockSection::GetList(array("SORT"=>"ASC"),
+            array("IBLOCK_ID"=>$iblockId), false, ['NAME', 'PROPERTY_CITY'], array("nPageSize" => "5"));
+
+        $result = [];
+        while($arRes = $db_iblock->Fetch()) {
+
+            $result[] = $arRes;
+        }
+        return $result;
+    }
 }
 
 $code = 'services';
 $code = 'price-list';
 $id = IBlockService::getIBlockId($code);
-$list = IBlockService::getList($id);
+$list = IBlockService::getSectionList($id);
 
 print_r($id);
 print_r($list);

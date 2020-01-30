@@ -119,6 +119,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/lib/loader.php');
         'bitrix\main\composite\memcachedresponse' => 'lib/composite/responder.php',
     ));
 
+
+include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/file.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/mysql/file.php");
+
 function getmicrotime()
 {
     list($_918868851, $_1763487896) = explode('', microtime());

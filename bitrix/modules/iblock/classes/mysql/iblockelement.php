@@ -1163,11 +1163,11 @@ class CIBlockElement extends CAllIBlockElement
         $DETAIL_tmp = is_set($arFields, "DETAIL_TEXT") ? $arFields["DETAIL_TEXT"] : $ar_wf_element["DETAIL_TEXT"];
         $DETAIL_TYPE_tmp = is_set($arFields, "DETAIL_TEXT_TYPE") ? $arFields["DETAIL_TEXT_TYPE"] : $ar_wf_element["DETAIL_TEXT_TYPE"];
 
-        $arFields["SEARCHABLE_CONTENT"] = ToUpper(
+        /*$arFields["SEARCHABLE_CONTENT"] = ToUpper(
             (is_set($arFields, "NAME") ? $arFields["NAME"] : $ar_wf_element["NAME"]) . "\r\n" .
             ($PREVIEW_TYPE_tmp == "html" ? HTMLToTxt($PREVIEW_tmp) : $PREVIEW_tmp) . "\r\n" .
             ($DETAIL_TYPE_tmp == "html" ? HTMLToTxt($DETAIL_tmp) : $DETAIL_tmp)
-        );
+        );*/
 
         if (array_key_exists("IBLOCK_SECTION_ID", $arFields)) {
             if (!array_key_exists("IBLOCK_SECTION", $arFields)) {

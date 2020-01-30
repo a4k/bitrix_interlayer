@@ -1,11 +1,33 @@
 <?
 define("BX_USE_MYSQLI", true);
 define("DBPersistent", false);
+
+$serverType = getenv('INTEGRATION_TYPE');
+
+function getConfigFile($mode) {
+    $path =  __DIR__ . '/../../config/config.'.$mode.'.ini';
+    return parse_ini_file($path, true);
+}
+
+function getConfigMode($serverType = '') {
+    switch ($serverType) {
+        case 'production':
+        case 'local':
+            return $serverType;
+            break;
+    }
+    return 'test';
+}
+
+$configMode = getConfigMode($serverType);
+$configFile = getConfigFile($configMode)['mysql'];
+
 $DBType = "mysql";
-$DBHost = "localhost";
-$DBLogin = "root";
-$DBPassword = "";
-$DBName = "dintegration";
+$DBHost = $configFile['host'];
+$DBLogin = $configFile['login'];
+$DBPassword = $configFile['password'];
+$DBName = $configFile['dbname'];
+
 $DBDebug = true;
 $DBDebugToFile = false;
 

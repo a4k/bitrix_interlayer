@@ -3,7 +3,7 @@ class CIBlockSection extends CAllIBlockSection
 {
 	public static function GetList($arOrder=array("SORT"=>"ASC"), $arFilter=array(), $bIncCnt = false, $arSelect = array(), $arNavStartParams=false)
 	{
-		global $DB, $USER, $USER_FIELD_MANAGER;
+		global $DB, $USER_FIELD_MANAGER;
 
 		if (!is_array($arOrder))
 			$arOrder = array();
@@ -53,7 +53,7 @@ class CIBlockSection extends CAllIBlockSection
 		$arSqlSearch = CIBlockSection::GetFilter($arFilter);
 
 		$bCheckPermissions = !array_key_exists("CHECK_PERMISSIONS", $arFilter) || $arFilter["CHECK_PERMISSIONS"]!=="N";
-		$bIsAdmin = is_object($USER) && $USER->IsAdmin();
+		$bIsAdmin = false;
 		$permissionsBy = null;
 		if ($bCheckPermissions && isset($arFilter['PERMISSIONS_BY']))
 		{

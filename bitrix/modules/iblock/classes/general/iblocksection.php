@@ -1670,7 +1670,7 @@ class CAllIBlockSection
 						"USER_ID" => $USER_ID,
 						"IBLOCK_PAGE_URL" => $arSection["LIST_PAGE_URL"],
 					);
-					AddMessage2Log($res);
+//					AddMessage2Log($res);
 				}
 			}
 

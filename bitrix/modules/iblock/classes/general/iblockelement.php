@@ -3364,21 +3364,21 @@ class CAllIBlockElement
 		}
 
 		$arFields["SEARCHABLE_CONTENT"] = $arFields["NAME"];
-		if(isset($arFields["PREVIEW_TEXT"]))
+		/*if(isset($arFields["PREVIEW_TEXT"]))
 		{
 			if(isset($arFields["PREVIEW_TEXT_TYPE"]) && $arFields["PREVIEW_TEXT_TYPE"] == "html")
 				$arFields["SEARCHABLE_CONTENT"] .= "\r\n".HTMLToTxt($arFields["PREVIEW_TEXT"]);
 			else
 				$arFields["SEARCHABLE_CONTENT"] .= "\r\n".$arFields["PREVIEW_TEXT"];
-		}
-		if(isset($arFields["DETAIL_TEXT"]))
+		}*/
+		/*if(isset($arFields["DETAIL_TEXT"]))
 		{
 			if(isset($arFields["DETAIL_TEXT_TYPE"]) && $arFields["DETAIL_TEXT_TYPE"] == "html")
 				$arFields["SEARCHABLE_CONTENT"] .= "\r\n".HTMLToTxt($arFields["DETAIL_TEXT"]);
 			else
 				$arFields["SEARCHABLE_CONTENT"] .= "\r\n".$arFields["DETAIL_TEXT"];
 		}
-		$arFields["SEARCHABLE_CONTENT"] = ToUpper($arFields["SEARCHABLE_CONTENT"]);
+		$arFields["SEARCHABLE_CONTENT"] = ToUpper($arFields["SEARCHABLE_CONTENT"]);*/
 
 		if(!$this->CheckFields($arFields) || strlen($strWarning))
 		{
@@ -3480,7 +3480,7 @@ class CAllIBlockElement
 						"USER_ID" => $USER_ID,
 						"IBLOCK_PAGE_URL" => $arElement["LIST_PAGE_URL"],
 					);
-					AddMessage2Log($res);
+//					AddMessage2Log($res);
 				}
 			}
 			if($bWorkFlow && intval($arFields["WF_PARENT_ELEMENT_ID"])<=0)

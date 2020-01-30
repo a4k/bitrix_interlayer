@@ -1,36 +1,38 @@
-2019-11-11 17:40:15 - Host:  - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
-array_key_exists() expects parameter 2 to be array, null given (0)
-C:\dev\php\doctorplus_integration\bitrix\modules\iblock\classes\general\iblockproperty.php:922
-#0: array_key_exists(string, NULL)
-	C:\dev\php\doctorplus_integration\bitrix\modules\iblock\classes\general\iblockproperty.php:922
-#1: CAllIBlockProperty::GetUserType(string)
-	C:\dev\php\doctorplus_integration\bitrix\modules\iblock\classes\mysql\iblockelement.php:1826
-#2: CIBlockElement->SetPropertyValues(integer, integer, array)
-	C:\dev\php\doctorplus_integration\bitrix\modules\iblock\classes\general\iblockelement.php:3441
-#3: CAllIBlockElement->Add(array)
-	C:\dev\php\doctorplus_integration\app\store\BitrixStore.php:165
-#4: app\store\BitrixStore->addStoreElement(string, array)
-	C:\dev\php\doctorplus_integration\app\store\BitrixStoreTest.php:352
-#5: store\BitrixStoreTest->testAddStoreElementSaveDB()
+2019-12-04 14:02:29 - Host:  - LOW_PRIORITY_ERROR - [ErrorException] E_WARNING
+Illegal string offset 'serviceId' (0)
+C:\dev\php\doctorplus_integration\app\model\price\PriceListModel.php:98
+#0: app\model\PriceListModel->fillData(array)
+	C:\dev\php\doctorplus_integration\app\model\price\PriceListModel.php:35
+#1: app\model\PriceListModel->fillModel(array, object)
+	C:\dev\php\doctorplus_integration\app\model\service\ServiceListModel.php:57
+#2: app\model\ServiceListModel->fillSection(array)
+	C:\dev\php\doctorplus_integration\app\model\service\ServiceListModel.php:41
+#3: app\model\ServiceListModel->fillSection(array)
+	C:\dev\php\doctorplus_integration\app\model\service\ServiceListModel.php:22
+#4: app\model\ServiceListModel->fillData(array)
+	C:\dev\php\doctorplus_integration\app\model\service\ServiceListModel.php:92
+#5: app\model\ServiceListModel->fillModel(string)
+	C:\dev\php\doctorplus_integration\app\model\service\ServiceListModelTest.php:55
+#6: app\model\ServiceListModelTest->testFillModel()
 	
-#6: ReflectionMethod->invokeArgs(object, array)
+#7: ReflectionMethod->invokeArgs(object, array)
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\Framework\TestCase.php:1071
-#7: PHPUnit\Framework\TestCase->runTest()
+#8: PHPUnit\Framework\TestCase->runTest()
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\Framework\TestCase.php:939
-#8: PHPUnit\Framework\TestCase->runBare()
+#9: PHPUnit\Framework\TestCase->runBare()
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\Framework\TestResult.php:698
-#9: PHPUnit\Framework\TestResult->run(object)
+#10: PHPUnit\Framework\TestResult->run(object)
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\Framework\TestCase.php:894
-#10: PHPUnit\Framework\TestCase->run(object)
-	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\Framework\TestSuite.php:755
-#11: PHPUnit\Framework\TestSuite->run(object)
+#11: PHPUnit\Framework\TestCase->run(object)
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\Framework\TestSuite.php:755
 #12: PHPUnit\Framework\TestSuite->run(object)
+	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\Framework\TestSuite.php:755
+#13: PHPUnit\Framework\TestSuite->run(object)
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:545
-#13: PHPUnit\TextUI\TestRunner->doRun(object, array, boolean)
+#14: PHPUnit\TextUI\TestRunner->doRun(object, array, boolean)
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\TextUI\Command.php:195
-#14: PHPUnit\TextUI\Command->run(array, boolean)
+#15: PHPUnit\TextUI\Command->run(array, boolean)
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\src\TextUI\Command.php:148
-#15: PHPUnit\TextUI\Command::main()
+#16: PHPUnit\TextUI\Command::main()
 	C:\dev\php\doctorplus_integration\vendor\phpunit\phpunit\phpunit:53
 ----------

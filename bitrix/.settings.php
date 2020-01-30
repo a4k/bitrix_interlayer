@@ -1,4 +1,30 @@
 <?php
+
+$serverType = getenv('INTEGRATION_TYPE');
+
+function getConfigFileS($mode) {
+    $path =  __DIR__ . '/../config/config.'.$mode.'.ini';
+    return parse_ini_file($path, true);
+}
+
+function getConfigModeS($serverType = '') {
+    switch ($serverType) {
+        case 'production':
+        case 'local':
+            return $serverType;
+            break;
+    }
+    return 'test';
+}
+
+$configMode = getConfigModeS($serverType);
+$configFile = getConfigFileS($configMode)['mysql'];
+
+$DBHost = $configFile['host'];
+$DBLogin = $configFile['login'];
+$DBPassword = $configFile['password'];
+$DBName = $configFile['dbname'];
+
 return array (
   'utf_mode' => 
   array (
@@ -49,10 +75,10 @@ return array (
       'default' => 
       array (
         'className' => '\\Bitrix\\Main\\DB\\MysqliConnection',
-        'host' => 'localhost',
-        'database' => 'dintegration',
-        'login' => 'root',
-        'password' => '',
+        'host' => $DBHost,
+        'database' => $DBName,
+        'login' => $DBLogin,
+        'password' => $DBPassword,
         'options' => 2.0,
       ),
     ),

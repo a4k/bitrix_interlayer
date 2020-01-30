@@ -240,24 +240,16 @@ class CIBlockPropertyEnum
 			}
 			elseif (!isset($BX_IBLOCK_ENUM_CACHE[$bucket]))
 			{
-				if ($CACHE_MANAGER->Read(CACHED_b_iblock_property_enum, $cache_id="b_iblock_property_enum".$bucket, "b_iblock_property_enum"))
-				{
-					$arEnums = $CACHE_MANAGER->Get($cache_id);
-				}
-				else
-				{
-					$arEnums = array();
-					$rs = $DB->Query("
+                $arEnums = array();
+                $rs = $DB->Query("
 						SELECT *
 						FROM b_iblock_property_enum
 						WHERE ID between ".($bucket*$bucket_size)." AND ".(($bucket+1)*$bucket_size-1)
-					);
-					while($ar = $rs->Fetch())
-					{
-						$arEnums[$ar["ID"]] = $ar;
-					}
-					$CACHE_MANAGER->Set($cache_id, $arEnums);
-				}
+                );
+                while($ar = $rs->Fetch())
+                {
+                    $arEnums[$ar["ID"]] = $ar;
+                }
 				$BX_IBLOCK_ENUM_CACHE[$bucket] = $arEnums;
 			}
 		}

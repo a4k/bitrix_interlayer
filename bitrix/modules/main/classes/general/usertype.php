@@ -169,7 +169,7 @@ class CAllUserTypeEntity extends CDBResult
 	 */
 	public static function GetList($aSort=array(), $aFilter=array())
 	{
-		global $DB, $CACHE_MANAGER;
+		global $DB;
 
 		$bLangJoin = false;
 		$arFilter = array();
@@ -478,8 +478,6 @@ class CAllUserTypeEntity extends CDBResult
 
 		if($ID = $DB->Add("b_user_field", $arFields, array("SETTINGS")))
 		{
-			if(CACHED_b_user_field!==false)
-				$CACHE_MANAGER->CleanDir("b_user_field");
 
 			$arLabels = array("EDIT_FORM_LABEL", "LIST_COLUMN_LABEL", "LIST_FILTER_LABEL", "ERROR_MESSAGE", "HELP_MESSAGE");
 			$arLangs = array();
@@ -538,7 +536,7 @@ class CAllUserTypeEntity extends CDBResult
 	 */
 	function Update($ID, $arFields)
 	{
-		global $DB, $USER_FIELD_MANAGER, $CACHE_MANAGER, $APPLICATION;
+		global $DB, $USER_FIELD_MANAGER, $APPLICATION;
 		$ID = intval($ID);
 
 		unset($arFields["ENTITY_ID"]);
@@ -568,8 +566,6 @@ class CAllUserTypeEntity extends CDBResult
 
 		// events
 
-		if(is_object($USER_FIELD_MANAGER))
-			$USER_FIELD_MANAGER->CleanCache();
 
 		$strUpdate = $DB->PrepareUpdate("b_user_field", $arFields);
 
@@ -588,10 +584,6 @@ class CAllUserTypeEntity extends CDBResult
 
 		if($strUpdate <> "" || !empty($arLangs))
 		{
-			if(CACHED_b_user_field !== false)
-			{
-				$CACHE_MANAGER->CleanDir("b_user_field");
-			}
 
 			if($strUpdate <> "")
 			{
@@ -632,7 +624,7 @@ class CAllUserTypeEntity extends CDBResult
 	 */
 	function Delete($ID)
 	{
-		global $DB, $CACHE_MANAGER, $USER_FIELD_MANAGER, $APPLICATION;
+		global $DB, $USER_FIELD_MANAGER, $APPLICATION;
 		$ID = intval($ID);
 
 		$rs = $this->GetList(array(), array("ID"=>$ID));
@@ -672,7 +664,6 @@ class CAllUserTypeEntity extends CDBResult
 				}
 			}
 
-			if(CACHED_b_user_field!==false) $CACHE_MANAGER->CleanDir("b_user_field");
 			$rs = $DB->Query("DELETE FROM b_user_field_lang WHERE USER_FIELD_ID = ".$ID, false, "FILE: ".__FILE__."<br>LINE: ".__LINE__);
 			if($rs)
 				$rs = $DB->Query("DELETE FROM b_user_field WHERE ID = ".$ID, false, "FILE: ".__FILE__."<br>LINE: ".__LINE__);
@@ -710,7 +701,7 @@ class CAllUserTypeEntity extends CDBResult
 	 */
 	function DropEntity($entity_id)
 	{
-		global $DB, $CACHE_MANAGER, $USER_FIELD_MANAGER;
+		global $DB, $USER_FIELD_MANAGER;
 		$entity_id = preg_replace("/[^0-9A-Z_]+/", "", $entity_id);
 
 		$rs = true;
@@ -741,11 +732,6 @@ class CAllUserTypeEntity extends CDBResult
 			$rs = $DB->Query("DROP TABLE b_utm_".strtolower($entity_id), true, "FILE: ".__FILE__."<br>LINE: ".__LINE__);
 		}
 
-		if(CACHED_b_user_field !== false)
-			$CACHE_MANAGER->CleanDir("b_user_field");
-
-		if(is_object($USER_FIELD_MANAGER))
-			$USER_FIELD_MANAGER->CleanCache();
 
 		return $rs;
 	}
@@ -803,6 +789,39 @@ class CUserTypeManager
 		$this->arFieldsCache = array();
 		$this->arUserTypes = false;
 	}
+
+
+    public static function BuildList() {
+        $cuserTypeString = new CUserTypeString();
+        $cuserTypeInteger = new CUserTypeInteger();
+        $cuserTypeDouble = new CUserTypeDouble();
+        $cuserTypeDateTime = new CUserTypeDateTime();
+        $cuserTypeDate = new CUserTypeDate();
+        $cuserTypeBoolean = new CUserTypeBoolean();
+        $cuserTypeUrl = new CUserTypeUrl();
+        $cuserTypeFile = new CUserTypeFile();
+        $cuserTypeEnum = new CUserTypeEnum();
+        $cuserTypeIBlockSection = new CUserTypeIBlockSection();
+        $cuserTypeIBlockElement = new CUserTypeIBlockElement();
+        $cuserTypeStringFormatted = new CUserTypeStringFormatted();
+
+        $result = array();
+        $result[] = $cuserTypeString->GetUserTypeDescription();
+        $result[] = $cuserTypeInteger->GetUserTypeDescription();
+        $result[] = $cuserTypeDouble->GetUserTypeDescription();
+        $result[] = $cuserTypeDateTime->GetUserTypeDescription();
+        $result[] = $cuserTypeDate->GetUserTypeDescription();
+        $result[] = $cuserTypeBoolean->GetUserTypeDescription();
+        $result[] = $cuserTypeUrl->GetUserTypeDescription();
+        $result[] = $cuserTypeFile->GetUserTypeDescription();
+        $result[] = $cuserTypeEnum->GetUserTypeDescription();
+        $result[] = $cuserTypeIBlockSection->GetUserTypeDescription();
+        $result[] = $cuserTypeIBlockElement->GetUserTypeDescription();
+        $result[] = $cuserTypeStringFormatted->GetUserTypeDescription();
+
+        return $result;
+    }
+
 	/**
 	 * Функция возвращает метаданные типа.
 	 *
@@ -816,19 +835,24 @@ class CUserTypeManager
 	 */
 	function GetUserType($user_type_id = false)
 	{
-		if(!is_array($this->arUserTypes))
-		{
-			$this->arUserTypes = array();
-		}
-		if($user_type_id !== false)
-		{
-			if(array_key_exists($user_type_id, $this->arUserTypes))
-				return $this->arUserTypes[$user_type_id];
-			else
-				return false;
-		}
-		else
-			return $this->arUserTypes;
+        if(!is_array($this->arUserTypes))
+        {
+            $this->arUserTypes = array();
+
+            $arList = self::BuildList();
+            foreach ($arList as $item) {
+                $this->arUserTypes[$item["USER_TYPE_ID"]] = $item;
+            }
+        }
+        if($user_type_id !== false)
+        {
+            if(array_key_exists($user_type_id, $this->arUserTypes))
+                return $this->arUserTypes[$user_type_id];
+            else
+                return false;
+        }
+        else
+            return $this->arUserTypes;
 	}
 
 	function GetDBColumnType($arUserField)
@@ -4141,8 +4165,6 @@ class CUserFieldEnum
 			return false;
 		}
 
-		if(CACHED_b_user_field_enum!==false)
-			$CACHE_MANAGER->CleanDir("b_user_field_enum");
 
 		foreach($values as $key=>$value)
 		{
@@ -4186,8 +4208,6 @@ class CUserFieldEnum
 				}
 			}
 		}
-		if(CACHED_b_user_field_enum!==false)
-			$CACHE_MANAGER->CleanDir("b_user_field_enum");
 
 
 		return true;
@@ -4197,21 +4217,7 @@ class CUserFieldEnum
 	{
 		global $DB, $CACHE_MANAGER;
 
-		if(CACHED_b_user_field_enum !== false)
-		{
-			$cacheId = "b_user_field_enum".md5(serialize($aSort).".".serialize($aFilter));
-			if($CACHE_MANAGER->Read(CACHED_b_user_field_enum, $cacheId, "b_user_field_enum"))
-			{
-				$arResult = $CACHE_MANAGER->Get($cacheId);
-				$res = new CDBResult;
-				$res->InitFromArray($arResult);
-				return $res;
-			}
-		}
-		else
-		{
-			$cacheId = '';
-		}
+        $cacheId = '';
 
 		$bJoinUFTable = false;
 		$arFilter = array();
@@ -4303,7 +4309,6 @@ class CUserFieldEnum
 			while($ar = $res->Fetch())
 				$arResult[]=$ar;
 
-			$CACHE_MANAGER->Set($cacheId, $arResult);
 
 			$res = new CDBResult;
 			$res->InitFromArray($arResult);
@@ -4314,8 +4319,7 @@ class CUserFieldEnum
 
 	function DeleteFieldEnum($FIELD_ID)
 	{
-		global $DB, $CACHE_MANAGER;
+		global $DB;
 		$DB->Query("DELETE FROM b_user_field_enum WHERE USER_FIELD_ID = ".intval($FIELD_ID), false, "FILE: ".__FILE__."<br>LINE: ".__LINE__);
-		if(CACHED_b_user_field_enum!==false) $CACHE_MANAGER->CleanDir("b_user_field_enum");
 	}
 }
